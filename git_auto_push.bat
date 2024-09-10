@@ -14,13 +14,13 @@ if %errorlevel%==1 (
     exit /b 0
 )
 
-:: Check if remote origin already exists
-git remote -v | find "origin" >nul
+:: Check if remote origin already exists, if it does, skip adding it
+git remote -v | findstr "origin" >nul
 if %errorlevel%==0 (
-    echo "Remote already exists"
+    echo "Remote 'origin' already exists"
 ) else (
     git remote add origin https://github.com/Ferdinand57/test_repo.git
-    echo "Remote added"
+    echo "Remote 'origin' added"
 )
 
 :: Push to the main branch
