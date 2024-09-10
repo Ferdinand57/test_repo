@@ -2,6 +2,16 @@
 
 :: Script to automatically git add ., commit with a default message, and push
 
+:: Check if on 'master' branch and switch to 'main' if needed
+git rev-parse --abbrev-ref HEAD | findstr "master" >nul
+if %errorlevel%==0 (
+    echo "You are on the master branch. Switching to main..."
+    git checkout -b main
+    git branch -D master
+) else (
+    echo "Already on the main branch or another branch"
+)
+
 :: Add all changes
 git add .
 
