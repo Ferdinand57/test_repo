@@ -27,98 +27,145 @@ Explain how you implemented the checklist above step-by-step (not just following
 Create a form input to add a model object to the previous app.
 =
 
-To allow users to add new entries to the MoodEntry model, I implemented a form within the application.
+Creating the Form Structure:
 
-    Creating the Form Structure:
-        File: Created a new file forms.py in the main app directory.
-        Code:
+File: Created a new file forms.py in the main app directory.
 
-        python
+```
+from django.forms import ModelForm
+from main.models import ProductEntry
 
-    from django.forms import ModelForm
-    from main.models import MoodEntry
-
-    class MoodEntryForm(ModelForm):
-        class Meta:
-            model = MoodEntry
-            fields = ["mood", "feelings", "mood_intensity"]
-
-    Explanation:
-        The MoodEntryForm class inherits from ModelForm, automatically generating form fields based on the MoodEntry model.
-        Specified the fields to include in the form (mood, feelings, mood_intensity). Excluded time since it's auto-generated.
+class ProductEntryForm(ModelForm):
+    class Meta:
+        model = ProductEntry
+        fields = ["name", "description", "price"]
+```
 
 Handling Form Submission:
 
-    File: Updated views.py in the main app.
-    Code:
+File: Updated views.py in the main app.
 
-    python
+```
+from django.shortcuts import render, redirect
+from main.forms import ProductEntryForm
+from main.models import ProductEntry
 
-    from django.shortcuts import render, redirect
-    from main.forms import MoodEntryForm
-    from main.models import MoodEntry
+def create_product_entry(request):
+    form = ProductEntryForm(request.POST or None)
 
-    def create_mood_entry(request):
-        form = MoodEntryForm(request.POST or None)
-        if form.is_valid() and request.method == "POST":
-            form.save()
-            return redirect('main:show_main')
-        context = {'form': form}
-        return render(request, "create_mood_entry.html", context)
+    if form.is_valid() and request.method == "POST":
+        form.save()
+        return redirect('main:show_main')
 
-    Explanation:
-        Created the create_mood_entry view to handle GET and POST requests.
-        On POST, it validates and saves the form data, then redirects to the main page.
-        On GET, it renders the empty form.
+    context = {'form': form}
+    return render(request, "create_product_entry.html", context)
+```
 
 Updating URL Routing:
 
-    File: Modified urls.py in the main app.
-    Code:
+File: Modified urls.py in the main app.
 
-    python
+```
+from main.views import show_main, create_product_entry
 
-    from main.views import create_mood_entry
-
-    urlpatterns = [
-        # ... other url patterns ...
-        path('create-mood-entry', create_mood_entry, name='create_mood_entry'),
-    ]
-
-    Explanation:
-        Added a new URL pattern for the create_mood_entry view.
+urlpatterns = [
+    path('', show_main, name='show_main'),
+    path('create-product-entry', create_product_entry, name='create_product_entry'),
+```
 
 Creating the Form Template:
 
-    File: Created create_mood_entry.html in main/templates.
-    Code:
+File: Created create_mood_entry.html in main/templates.
 
-    html
-
-{% extends 'base.html' %}
+```
+{% extends 'base.html' %} 
 {% block content %}
-<h1>Add New Mood Entry</h1>
+<h1>Add New Product Entry</h1>
+
 <form method="POST">
   {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Add Mood Entry" />
+  <table>
+    {{ form.as_table }}
+    <tr>
+      <td></td>
+      <td>
+        <input type="submit" value="Add Product Entry" />
+      </td>
+    </tr>
+  </table>
 </form>
+
 {% endblock %}
-
-Explanation:
-
-    Extended from base.html to maintain consistent styling.
-    Used {{ form.as_p }} to render the form fields.
-    Included {% csrf_token %} for security against CSRF attacks.
+```
 
 Add 4 views to view the added objects in XML, JSON, XML by ID, and JSON by ID formats.
 =
+
+Importing Necessary Modules:
+
+File: At the top of views.py.
+
+```
+from django.http import HttpResponse
+from django.core import serializers
+```
+
+Creating the Views:
+
+View for XML Format:
+
+```
+def show_xml(request):
+    data = MoodEntry.objects.all()
+    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
+```
+
+View for JSON Format:
+
+```
+def show_json(request):
+    data = MoodEntry.objects.all()
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+```
+
+View for XML by ID:
+
+```
+def show_xml_by_id(request, id):
+    data = MoodEntry.objects.filter(pk=id)
+    return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
+```
+
+View for JSON by ID:
+
+```
+def show_json_by_id(request, id):
+    data = MoodEntry.objects.filter(pk=id)
+    return HttpResponse(serializers.serialize("json", data), content_type="applicati
+```
 
 
 Create URL routing for each of the views added in point 2.
 =
 
+To make these views accessible via URLs, I updated the urls.py file:
 
+```
+from main.views import show_main, create_product_entry, show_xml, show_json, show_xml_by_id, show_json_by_id
+```
+
+Adding URL Patterns:
+
+```
+urlpatterns = [
+    path('', show_main, name='show_main'),
+    path('create-product-entry', create_product_entry, name='create_product_entry'),
+    path('xml/', show_xml, name='show_xml'),
+    path('json/', show_json, name='show_json'),
+    path('xml/<str:id>/', show_xml_by_id, name='show_xml_by_id'),
+    path('json/<str:id>/', show_json_by_id, name='show_json_by_id'),
+]
+```
 
 
 Answer the following questions in README.md in the root folder.
