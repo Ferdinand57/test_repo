@@ -21,7 +21,19 @@ git branch -M master
 git push pws master
 ```
 
+Explain how you implemented the checklist above step-by-step (not just following the tutorial).
+=
 
+Create a form input to add a model object to the previous app.
+
+Add 4 views to view the added objects in XML, JSON, XML by ID, and JSON by ID formats.
+
+Create URL routing for each of the views added in point 2.
+
+
+
+Answer the following questions in README.md in the root folder.
+=
 
 Explain why we need data delivery in implementing a platform.
 =
@@ -51,19 +63,7 @@ Without the csrf_token, our application becomes vulnerable to CSRF attacks where
 
 source: https://docs.djangoproject.com/en/5.1/ref/csrf/
 
-Explain how you implemented the checklist above step-by-step (not just following the tutorial).
-=
-
-
-
-Create a form input to add a model object to the previous app.
-
-Add 4 views to view the added objects in XML, JSON, XML by ID, and JSON by ID formats.
-
-Create URL routing for each of the views added in point 2.
-
-Answer the following questions in README.md in the root folder.
-
-
 
 Access the four URLs in point 2 using Postman, take screenshots of the results in Postman, and add them to README.md.
+=
+![image](https://github.com/user-attachments/assets/ea799bc6-331b-435c-8df8-97fc63ac9e21)
