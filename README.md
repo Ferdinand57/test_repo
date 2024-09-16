@@ -27,6 +27,89 @@ Explain how you implemented the checklist above step-by-step (not just following
 Create a form input to add a model object to the previous app.
 =
 
+To allow users to add new entries to the MoodEntry model, I implemented a form within the application.
+
+    Creating the Form Structure:
+        File: Created a new file forms.py in the main app directory.
+        Code:
+
+        python
+
+    from django.forms import ModelForm
+    from main.models import MoodEntry
+
+    class MoodEntryForm(ModelForm):
+        class Meta:
+            model = MoodEntry
+            fields = ["mood", "feelings", "mood_intensity"]
+
+    Explanation:
+        The MoodEntryForm class inherits from ModelForm, automatically generating form fields based on the MoodEntry model.
+        Specified the fields to include in the form (mood, feelings, mood_intensity). Excluded time since it's auto-generated.
+
+Handling Form Submission:
+
+    File: Updated views.py in the main app.
+    Code:
+
+    python
+
+    from django.shortcuts import render, redirect
+    from main.forms import MoodEntryForm
+    from main.models import MoodEntry
+
+    def create_mood_entry(request):
+        form = MoodEntryForm(request.POST or None)
+        if form.is_valid() and request.method == "POST":
+            form.save()
+            return redirect('main:show_main')
+        context = {'form': form}
+        return render(request, "create_mood_entry.html", context)
+
+    Explanation:
+        Created the create_mood_entry view to handle GET and POST requests.
+        On POST, it validates and saves the form data, then redirects to the main page.
+        On GET, it renders the empty form.
+
+Updating URL Routing:
+
+    File: Modified urls.py in the main app.
+    Code:
+
+    python
+
+    from main.views import create_mood_entry
+
+    urlpatterns = [
+        # ... other url patterns ...
+        path('create-mood-entry', create_mood_entry, name='create_mood_entry'),
+    ]
+
+    Explanation:
+        Added a new URL pattern for the create_mood_entry view.
+
+Creating the Form Template:
+
+    File: Created create_mood_entry.html in main/templates.
+    Code:
+
+    html
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>Add New Mood Entry</h1>
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Add Mood Entry" />
+</form>
+{% endblock %}
+
+Explanation:
+
+    Extended from base.html to maintain consistent styling.
+    Used {{ form.as_p }} to render the form fields.
+    Included {% csrf_token %} for security against CSRF attacks.
 
 Add 4 views to view the added objects in XML, JSON, XML by ID, and JSON by ID formats.
 =
@@ -72,4 +155,4 @@ source: https://docs.djangoproject.com/en/5.1/ref/csrf/
 
 Access the four URLs in point 2 using Postman, take screenshots of the results in Postman, and add them to README.md.
 =
-![image](https://github.com/user-attachments/assets/ea799bc6-331b-435c-8df8-97fc63ac9e21)
+
