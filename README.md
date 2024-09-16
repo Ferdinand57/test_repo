@@ -5,11 +5,11 @@ link to the PWS application that has been deployed: http://ferdinand-bonfilio-bo
 
 Deployment credential:
 
+```
 Username: ferdinand.bonfilio
 
-Project Command
-
 Password: nEIckZwXfCMNUS8s3j1NcZwPnX_LzTpc
+```
 
 You will need to use this command to deploy your code. If you have done this, in the future you will need to just use the third line only.
 
