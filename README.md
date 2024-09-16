@@ -57,8 +57,11 @@ Explain how you implemented the checklist above step-by-step (not just following
 
 
 Create a form input to add a model object to the previous app.
+
 Add 4 views to view the added objects in XML, JSON, XML by ID, and JSON by ID formats.
+
 Create URL routing for each of the views added in point 2.
+
 Answer the following questions in README.md in the root folder.
 
 
