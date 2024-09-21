@@ -21,6 +21,39 @@ git branch -M master
 git push pws master
 ```
 
+Bonbon Shop user:
+```
+User: Ferdinand1
+Pass: bS"]FXPKcAf99_w
+
+Apple juice
+Good ol apple
+1000
+
+Cucumber juice
+Cucumber is acidic btw
+2000
+
+Banana juice
+Yellow liquid
+3000
+```
+```
+User: Ferdinand2
+Pass: -#egKAf4_Y+Uwkj
+
+Durian juice
+Spiky and delicious
+4000
+
+Saraca juice
+Spicy and more spicy
+5000
+
+Mustard juice
+From yours truly
+6000
+```
 
 Explain how did you implement the checklist step-by-step (apart from following the tutorial).
 =
@@ -270,19 +303,23 @@ Display logged in user details such as username and apply cookies like last logi
 
 
 
-What is a UserCreationForm, explain its advantages and disadvantages?
-=
-
-What is the difference between authentication and authorization in Django, why are both important?
-=
-
-What are cookies in web development, and how do Django use cookies to manage user sessions?
-=
-
-Are the use of cookies safe by default in web development, or are there risks that needs to be noted?
+What is the difference between HttpResponseRedirect() and redirect()?
 =
 
 
+
+Explain how the MoodEntry model is linked with User!
+=
+
+
+
+What is the difference between authentication and authorization, and what happens when a user logs in? Explain how Django implements these two concepts.
+=
+
+
+
+How does Django remember logged-in users? Explain other uses of cookies and whether all cookies are safe to use.
+=
 
 
 
