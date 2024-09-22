@@ -21,39 +21,6 @@ git branch -M master
 git push pws master
 ```
 
-Bonbon Shop user:
-```
-User: Ferdinand1
-Pass: bS"]FXPKcAf99_w
-
-Apple juice
-Good ol apple
-1000
-
-Cucumber juice
-Cucumber is acidic btw
-2000
-
-Banana juice
-Yellow liquid
-3000
-```
-```
-User: Ferdinand2
-Pass: -#egKAf4_Y+Uwkj
-
-Durian juice
-Spiky and delicious
-4000
-
-Saraca juice
-Spicy and more spicy
-5000
-
-Mustard juice
-From yours truly
-6000
-```
 
 Explain how did you implement the checklist step-by-step (apart from following the tutorial).
 =
@@ -261,7 +228,7 @@ context = {
     'class': 'PBP D',
     'npm': '2306123456',
     'mood_entries': mood_entries,
-    'last_login': request.COOKIES['last_login'],
+    'last_login': request.COOKIES.get('last_login', 'No login recorded'),
 }
 ```
 
@@ -290,12 +257,89 @@ Before proceeding to the next tutorial, create an account on your website.
 make two user accounts with three dummy data each, using the model made in the application beforehand so that each data can be accessed by each account locally.
 =
 
+Bonbon Shop user:
+```
+User: Ferdinand1
+Pass: bS"]FXPKcAf99_w
+
+Apple juice
+Good ol apple
+1000
+
+Cucumber juice
+Cucumber is acidic btw
+2000
+
+Banana juice
+Yellow liquid
+3000
+```
+```
+User: Ferdinand2
+Pass: -#egKAf4_Y+Uwkj
+
+Durian juice
+Spiky and delicious
+4000
+
+Saraca juice
+Spicy and more spicy
+5000
+
+Mustard juice
+From yours truly
+6000
+```
 
 
 Connect the models Product and User.
 =
+Lastly, we will link each MoodEntry object created to the user who made it so that an authorized user only sees the mood entries they have created. Follow these steps:
 
+1. Open models.py in the main subdirectory and add the following code below the line that imports the model:
 
+```
+...
+from django.contrib.auth.models import User
+...
+```
+
+2. In the previously created ProductEntry model, add the following code:
+```
+class ProductEntry(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    ...
+```
+
+3. Reopen views.py in the main subdirectory and modify the code in the create_product_entry function as follows:
+
+```
+def create_product_entry(request):
+    form = ProductEntryForm(request.POST or None)
+
+    if form.is_valid() and request.method == "POST":
+        product_entry = form.save(commit=False)
+        product_entry.user = request.user
+        product_entry.save()
+        return redirect('main:show_main')
+
+    context = {'form': form}
+    return render(request, "create_product_entry.html", context)
+ ...
+```
+
+4. Change the value of product_entries and context in the function show_main as follows.
+
+```
+def show_main(request):
+    product_entries = ProductEntry.objects.filter(user=request.user)
+
+    context = {
+         'name': request.user.username,
+         ...
+    }
+...
+```
 
 Display logged in user details such as username and apply cookies like last login to the application's main page.
 =
