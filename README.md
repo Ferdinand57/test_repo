@@ -341,6 +341,29 @@ def show_main(request):
 ...
 ```
 
+
+
+5. Save all changes and run the model migration with python manage.py makemigrations.
+
+6. You should encounter an error during the model migration. Select 1 to set a default value for the user field on all rows already created in the database.
+
+7. Type 1 again to assign the user with ID 1 (which we created earlier) to the existing model
+
+8. Run python manage.py migrate to apply the migration made in the previous step.
+
+9. Lastly, we need to ensure our project is ready for a production environtment. To do that, add another import statement in settings.py in the mental_health_tracker subdirectory.
+
+```
+import os
+```
+
+10. Then, change the variable DEBUG in settings.py into this.
+
+```
+PRODUCTION = os.getenv("PRODUCTION", False)
+DEBUG = not PRODUCTION
+```
+
 Display logged in user details such as username and apply cookies like last login to the application's main page.
 =
 
