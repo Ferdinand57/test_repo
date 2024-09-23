@@ -437,8 +437,6 @@ Internally, redirect() uses HttpResponseRedirect() to perform the redirection bu
 
 The upside of using redirect() is that you don't have to build the URL manually; you can simply refer to the name of the view or URL pattern, not only that if your URL patterns change, you only need to update the urls.py file, and the redirect() calls will continue to work without modification, and because it used names rather than hard-coded URLs makes your code cleaner and easier to maintain.
 
-Summary: While HttpResponseRedirect() requires you to provide the exact URL and manage changes manually, redirect() offers a simpler and more flexible approach by resolving URLs internally, reducing the risk of errors and making your codebase easier to maintain.
-
 Explain how the ProductEntry model is linked with User!
 =
 
