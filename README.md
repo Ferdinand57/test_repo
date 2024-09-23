@@ -367,8 +367,46 @@ DEBUG = not PRODUCTION
 Display logged in user details such as username and apply cookies like last login to the application's main page.
 =
 
+We already did this before where we apply login:
+
+step 5.3: we change the last_login to request cookies
+
+3. In the show_main function, add the snippet 'last_login': request.COOKIES['last_login'] to the context variable. Here is an example of the updated code.
+```
+context = {
+    'name': 'Pak Bepe',
+    'class': 'PBP D',
+    'npm': '2306123456',
+    'mood_entries': mood_entries,
+    'last_login': request.COOKIES.get('last_login', 'No login recorded'),
+}
+```
 
 
+5.5: we add last login session on the main.html
+
+
+5. Open the main.html file and add the following snippet after the logout button to display the last login data.
+```
+...
+<h5>Last login session: {{ last_login }}</h5>
+...
+```
+
+and when we models product to user we add the following on step 4 which display the user name used for the login as the name shown:
+
+4. Change the value of product_entries and context in the function show_main as follows.
+
+```
+def show_main(request):
+    product_entries = ProductEntry.objects.filter(user=request.user)
+
+    context = {
+         'name': request.user.username,
+         ...
+    }
+...
+```
 
 What is the difference between HttpResponseRedirect() and redirect()?
 =
