@@ -1,0 +1,7542 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.1 084b4234",
+  "osm3s": {
+    "timestamp_osm_base": "2024-09-27T14:00:17Z",
+    "timestamp_areas_base": "2024-09-24T16:29:52Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 430783319,
+      "lat": -8.6694066,
+      "lon": 115.2176394,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "20",
+        "addr:postcode": "80210",
+        "addr:street": "P.B. Sudirman",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "McDonald's",
+        "opening_hours": "24/7",
+        "operator": "PT McDonald's Indonesia",
+        "phone": "+62 361 234890",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 436251315,
+      "lat": -8.6742695,
+      "lon": 115.2591865,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "11",
+        "addr:postcode": "80115",
+        "addr:street": "Hang Tuah",
+        "alt_name": "Kentucky Fried Chicken",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "cuisine": "chicken",
+        "delivery": "yes",
+        "drive_through": "no",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "KFC",
+        "outdoor_seating": "no",
+        "phone": "+62 361 285874",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 603104018,
+      "lat": -8.679811,
+      "lon": 115.2586946,
+      "tags": {
+        "amenity": "restaurant",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Splash Bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610372854,
+      "lat": -8.7045427,
+      "lon": 115.2500825,
+      "tags": {
+        "addr:city": "Sanur Kauh, South Denpasar, Bali",
+        "addr:housenumber": "405E",
+        "addr:postcode": "80221",
+        "addr:street": "Jalan Bypass Ngurah Rai",
+        "amenity": "restaurant",
+        "ele": "34.25",
+        "name": "Kopi Bali House",
+        "phone": "+62 361 270990",
+        "wpt_symbol": "Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610374517,
+      "lat": -8.6854037,
+      "lon": 115.2621931,
+      "tags": {
+        "amenity": "restaurant",
+        "ele": "30.65",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Randy's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610375066,
+      "lat": -8.6908956,
+      "lon": 115.2631896,
+      "tags": {
+        "amenity": "restaurant",
+        "ele": "16.71",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "The Porch Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610375768,
+      "lat": -8.6936032,
+      "lon": 115.263789,
+      "tags": {
+        "amenity": "restaurant",
+        "ele": "28.97",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Smorga's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610377227,
+      "lat": -8.7047581,
+      "lon": 115.2607073,
+      "tags": {
+        "addr:city": "Sanur, Bali",
+        "addr:housenumber": "Nomor 228",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "ele": "26.32",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Massimo",
+        "phone": "+62 361 288942"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610378155,
+      "lat": -8.7028862,
+      "lon": 115.2609897,
+      "tags": {
+        "amenity": "restaurant",
+        "ele": "10.22",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Casa Luna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610378284,
+      "lat": -8.6956183,
+      "lon": 115.2637998,
+      "tags": {
+        "addr:city": "Sanur, Denpasar Sel., Kota Denpasar, Bali, Indonesia",
+        "addr:housenumber": "75",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "ele": "9.02",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Cafe Batujimbar",
+        "phone": "0361 284103"
+      }
+    },
+    {
+      "type": "node",
+      "id": 610378469,
+      "lat": -8.6909154,
+      "lon": 115.2639171,
+      "tags": {
+        "amenity": "restaurant",
+        "ele": "10.70",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "The Wicked Parrot"
+      }
+    },
+    {
+      "type": "node",
+      "id": 700840832,
+      "lat": -8.6860073,
+      "lon": 115.2625136,
+      "tags": {
+        "amenity": "restaurant",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Street Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 794608983,
+      "lat": -8.6930923,
+      "lon": 115.2634814,
+      "tags": {
+        "amenity": "bar",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Internet Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815316972,
+      "lat": -8.6879205,
+      "lon": 115.2630329,
+      "tags": {
+        "amenity": "restaurant",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Lotus Pond"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815317290,
+      "lat": -8.6873063,
+      "lon": 115.2649121,
+      "tags": {
+        "amenity": "restaurant",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "La Taverna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815317328,
+      "lat": -8.7074351,
+      "lon": 115.256418,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Sale e Pepe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815317593,
+      "lat": -8.7075134,
+      "lon": 115.2575877,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Paon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815317792,
+      "lat": -8.6904727,
+      "lon": 115.2639117,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "The Village"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815318022,
+      "lat": -8.7070784,
+      "lon": 115.2588858,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Caesar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 815318100,
+      "lat": -8.6838791,
+      "lon": 115.2626616,
+      "tags": {
+        "amenity": "restaurant",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "White Sands"
+      }
+    },
+    {
+      "type": "node",
+      "id": 949977504,
+      "lat": -8.7179082,
+      "lon": 115.1852708,
+      "tags": {
+        "addr:city": "Kuta, Badung Regency, Bali",
+        "addr:housenumber": "8",
+        "addr:postcode": "80361",
+        "addr:street": "Sunset Road",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "is_in": "Kuta,South Bali,Bali,Indonesia",
+        "name": "Tempo Doeloe",
+        "phone": "+62 361 9196868",
+        "website": "https://www.ibcgroup.co.id/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 962975537,
+      "lat": -8.6910199,
+      "lon": 115.2636301,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "balinese",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Warung Pregina"
+      }
+    },
+    {
+      "type": "node",
+      "id": 962975542,
+      "lat": -8.6907735,
+      "lon": 115.2636384,
+      "tags": {
+        "amenity": "restaurant",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Nogo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 962980443,
+      "lat": -8.6841904,
+      "lon": 115.259831,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Wapo KKN"
+      }
+    },
+    {
+      "type": "node",
+      "id": 964758853,
+      "lat": -8.7092512,
+      "lon": 115.1846513,
+      "tags": {
+        "addr:city": "Kuta, Badung, Bali",
+        "addr:housenumber": "No. 99",
+        "addr:postcode": "80361",
+        "addr:street": "Jalan Sunset Road",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "is_in": "Kuta,South Bali,Bali,Indonesia",
+        "name": "Sushi Tei",
+        "opening_hours": "11:00-23:00",
+        "phone": "+62 361 8496496",
+        "website": "sushitei.co.id"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600650,
+      "lat": -8.7079358,
+      "lon": 115.2584285,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Double Dutch"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600668,
+      "lat": -8.7040684,
+      "lon": 115.261182,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gateway to India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600671,
+      "lat": -8.6966447,
+      "lon": 115.2633814,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ryoshi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600684,
+      "lat": -8.6928161,
+      "lon": 115.2634887,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Retro Resto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600693,
+      "lat": -8.6864166,
+      "lon": 115.2625944,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Glass House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600738,
+      "lat": -8.7078969,
+      "lon": 115.2570058,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Mina"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1199600747,
+      "lat": -8.7076212,
+      "lon": 115.2569481,
+      "tags": {
+        "amenity": "pub",
+        "name": "Linga Longa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1446154307,
+      "lat": -8.7076059,
+      "lon": 115.2572126,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Natah Bale"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1446154309,
+      "lat": -8.7074501,
+      "lon": 115.2578058,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Tropical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1446154338,
+      "lat": -8.7076185,
+      "lon": 115.2566916,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "is_in": "Sanur,South Bali,Bali,Indonesia",
+        "name": "Tia Garden"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1456256745,
+      "lat": -8.70435,
+      "lon": 115.2641985,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cafe Bamboo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1456256765,
+      "lat": -8.6889243,
+      "lon": 115.2633538,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cinnamon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1456261113,
+      "lat": -8.7073648,
+      "lon": 115.2580557,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Jegeg Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1533569978,
+      "lat": -8.6806618,
+      "lon": 115.2594399,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "name": "Furama"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1533604114,
+      "lat": -8.6747029,
+      "lon": 115.2574853,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Makan Muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1533604396,
+      "lat": -8.6741857,
+      "lon": 115.2592171,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "lounge Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1533609069,
+      "lat": -8.6747075,
+      "lon": 115.2583869,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "asian",
+        "name": "Rumah Makan Sari Ratu",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1533609378,
+      "lat": -8.6711468,
+      "lon": 115.2618071,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "name": "Warung Ikan Bakar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1533610052,
+      "lat": -8.6743145,
+      "lon": 115.2546217,
+      "tags": {
+        "amenity": "food_court",
+        "name": "Sanur Food Court (Babi Guling, Sate, Soto, Buah)",
+        "opening_hours": "Mo-Fr 08:30-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2091228285,
+      "lat": -8.691725,
+      "lon": 115.2634411,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Starry House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2207665522,
+      "lat": -8.6953903,
+      "lon": 115.2271656,
+      "tags": {
+        "addr:street": "Jl. Bedugul",
+        "amenity": "restaurant",
+        "name": "Budiani Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2209297668,
+      "lat": -8.6956026,
+      "lon": 115.2269322,
+      "tags": {
+        "addr:housename": "(Sartika.Net)",
+        "addr:housenumber": "No. 43",
+        "addr:postcode": "80224",
+        "addr:street": "Jalan Bedugul Sidakarya, Denpasar - Bali",
+        "amenity": "cafe",
+        "name": "Internet Sartika",
+        "website": "http://www.sartika.com/",
+        "wifi": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2222709192,
+      "lat": -8.6359923,
+      "lon": 115.218123,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Pizza Hut",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2222717568,
+      "lat": -8.6364043,
+      "lon": 115.2145279,
+      "tags": {
+        "amenity": "cafe",
+        "name": "J.Co Donuts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2279273093,
+      "lat": -8.6997435,
+      "lon": 115.1832819,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Pondok Udang"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2418944234,
+      "lat": -8.711001,
+      "lon": 115.2539003,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Pandara Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2498044931,
+      "lat": -8.6945817,
+      "lon": 115.2380308,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "KSD"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2498044932,
+      "lat": -8.6843056,
+      "lon": 115.230584,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Waroeng SS",
+        "website": "https://www.waroengss.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2498049903,
+      "lat": -8.7104732,
+      "lon": 115.2462875,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "leisure": "swimming_pool",
+        "name": "Safare"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2618220842,
+      "lat": -8.67734,
+      "lon": 115.2305475,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "Ayam_bakar",
+        "name": "Tendaku"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2756924106,
+      "lat": -8.7076364,
+      "lon": 115.2571037,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Donald's",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2756924157,
+      "lat": -8.7077846,
+      "lon": 115.2572603,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Redmanna"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2756924170,
+      "lat": -8.7082668,
+      "lon": 115.257353,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Sumo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2756982875,
+      "lat": -8.7100404,
+      "lon": 115.2580526,
+      "tags": {
+        "addr:street": "JL. Kusuma Sari",
+        "amenity": "restaurant",
+        "cuisine": "local",
+        "name": "Bobby's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2756982879,
+      "lat": -8.6739417,
+      "lon": 115.2590818,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Jazz & Grill"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2847472201,
+      "lat": -8.698424,
+      "lon": 115.262905,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "Bali Deli",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2857538701,
+      "lat": -8.696897,
+      "lon": 115.263546,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "name": "Stars Bar Bistro",
+        "name:en": "stars bistro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2857538802,
+      "lat": -8.696827,
+      "lon": 115.263326,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Grocer and Grind"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2872140201,
+      "lat": -8.703798,
+      "lon": 115.264226,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "no",
+        "name": "Komilfo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2874027601,
+      "lat": -8.69585,
+      "lon": 115.263491,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "internet_access": "wlan",
+        "name": "El Comedor",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2874385501,
+      "lat": -8.697916,
+      "lon": 115.262918,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "internet_access": "wlan",
+        "name": "Coriander",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2885231122,
+      "lat": -8.7053237,
+      "lon": 115.2600517,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "108",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Poso",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "name": "The Fire Station",
+        "opening_hours": "Mo-Sa 16:00-01:00; Su 12:00-01:00",
+        "phone": "+62 361 285675",
+        "website": "https://www.tfsbali.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3073181834,
+      "lat": -8.689637,
+      "lon": 115.265799,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Bata resto",
+        "outdoor_seating": "yes",
+        "smoking": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3097312818,
+      "lat": -8.6899947,
+      "lon": 115.2660791,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "outdoor_seating": "yes",
+        "smoking": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3097320134,
+      "lat": -8.690239,
+      "lon": 115.2637581,
+      "tags": {
+        "addr:city": "Sanur, Denpasar, Bali",
+        "addr:housenumber": "No. 47",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "cafe",
+        "name": "Starbucks Coffee - Danau Tamblingan",
+        "operator": "Starbucks"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3170396086,
+      "lat": -8.6859977,
+      "lon": 115.262341,
+      "tags": {
+        "addr:housenumber": "34",
+        "amenity": "restaurant",
+        "name": "Little Bird"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3173930849,
+      "lat": -8.6700716,
+      "lon": 115.2174236,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "4G",
+        "addr:street": "Dewi Sartika",
+        "alt_name": "Kentucky Fried Chicken",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "cuisine": "chicken",
+        "name": "KFC",
+        "opening_hours": "Mo-Fr 08:00-22:00; Sa-Su 08:00-22:30",
+        "operator": "PT Fastfood Indonesia",
+        "smoking": "no",
+        "source": "Local knowledge. Adress and opening hours share with rest of complex.",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3175921563,
+      "lat": -8.6592865,
+      "lon": 115.2392556,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80237",
+        "addr:street": "Jalan Hayam Wuruk",
+        "amenity": "fast_food",
+        "cuisine": "french",
+        "name": "D'Crepes",
+        "operator": "PT Jaddi Pastrisindo Gemilang",
+        "smoking": "outside",
+        "source": "Local knowledge",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3175963484,
+      "lat": -8.6587285,
+      "lon": 115.2122954,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "59",
+        "addr:street": "Jalan Hasanuddin",
+        "alt_name": "Kentucky Fried Chicken",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "brand:wikipedia": "en:KFC",
+        "cuisine": "chicken",
+        "name": "KFC",
+        "opening_hours": "24/7",
+        "operator": "PT Fastfood Indonesia",
+        "smoking": "no",
+        "source": "Local knowledge and KFC Indonesia website for address",
+        "takeaway": "yes",
+        "website": "https://kfcku.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3176175065,
+      "lat": -8.6667631,
+      "lon": 115.2297178,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Cok Agung Tresna",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Ayam Goreng Kalasan",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "smoking": "yes",
+        "source": "Local knowledge",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3176175066,
+      "lat": -8.6667953,
+      "lon": 115.2298967,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Cok Agung Tresna",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Ayam Goreng Prambanan",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "smoking": "yes",
+        "source": "Local knowledge",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3182489150,
+      "lat": -8.6787255,
+      "lon": 115.2052195,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "175",
+        "addr:postcode": "80114",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "J.Co",
+        "phone": "08158898000",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3182514121,
+      "lat": -8.6785854,
+      "lon": 115.2053937,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "yes",
+        "name": "Starbucks",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3184156262,
+      "lat": -8.6778492,
+      "lon": 115.2052895,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "MM Juice",
+        "smoking": "outside",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3184156273,
+      "lat": -8.680855,
+      "lon": 115.2010404,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "218",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Papa Ron's Pizza",
+        "source": "Survey",
+        "website": "https://www.paparonspizza.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3188105235,
+      "lat": -8.6688732,
+      "lon": 115.2131561,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "Blok A No. 8 A",
+        "addr:postcode": "80113",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "name": "NAV Karaoke",
+        "phone": "+62 361 221721",
+        "source": "Survey",
+        "website": "https://nav.co.id/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3188106279,
+      "lat": -8.669183,
+      "lon": 115.2138274,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "no",
+        "name": "Chatime",
+        "smoking": "no",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3207441966,
+      "lat": -8.675481,
+      "lon": 115.2075205,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "65C",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Mie Goreng Makassar",
+        "opening_hours": "Mo-Su 08:00-21:30",
+        "smoking": "yes",
+        "source": "Survey, local knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3222745893,
+      "lat": -8.6917308,
+      "lon": 115.2173613,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80232",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "fast_food",
+        "cuisine": "american",
+        "name": "KFC Mall Ramayana",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3235685061,
+      "lat": -8.7058241,
+      "lon": 115.2543486,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "warung muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3242057572,
+      "lat": -8.7056767,
+      "lon": 115.2564378,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3251556077,
+      "lat": -8.6758446,
+      "lon": 115.2155038,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "171C",
+        "addr:street": "Jalan Diponegoro",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Diponegoro Dimsum",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3278194240,
+      "lat": -8.6657956,
+      "lon": 115.2157625,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Diponegoro",
+        "amenity": "fast_food",
+        "cuisine": "american",
+        "name": "California Fried Chicken",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3278222028,
+      "lat": -8.6659845,
+      "lon": 115.2147267,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "C15",
+        "addr:street": "Jalan Diponegoro",
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "name": "Ayam Campus",
+        "source": "Survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3285647957,
+      "lat": -8.6738109,
+      "lon": 115.2323871,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "9A",
+        "addr:street": "Tukad Musi",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Kedai Kelle",
+        "opening_hours": "Mo 15:00-00:00, Tu-Su 10:00-00:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3292237942,
+      "lat": -8.6372979,
+      "lon": 115.2357792,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "147",
+        "addr:street": "Jalan Noja",
+        "amenity": "cafe",
+        "name": "Fresco Sports Cafe & Grill"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3296850373,
+      "lat": -8.6625994,
+      "lon": 115.2170723,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "P.B. Sudirman",
+        "amenity": "cafe",
+        "cuisine": "donut",
+        "internet_access": "no",
+        "name": "Dunkin Donuts"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3458929116,
+      "lat": -8.6826991,
+      "lon": 115.2590054,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "SANUR BABI GULING"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3602045066,
+      "lat": -8.7036626,
+      "lon": 115.2608786,
+      "tags": {
+        "addr:housenumber": "190",
+        "addr:street": "Jl. Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Apa Kabar",
+        "phone": "0361-282153"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3671122853,
+      "lat": -8.6787477,
+      "lon": 115.205304,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Roppan",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3675159810,
+      "lat": -8.6700227,
+      "lon": 115.2233179,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "82",
+        "addr:street": "Tantular Barat",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Vapor Juice Bar",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3675164692,
+      "lat": -8.6595271,
+      "lon": 115.2393221,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Hayam Wuruk",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Caffetory",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3675164743,
+      "lat": -8.6667669,
+      "lon": 115.2280175,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Cok Agung Tresna",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bendega",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3749224235,
+      "lat": -8.6606967,
+      "lon": 115.2149521,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "46",
+        "addr:street": "Jalan Diponegoro",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Sate Babi Melati"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3750087321,
+      "lat": -8.6618823,
+      "lon": 115.2189423,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "Pertokoan Udayana 32A-B",
+        "addr:street": "Letda Made Putra",
+        "amenity": "restaurant",
+        "capacity": "36",
+        "cuisine": "healthy_food",
+        "delivery": "yes",
+        "name": "Warung Sehat",
+        "note": "Closed on Monday",
+        "opening_hours": "10:00-21:00",
+        "smoking": "outside",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3756627744,
+      "lat": -8.6501976,
+      "lon": 115.2176225,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Veteran",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "wlan",
+        "name": "Warung Kopi Bali 63"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3758642908,
+      "lat": -8.6810994,
+      "lon": 115.1998572,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "230",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Kedai Nasi Uduk & Mie Bandung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3786009233,
+      "lat": -8.6567325,
+      "lon": 115.2381112,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Hayam Wuruk",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bakso Solo ABG",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3786009463,
+      "lat": -8.6488051,
+      "lon": 115.2300852,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan WR Supratman",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "internet_access": "wlan",
+        "name": "Warung Ice Cream & Gelato"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3805220649,
+      "lat": -8.6820618,
+      "lon": 115.1966734,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:country": "ID",
+        "addr:housenumber": "270",
+        "addr:postcode": "80113",
+        "addr:province": "Bali",
+        "addr:street": "Jalan Imam Bonjol",
+        "amenity": "restaurant",
+        "cuisine": "asian;regional",
+        "name": "Siang Malam (Masakan Padang)",
+        "phone": "081 337 529 223",
+        "website": "https://rmsiangmalam.com/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3834339332,
+      "lat": -8.6358422,
+      "lon": 115.2513213,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Ayam Betutu Gilimanuk",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3846419225,
+      "lat": -8.6358657,
+      "lon": 115.2162335,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "cafe",
+        "cuisine": "ice_cream",
+        "name": "'Lik Gondo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3846419251,
+      "lat": -8.6358255,
+      "lon": 115.2166557,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Warung 99"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3846419315,
+      "lat": -8.6360057,
+      "lon": 115.2177074,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "no",
+        "name": "Bakmi Naga",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3846419316,
+      "lat": -8.6360017,
+      "lon": 115.2178009,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "capacity": "0",
+        "cuisine": "regional",
+        "delivery": "no",
+        "name": "Djambow Martabak",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3848668266,
+      "lat": -8.6363711,
+      "lon": 115.2384994,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "492",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bakmi Pancoran"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3909173261,
+      "lat": -8.6980975,
+      "lon": 115.2655386,
+      "tags": {
+        "amenity": "bar",
+        "name": "Maya Sanur"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3909201647,
+      "lat": -8.7053335,
+      "lon": 115.2607025,
+      "tags": {
+        "amenity": "restaurant",
+        "bar": "yes",
+        "cuisine": "japanese",
+        "name": "Akari"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3909202960,
+      "lat": -8.7048422,
+      "lon": 115.2606243,
+      "tags": {
+        "amenity": "bar",
+        "name": "Canang"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3909202961,
+      "lat": -8.7041947,
+      "lon": 115.2608535,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "name": "Legong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3910937824,
+      "lat": -8.6746058,
+      "lon": 115.2635845,
+      "tags": {
+        "amenity": "restaurant",
+        "bar": "yes",
+        "internet_access": "no",
+        "name": "Warung Sunrise"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3915625772,
+      "lat": -8.7053066,
+      "lon": 115.2578544,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian",
+        "name": "La Bruschetta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3915627032,
+      "lat": -8.7051942,
+      "lon": 115.2580221,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "tex-mex",
+        "name": "El Gringo's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3915627034,
+      "lat": -8.7052992,
+      "lon": 115.2569945,
+      "tags": {
+        "amenity": "pub",
+        "name": "Ye Old Cock in Hand"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3919740161,
+      "lat": -8.6975056,
+      "lon": 115.2634619,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "kuu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3933807983,
+      "lat": -8.6930748,
+      "lon": 115.2638462,
+      "tags": {
+        "addr:housenumber": "51",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "regional;international",
+        "name": "Terracotta",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+62 361 287919"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3933807985,
+      "lat": -8.6938048,
+      "lon": 115.2638043,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Café You&Me"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3933807988,
+      "lat": -8.6952929,
+      "lon": 115.2635283,
+      "tags": {
+        "addr:city": "Sanur, Denpasar Sel., Kota Denpasar, Bali, Indonesia",
+        "addr:housenumber": "136A",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "name": "The Oasis Lagoon",
+        "phone": "0361 282264"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3955851307,
+      "lat": -8.6747351,
+      "lon": 115.2175812,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jl. P.B. Sudirman",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Ayam Geprek Depan Campus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3955851308,
+      "lat": -8.6747732,
+      "lon": 115.2175658,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jl. P.B. Sudirman",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "yes",
+        "name": "Helo Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3955851338,
+      "lat": -8.6745629,
+      "lon": 115.2176538,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jl. P.B. Sudirman",
+        "amenity": "cafe",
+        "cuisine": "regional",
+        "internet_access": "yes",
+        "name": "Kedai Anyar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3955851339,
+      "lat": -8.6742487,
+      "lon": 115.2175934,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3955851340,
+      "lat": -8.6744396,
+      "lon": 115.2176564,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jl. P.B. Sudirman",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bakso & Mie Ayam Surabaya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3964509657,
+      "lat": -8.6508667,
+      "lon": 115.1892354,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "206",
+        "addr:postcode": "80117",
+        "addr:street": "Jalan Gunung Agung",
+        "amenity": "cafe",
+        "email": "nonikedai@gmail.com",
+        "name": "Kedai Noni",
+        "phone": "08124669494",
+        "website": "www.kedainoni.weebly.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3973103860,
+      "lat": -8.6774542,
+      "lon": 115.218008,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Waturenggong",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Uno Terang Bulan",
+        "opening_hours": "Mo-Su 16:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4082829099,
+      "lat": -8.6441587,
+      "lon": 115.2532985,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "10",
+        "cuisine": "indonesian",
+        "name": "Warung Made",
+        "opening_hours": "09:00-21:30",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4082829102,
+      "lat": -8.6405509,
+      "lon": 115.2524297,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Warung Satria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4082829103,
+      "lat": -8.6406085,
+      "lon": 115.2523569,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Satriani Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4082835208,
+      "lat": -8.6454384,
+      "lon": 115.2538386,
+      "tags": {
+        "addr:city": "Denpasar Timur",
+        "addr:housenumber": "10",
+        "addr:street": "Jalan Gandapura 3F",
+        "amenity": "restaurant",
+        "capacity": "20",
+        "cuisine": "regional",
+        "description": "Ayam Betutu and similar Balinese cousine",
+        "internet_access": "no",
+        "name": "Warung Liku",
+        "opening_hours": "08:00-15:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4092034508,
+      "lat": -8.6746373,
+      "lon": 115.2587629,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Warung Wayan Karti"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4092034524,
+      "lat": -8.6332275,
+      "lon": 115.1978374,
+      "tags": {
+        "amenity": "restaurant",
+        "fixme": "Location and details unknown.",
+        "name": "Warung Satria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4127536602,
+      "lat": -8.7044304,
+      "lon": 115.2475663,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Bunana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4147096875,
+      "lat": -8.6444991,
+      "lon": 115.2539866,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "8",
+        "cuisine": "regional",
+        "name": "Warung Sari Boga",
+        "opening_hours": "09:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4157285065,
+      "lat": -8.681167,
+      "lon": 115.199214,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Martabak Holland",
+        "takeaway": "only"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4157285066,
+      "lat": -8.681159,
+      "lon": 115.1992432,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "236",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bakwan Teuku Umar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4171856852,
+      "lat": -8.6793646,
+      "lon": 115.2149518,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "14",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Nasi Guling Rebo Manis"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4171857222,
+      "lat": -8.6793513,
+      "lon": 115.2152795,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "31",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "no",
+        "name": "Ayam Tango",
+        "opening_hours": "Mo-Fr 13:00-23:00; Sa 15:00-23:00; Su off",
+        "smoking": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4172481101,
+      "lat": -8.6999981,
+      "lon": 115.1809923,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "30",
+        "cuisine": "indonesian",
+        "name": "Warung Pak Tedja"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4172481102,
+      "lat": -8.7000076,
+      "lon": 115.1811068,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "20",
+        "cuisine": "indonesian",
+        "name": "Warung Liku",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4174889390,
+      "lat": -8.6738761,
+      "lon": 115.2620204,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "d' Mami's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4176014202,
+      "lat": -8.6682275,
+      "lon": 115.2217095,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Letda Tantular",
+        "amenity": "restaurant",
+        "name": "Mie Kober",
+        "opening_hours": "Mo-Su 15:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4177481705,
+      "lat": -8.6806052,
+      "lon": 115.2120444,
+      "tags": {
+        "addr:city": "West Denpasar, Bali",
+        "addr:postcode": "80112",
+        "addr:street": "Jl. Satelit No.50",
+        "amenity": "restaurant",
+        "name": "Giant Pizza"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4177620331,
+      "lat": -8.6832091,
+      "lon": 115.2593199,
+      "tags": {
+        "addr:city": "Sanur, Bali, Indonesia",
+        "addr:housenumber": "115",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan By Pass Ngurah Rai",
+        "amenity": "restaurant",
+        "name": "Arena Pub & Restaurant",
+        "phone": "0361 287255"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4177775289,
+      "lat": -8.7040896,
+      "lon": 115.1902622,
+      "tags": {
+        "addr:city": "Pemogan, Denpasar Sel., Kota Denpasar, Bali, Indonesia",
+        "addr:postcode": "80221",
+        "addr:street": "Jl. Gelogor Carik",
+        "amenity": "restaurant",
+        "name": "Bakso Bandung",
+        "phone": "0852-3823-2799"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4177775378,
+      "lat": -8.6733475,
+      "lon": 115.2339389,
+      "tags": {
+        "addr:city": "Renon, Denpasar Selatan, Bali, Indonesia",
+        "addr:housenumber": "287",
+        "addr:postcode": "80226",
+        "addr:street": "Jalan Raya Puputan",
+        "amenity": "restaurant",
+        "name": "Bakso Lapangan Tembak Senayan",
+        "phone": "0361 225688"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4177802014,
+      "lat": -8.6996413,
+      "lon": 115.182641,
+      "tags": {
+        "addr:city": "Sunset Road, Kuta, Kabupaten Badung, Bali, Indonesia",
+        "addr:housenumber": "88",
+        "addr:postcode": "80361",
+        "addr:street": "Jalan Nakula",
+        "amenity": "restaurant",
+        "name": "Bale Udang Mang Engking",
+        "phone": "0361 3700660"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4178043239,
+      "lat": -8.7029192,
+      "lon": 115.1807658,
+      "tags": {
+        "addr:city": "Kuta, Bali",
+        "addr:housenumber": "Nomor 88 Kav. 3",
+        "addr:postcode": "80361",
+        "addr:street": "Sunset Road",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Laota",
+        "name:zh": "老大餐厅",
+        "phone": "+62 361 8947490",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4178098642,
+      "lat": -8.6878109,
+      "lon": 115.2652197,
+      "tags": {
+        "addr:city": "Sanur,Denpasar,Bali",
+        "addr:postcode": "80227",
+        "addr:street": "Jl Danau Tamblingan Sanur",
+        "amenity": "restaurant",
+        "name": "Sanur Beach Grove"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4178397119,
+      "lat": -8.6773944,
+      "lon": 115.234843,
+      "tags": {
+        "addr:street": "Jalan Tukad Yeh Aya",
+        "amenity": "restaurant",
+        "name": "Sambel Coli (Cobek Bali)",
+        "opening_hours": "Mo-Su 11:00-01:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4179977647,
+      "lat": -8.6823581,
+      "lon": 115.2601649,
+      "tags": {
+        "addr:city": "Sanur, Bali",
+        "addr:housenumber": "No.74",
+        "addr:postcode": "80228",
+        "addr:street": "Jl. Danau Buyan",
+        "amenity": "cafe",
+        "name": "Six Point Building"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4180106361,
+      "lat": -8.6685835,
+      "lon": 115.26039,
+      "tags": {
+        "addr:city": "Sanur, Denpasar, Bali",
+        "addr:postcode": "80228",
+        "addr:street": "Jl. Matahari Terbit",
+        "amenity": "restaurant",
+        "name": "Soup Kepala Ikan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4180232241,
+      "lat": -8.668929,
+      "lon": 115.2214922,
+      "tags": {
+        "addr:city": "East Denpasar",
+        "addr:housenumber": "Nomor 6",
+        "addr:postcode": "80226",
+        "addr:street": "Letda Tantular",
+        "amenity": "restaurant",
+        "cuisine": "noodle",
+        "name": "Mie Kober Renon"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4180382396,
+      "lat": -8.709558,
+      "lon": 115.1997724,
+      "tags": {
+        "addr:city": "Pemogan, Bali, Indonesia",
+        "addr:housenumber": "2X",
+        "addr:postcode": "80221",
+        "addr:street": "Jalan Kepaon Indah swung",
+        "amenity": "restaurant",
+        "name": "Fukudako Japanese Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4180387342,
+      "lat": -8.6976004,
+      "lon": 115.2189871,
+      "tags": {
+        "addr:city": "Bali, Indonesia",
+        "addr:housenumber": "200",
+        "addr:postcode": "80223",
+        "addr:street": "Jalan Raya Sesetan (100 meter selatan I/A/L/F),",
+        "amenity": "cafe",
+        "name": "Funny Pancake 'n Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4180438418,
+      "lat": -8.703794,
+      "lon": 115.216742,
+      "tags": {
+        "addr:city": "South Denpasar",
+        "addr:housenumber": "Nomor 21 X",
+        "addr:postcode": "80223",
+        "addr:street": "Jalan Gurita 1",
+        "amenity": "pub",
+        "name": "New Bahari Karaoke",
+        "phone": "+62 361 729137",
+        "website": "https://newbahari.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4180899843,
+      "lat": -8.689165,
+      "lon": 115.2172605,
+      "tags": {
+        "addr:city": "South Denpasar",
+        "addr:postcode": "80223",
+        "addr:street": "Jl. Raya Sesetan",
+        "amenity": "restaurant",
+        "name": "Pempek Corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4182403118,
+      "lat": -8.70562,
+      "lon": 115.2414376,
+      "tags": {
+        "addr:city": "Sidakarya, South Depnasar, Bali",
+        "addr:postcode": "80225",
+        "addr:street": "Jl. Danau Tempe",
+        "amenity": "fast_food",
+        "name": "Jl. Danau Tempe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4182761507,
+      "lat": -8.6622298,
+      "lon": 115.2331573,
+      "tags": {
+        "addr:city": "Renon, Denpasar, Bali",
+        "addr:housenumber": "No.54",
+        "addr:postcode": "80226",
+        "addr:street": "Jl. Drupadi",
+        "amenity": "restaurant",
+        "name": "Warung Drupadi Coffee and Cake"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4182767353,
+      "lat": -8.673638,
+      "lon": 115.2629981,
+      "tags": {
+        "addr:city": "Sanur, Denpasar, Bali",
+        "addr:housenumber": "45",
+        "addr:postcode": "80361",
+        "addr:street": "Jl. Hang Tuah",
+        "amenity": "restaurant",
+        "name": "Warung Mak Beng",
+        "phone": "0361 282633"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4182825448,
+      "lat": -8.6112058,
+      "lon": 115.2202304,
+      "tags": {
+        "addr:city": "Penguyangan Kaja, Bali, Indonesia",
+        "addr:housenumber": "99",
+        "addr:postcode": "80115",
+        "addr:street": "Jl. Astasura VI",
+        "amenity": "restaurant",
+        "name": "Segara bambu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4184956990,
+      "lat": -8.6772448,
+      "lon": 115.2349033,
+      "tags": {
+        "addr:street": "Jalan Tukad Yeh Aya",
+        "amenity": "restaurant",
+        "name": "Kedai Ceret",
+        "opening_hours": "Mo-Su 11:00-01:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4187243499,
+      "lat": -8.6696924,
+      "lon": 115.2140519,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "1",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "fast_food",
+        "brand": "Burger King",
+        "brand:wikidata": "Q177054",
+        "brand:wikipedia": "en:Burger King",
+        "cuisine": "burger",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Burger King",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196577571,
+      "lat": -8.6355758,
+      "lon": 115.2197253,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "306C",
+        "addr:postcode": "80239",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "delivery": "yes",
+        "drive_through": "no",
+        "name": "Domino's Pizza",
+        "opening_hours": "Mo-Su 10:00-23:00",
+        "phone": "+62 361 9009148",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196577975,
+      "lat": -8.6359348,
+      "lon": 115.2216481,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "cafe",
+        "cuisine": "western",
+        "internet_access": "yes",
+        "name": "Starz"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196577982,
+      "lat": -8.6358791,
+      "lon": 115.2219652,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "chicken",
+        "name": "Ayam Presto Nyonya Nita"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4196648399,
+      "lat": -8.6353758,
+      "lon": 115.2268823,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "steak_house",
+        "delivery": "no",
+        "name": "Waroeng Steak & Shake",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4219293805,
+      "lat": -8.6769037,
+      "lon": 115.2170319,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Waturenggong",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Kedai Sekar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4219293814,
+      "lat": -8.6763673,
+      "lon": 115.2164751,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Waturenggong",
+        "amenity": "fast_food",
+        "cuisine": "chicken",
+        "name": "C'bezt_friedchicken"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4219293840,
+      "lat": -8.6750148,
+      "lon": 115.2155319,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Diponegoro",
+        "amenity": "fast_food",
+        "cuisine": "chicken",
+        "name": "Amazy Fried Chicken"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236778194,
+      "lat": -8.681915,
+      "lon": 115.1929009,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "28B-C",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Bebek Goreng Condong Roso"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236778203,
+      "lat": -8.6818428,
+      "lon": 115.1932893,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "no",
+        "name": "Sate Padang Syukur",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236778230,
+      "lat": -8.6814451,
+      "lon": 115.1930528,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "23C-D",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Nasi Tempong Indra",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236778277,
+      "lat": -8.68148,
+      "lon": 115.1919158,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "88A",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "delivery": "no",
+        "name": "Depot Loy Yen",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236778281,
+      "lat": -8.6814531,
+      "lon": 115.1918216,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "168B",
+        "addr:postcode": "80119",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "fast_food",
+        "cuisine": "pizza",
+        "name": "Domino's Pizza",
+        "opening_hours": "Mo-Su 10:00-24:00",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236826610,
+      "lat": -8.6757634,
+      "lon": 115.1848765,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Iga Bakar Bagua"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236826648,
+      "lat": -8.6743542,
+      "lon": 115.1844357,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Warung Pecel Tumpang Pare Kediri"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4236826649,
+      "lat": -8.674397,
+      "lon": 115.1844826,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "cuisine": "noodle",
+        "name": "Pangsit Mie Pak Mo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4248093142,
+      "lat": -8.6338953,
+      "lon": 115.2124365,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80115",
+        "addr:street": "JL. Singasari",
+        "amenity": "restaurant",
+        "name": "Nagasari Restaurant & Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4249818178,
+      "lat": -8.6791699,
+      "lon": 115.2071243,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "33B",
+        "addr:postcode": "80114",
+        "addr:street": "Jalan Pulau Kawe",
+        "amenity": "cafe",
+        "internet_access": "yes",
+        "name": "Cafe Me",
+        "smoking": "outside"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4260005678,
+      "lat": -8.6969632,
+      "lon": 115.2269489,
+      "tags": {
+        "addr:city": "Sidakarya, Denpasar",
+        "addr:housenumber": "37",
+        "addr:postcode": "80224",
+        "addr:street": "Jalan Bedugul",
+        "amenity": "restaurant",
+        "name": "Kober Mie Setan",
+        "opening_hours": "24hours",
+        "phone": "+62 818-553-847"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4260104189,
+      "lat": -8.6843469,
+      "lon": 115.2594994,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kayu Manis Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4260148546,
+      "lat": -8.7025424,
+      "lon": 115.1803392,
+      "tags": {
+        "addr:city": "Kuta, Kabupaten Badung, Bali, Indonesia",
+        "addr:housenumber": "7",
+        "addr:postcode": "80361",
+        "addr:street": "Jl. Sunset Road",
+        "amenity": "restaurant",
+        "name": "X.O SUKI & CUISINE",
+        "phone": "0813-1475-5917",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4260251457,
+      "lat": -8.7145427,
+      "lon": 115.1864918,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Rasa Sayang Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4267763003,
+      "lat": -8.7107642,
+      "lon": 115.1855913,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Simpang Raya Cuisine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4278133889,
+      "lat": -8.6653682,
+      "lon": 115.1986551,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Gunung Rinjani",
+        "amenity": "fast_food",
+        "cuisine": "japanese",
+        "name": "Oishi Bento",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4278133890,
+      "lat": -8.6653987,
+      "lon": 115.198652,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Gunung Rinjani",
+        "amenity": "fast_food",
+        "cuisine": "fried_chicken",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "C'bezt_friedchicken",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4278133899,
+      "lat": -8.6663492,
+      "lon": 115.1985014,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Gunung Rinjani",
+        "amenity": "fast_food",
+        "cuisine": "fried_chicken",
+        "delivery": "no",
+        "drive_through": "no",
+        "name": "Amazy Fried Chicken",
+        "takeaway": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4278134148,
+      "lat": -8.6595838,
+      "lon": 115.20185,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "100",
+        "addr:street": "Jalan Gunung Batukaru",
+        "amenity": "restaurant",
+        "name": "Sari Minang",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4280222094,
+      "lat": -8.7106071,
+      "lon": 115.2231974,
+      "tags": {
+        "addr:street": "Suwung Batan Kendal",
+        "amenity": "restaurant",
+        "name": "Bakso Seser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4333473396,
+      "lat": -8.6865023,
+      "lon": 115.2605438,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Balijepun (Warung)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4344257997,
+      "lat": -8.7035947,
+      "lon": 115.2645115,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:facebook": "https://m.facebook.com/laplyasanur",
+        "cuisine": "seafood;indonesian;sandwich;pizza;italian;burger",
+        "name": "La Playa",
+        "outdoor_seating": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4358874689,
+      "lat": -8.6907851,
+      "lon": 115.2636815,
+      "tags": {
+        "addr:housenumber": "102",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;chinese;italian;international;asian",
+        "name:de": "Warung Kapu-Kapu",
+        "phone": "0062286206",
+        "website": "https://www.purisading.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4379880491,
+      "lat": -8.6844244,
+      "lon": 115.2608569,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:street": "Jalan Pantai Sindu",
+        "amenity": "restaurant",
+        "name": "Warung Sanur Segar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4379880492,
+      "lat": -8.6840573,
+      "lon": 115.2643048,
+      "tags": {
+        "addr:street": "Jalan Pantai Sindu",
+        "amenity": "cafe",
+        "name": "Luhtu's Coffee Shop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4384898890,
+      "lat": -8.6926024,
+      "lon": 115.2639004,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Manik Organik"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4397160503,
+      "lat": -8.7048385,
+      "lon": 115.2640424,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lilla Pantai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4401055967,
+      "lat": -8.7015775,
+      "lon": 115.2648473,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "internet_access:password": "hyatt852",
+        "name": "B-club",
+        "wifi": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4405219728,
+      "lat": -8.6970517,
+      "lon": 115.2635461,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "Bali",
+        "description": "Selection of Balinese food: crab, lobster, chicken, pork, beef. Beer bintang and cocktails.",
+        "internet_access": "wlan",
+        "name": "Casa colonial",
+        "phone": "+62 361 283875"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4405220489,
+      "lat": -8.6899569,
+      "lon": 115.2625855,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan Bumi Ayu",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;regional;international",
+        "name:de": "Warung Lilla",
+        "phone": "081934311241"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4409152584,
+      "lat": -8.6810555,
+      "lon": 115.1883856,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "337",
+        "addr:postcode": "80114",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "cafe",
+        "name": "9/11 Cafe & Concept Store",
+        "phone": "0361 4717481",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4409400973,
+      "lat": -8.7108847,
+      "lon": 115.2187273,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "626",
+        "addr:postcode": "80223",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Aroma Medan",
+        "phone": "0361 727393"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4409567927,
+      "lat": -8.6692456,
+      "lon": 115.2128495,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "10",
+        "addr:postcode": "80114",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "name": "Ayam Bakar Taliwang Baru",
+        "phone": "0361 263031"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4409570159,
+      "lat": -8.6651863,
+      "lon": 115.2392937,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "18",
+        "addr:postcode": "80239",
+        "addr:street": "Jalan Merdeka X",
+        "amenity": "restaurant",
+        "name": "Ayam Bakar Wong Solo",
+        "phone": "0361 231191",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4410761915,
+      "lat": -8.6752398,
+      "lon": 115.2072948,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80113",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "name": "Babi Guling Chandra",
+        "phone": "0361 221278"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4410773591,
+      "lat": -8.6811848,
+      "lon": 115.2258251,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "63",
+        "addr:postcode": "80225",
+        "addr:street": "Tukad Pakerisan",
+        "amenity": "restaurant",
+        "name": "Bakso Herman"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4410947329,
+      "lat": -8.6867079,
+      "lon": 115.1863283,
+      "tags": {
+        "addr:city": "Denpasar City, Bali, Indonesia",
+        "addr:housenumber": "7",
+        "addr:postcode": "80119",
+        "addr:street": "Jalan Mahendradatta Selatan",
+        "amenity": "restaurant",
+        "name": "Bator Bali",
+        "phone": "0822-3758-3602"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4411143212,
+      "lat": -8.7034939,
+      "lon": 115.2195978,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "260",
+        "addr:postcode": "80223",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "cafe",
+        "name": "Cafe Cream",
+        "phone": "+62 0361 720449"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4412613902,
+      "lat": -8.6904184,
+      "lon": 115.1901868,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "350",
+        "addr:postcode": "80361",
+        "addr:street": "Jalan Imam Bonjol",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Depot Gimbo Babi Asap",
+        "phone": "0361 483402",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4412860375,
+      "lat": -8.6540525,
+      "lon": 115.2134428,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "78",
+        "addr:postcode": "80231",
+        "addr:street": "Jalan Kartini",
+        "amenity": "restaurant",
+        "name": "Kartini Depot",
+        "phone": "+62 361 231318"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4414252203,
+      "lat": -8.6850736,
+      "lon": 115.1895633,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "18",
+        "addr:postcode": "80119",
+        "addr:street": "Jalan Gunung Soputan I",
+        "amenity": "restaurant",
+        "name": "Ganidha Resto & Lounge",
+        "phone": "0361 8466657"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4414390657,
+      "lat": -8.6449839,
+      "lon": 115.1857135,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "53",
+        "addr:postcode": "80115",
+        "addr:street": "Jalan Kebo Iwa",
+        "amenity": "restaurant",
+        "name": "Gochi Chiken House",
+        "phone": "0361 4715067"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4414619619,
+      "lat": -8.6762478,
+      "lon": 115.2187176,
+      "tags": {
+        "addr:city": "Panjer, South Denpasar Bali",
+        "addr:housenumber": "12A",
+        "addr:postcode": "80225",
+        "addr:street": "Jl. P.B. Sudirman",
+        "amenity": "restaurant",
+        "brand": "Loving Hut",
+        "brand:wikidata": "Q3491655",
+        "brand:wikipedia": "en:Loving Hut",
+        "cuisine": "international",
+        "diet:vegan": "only",
+        "diet:vegetarian": "only",
+        "name": "Loving Hut",
+        "opening_hours": "Mo-Sa 08:00-23:00, Su 12:00-23:00",
+        "phone": "+62 361 241035",
+        "website": "http://www.lovinghut.co.id"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4415966605,
+      "lat": -8.6658798,
+      "lon": 115.233489,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "44",
+        "addr:postcode": "80234",
+        "addr:street": "Jalan Drupadi",
+        "amenity": "restaurant",
+        "name": "Hanamasa - Drupadi",
+        "phone": "0361 264960"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4418378187,
+      "lat": -8.6671032,
+      "lon": 115.2361383,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80361",
+        "addr:street": "Cok Agung Tresna",
+        "amenity": "restaurant",
+        "name": "Ikan Bakar Cianjur",
+        "phone": "0361 230015",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4418908490,
+      "lat": -8.7089111,
+      "lon": 115.2509876,
+      "tags": {
+        "addr:housenumber": "53",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan Mertesari",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;local;international",
+        "name:de": "Warung Mama Putu",
+        "operator": "Mama Putu",
+        "phone": "085737424831"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4421391630,
+      "lat": -8.6670125,
+      "lon": 115.2358101,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "85",
+        "addr:postcode": "80361",
+        "addr:street": "Cok Agung Tresna",
+        "amenity": "restaurant",
+        "name": "Restoran Renon",
+        "phone": "+62 361 261364",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4421395328,
+      "lat": -8.6723855,
+      "lon": 115.2087259,
+      "tags": {
+        "addr:city": "Dauh Puri Kauh, Denpasar Bar., Kota Denpasar, Bali, Indonesia",
+        "addr:housenumber": "83",
+        "addr:postcode": "80113",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "name": "Restoran Sederhana",
+        "phone": "+62 361 221459"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4421398780,
+      "lat": -8.6807721,
+      "lon": 115.2019862,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "212",
+        "addr:postcode": "80113",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "restaurant",
+        "name": "JEBAK (Jejak Bali Kuliner)",
+        "phone": "0361 9382111"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4421527320,
+      "lat": -8.6355834,
+      "lon": 115.218749,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "326",
+        "addr:postcode": "80113",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "name": "Rumah Makan Kedaton",
+        "phone": "+62 361 425009",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4421890291,
+      "lat": -8.7049043,
+      "lon": 115.258471,
+      "tags": {
+        "addr:housenumber": "No.909",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Poso",
+        "amenity": "bar",
+        "name": "Amritas Juice",
+        "name:de": "Amaritas Juice",
+        "name:en": "Amritas Juice",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "phone": "+6281805546992"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4423078312,
+      "lat": -8.6989996,
+      "lon": 115.2534156,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "4",
+        "addr:postcode": "80224",
+        "addr:street": "Jl. Kutat Lestari",
+        "amenity": "restaurant",
+        "name": "Warung Khrisna",
+        "phone": "0361 281661"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4423089133,
+      "lat": -8.6843134,
+      "lon": 115.2291767,
+      "tags": {
+        "addr:city": "Dauh Puri Klod, Denpasar, Bali",
+        "addr:housenumber": "23",
+        "addr:postcode": "80225",
+        "addr:street": "Jalan Tukad Barito",
+        "amenity": "restaurant",
+        "name": "Warung Joni Geboy Steak & Surabi",
+        "phone": "0361 4722784"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4423243502,
+      "lat": -8.7106824,
+      "lon": 115.1856399,
+      "tags": {
+        "addr:city": "Kuta, Kabupaten Badung, Bali, Indonesia",
+        "addr:postcode": "80361",
+        "addr:street": "Sunset Road",
+        "amenity": "restaurant",
+        "name": "Tea Garden Restoran",
+        "opening_hours": "07:00-23:00",
+        "phone": "+62 361 4726258"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4425079640,
+      "lat": -8.6354706,
+      "lon": 115.2310373,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "300A",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "cafe",
+        "diet:vegetarian": "yes",
+        "name": "Marble Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4425081832,
+      "lat": -8.636131,
+      "lon": 115.2343602,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name": "Depot Hoki"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446961220,
+      "lat": -8.688655,
+      "lon": 115.2652674,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Kami sama"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4446961401,
+      "lat": -8.6877689,
+      "lon": 115.2650958,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Respati"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4457428321,
+      "lat": -8.637611,
+      "lon": 115.1967834,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "M",
+        "addr:street": "Jalan Raya Buluh Indah",
+        "amenity": "restaurant",
+        "cuisine": "noodle",
+        "name": "Mie Pangsit Medan Thien Thien Hao"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4462705691,
+      "lat": -8.704204,
+      "lon": 115.25178,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "korean",
+        "internet_access": "wlan",
+        "name": "Warung Gangnam",
+        "name:en": "Gangnam Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4469412225,
+      "lat": -8.6546396,
+      "lon": 115.2185713,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "14",
+        "addr:street": "Kaliasem",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Sate Kambing Sudi Mampir"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4470920297,
+      "lat": -8.6775165,
+      "lon": 115.2341854,
+      "tags": {
+        "addr:street": "Jalan Tukad Yeh Aya",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Warung Arifin (Sate Ayam dan Kambing)",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4494434427,
+      "lat": -8.6696779,
+      "lon": 115.2152203,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "1",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Starbucks",
+        "opening_hours": "Mo-Su 08:30-22:00",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4494434430,
+      "lat": -8.6696805,
+      "lon": 115.2146418,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "1",
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "cafe",
+        "cuisine": "donut",
+        "internet_access": "wlan",
+        "name": "J.Co",
+        "opening_hours": "Mo-Su 08:30-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4527962428,
+      "lat": -8.6918525,
+      "lon": 115.2636296,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Casablanca",
+        "name:en": "Casablanca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4537683289,
+      "lat": -8.7079649,
+      "lon": 115.2611736,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Jack Fish",
+        "name:es": "Jack Fish"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4560413892,
+      "lat": -8.6843056,
+      "lon": 115.2614384,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Oranje"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4570164292,
+      "lat": -8.6365761,
+      "lon": 115.2262746,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Good place quite cheap as well"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4571268692,
+      "lat": -8.684268,
+      "lon": 115.2604379,
+      "tags": {
+        "amenity": "bar",
+        "name:en": "Jimmys sports bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4593501493,
+      "lat": -8.6694028,
+      "lon": 115.2176611,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "McD. Dewata ayu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4599179491,
+      "lat": -8.7054142,
+      "lon": 115.2560394,
+      "tags": {
+        "addr:housenumber": "27",
+        "addr:street": "Danau Poso",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Warung Jawa",
+        "phone": "0361289947",
+        "website": "https://fr.tripadvisor.be/6738072?m=19905"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4604582992,
+      "lat": -8.7073573,
+      "lon": 115.2562637,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Baby Monkeys",
+        "name:en": "Baby Monkeys"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4624905094,
+      "lat": -8.6930996,
+      "lon": 115.1886047,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Imam Bonjol",
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "name": "Ikayana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4628958022,
+      "lat": -8.7003641,
+      "lon": 115.1860099,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "AA16-17",
+        "addr:street": "Imam Bonjol Square",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "no",
+        "name": "Bakmi & Bakso Raindy",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "outdoor_seating": "yes",
+        "smoking": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4628958071,
+      "lat": -8.6989942,
+      "lon": 115.1851267,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "name": "Kepiting Sukro",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4629419860,
+      "lat": -8.7024081,
+      "lon": 115.1846539,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "492",
+        "addr:street": "Jalan Imam Bonjol",
+        "amenity": "restaurant",
+        "name": "Rawon Setan Surabaya",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4631369589,
+      "lat": -8.7405247,
+      "lon": 115.2416176,
+      "tags": {
+        "amenity": "bar",
+        "name": "Blue Warung",
+        "name:en": "Blue Warung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4671689190,
+      "lat": -8.6947872,
+      "lon": 115.2637133,
+      "tags": {
+        "addr:housenumber": "# 134 / 156",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "email": "info@kopikiosk.com",
+        "internet_access": "wlan",
+        "name:en": "Kopi Kiosk - Coffee Hut",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "phone": "0361270046",
+        "website": "http://www.kopikiosk.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4671738290,
+      "lat": -8.6742433,
+      "lon": 115.2633767,
+      "tags": {
+        "addr:postcode": "80228",
+        "addr:street": "Pantai Sanur",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "email": "info@kopikiosk.com",
+        "internet_access": "wlan",
+        "name": "Kopi Kiosk - Coffee Hut",
+        "opening_hours": "Mo-Su 06:00-20:00",
+        "phone": "+62 812 39545897",
+        "website": "http://www.kopikiosk.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4679519090,
+      "lat": -8.6819544,
+      "lon": 115.2560562,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name:en": "Warung Dapoer Oma"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4689866689,
+      "lat": -8.6363317,
+      "lon": 115.2381467,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "Depot hengky"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4689930689,
+      "lat": -8.6213983,
+      "lon": 115.2052817,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "Wr.rujak bu deby"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4702955496,
+      "lat": -8.6614088,
+      "lon": 115.2112345,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "Rujak gelogor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4705401293,
+      "lat": -8.7079838,
+      "lon": 115.2612076,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "warung kak odong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4737835421,
+      "lat": -8.6702213,
+      "lon": 115.227264,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Pempek Quincy(gofod)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4739178423,
+      "lat": -8.6906332,
+      "lon": 115.2566512,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Wr.men runtu(rujak/gofod)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4742675283,
+      "lat": -8.7218879,
+      "lon": 115.2387666,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "100",
+        "cuisine": "regional",
+        "description": "Open space restaurant, useful for lunch after diving.",
+        "name": "Agus Restaurant",
+        "name:en": "Agus Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4748493224,
+      "lat": -8.6868423,
+      "lon": 115.2269173,
+      "tags": {
+        "addr:housenumber": "4X",
+        "addr:street": "Jalan Tukad Pancoran",
+        "amenity": "bar",
+        "name:en": "Fruit in bottle(gofod)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4750663821,
+      "lat": -8.68514,
+      "lon": 115.2378717,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Pangsit malang57(gofod)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4761205185,
+      "lat": -8.6855313,
+      "lon": 115.2564598,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Garasi Rubi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4769021121,
+      "lat": -8.6343125,
+      "lon": 115.2343787,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Ongan Asri(gofod)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4770554886,
+      "lat": -8.6352423,
+      "lon": 115.2069027,
+      "tags": {
+        "amenity": "fast_food",
+        "internet_access": "wlan",
+        "name:en": "Mining Ubung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4782165124,
+      "lat": -8.6748225,
+      "lon": 115.2282649,
+      "tags": {
+        "addr:housenumber": "no.17",
+        "addr:street": "Tukad Gangga",
+        "amenity": "restaurant",
+        "name:en": "Warung Saman",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "085101788787"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4785826057,
+      "lat": -8.6842534,
+      "lon": 115.2618466,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Maya's Coffee & Smoothie Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4788129622,
+      "lat": -8.6354309,
+      "lon": 115.2016235,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Wr.nasi ayam pasar pidada9(blkg papan pasar)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4788144221,
+      "lat": -8.6353233,
+      "lon": 115.2013567,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Wr.nasi ayam pasar pidada"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4788168318,
+      "lat": -8.7187919,
+      "lon": 115.1925103,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Griya Anyar",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "UD Barong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4791132322,
+      "lat": -8.6842958,
+      "lon": 115.2596248,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;asian",
+        "internet_access": "wlan",
+        "name:en": "Warrung Yahuu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4791837322,
+      "lat": -8.6843873,
+      "lon": 115.2602364,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Mei"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4805732021,
+      "lat": -8.6870535,
+      "lon": 115.26269,
+      "tags": {
+        "addr:housenumber": "50",
+        "addr:postcode": "8022",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "cafe",
+        "cuisine": "burger;sandwich;mexican;breakfast;coffee_shop",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name:en": "The Owl"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4806701321,
+      "lat": -8.6853705,
+      "lon": 115.2608968,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "cafe",
+        "cuisine": "indonesian;american;tea;breakfast;coffee_shop",
+        "internet_access": "wlan",
+        "name:en": "The Coffee House",
+        "opening_hours": "Mo-Su 06:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4817070022,
+      "lat": -8.6779669,
+      "lon": 115.2063817,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Ayam bkr Wo Aini"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4821587721,
+      "lat": -8.6533965,
+      "lon": 115.2106951,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Selamat Datang Di Waroeng Vegetarian Sariboga"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4822670321,
+      "lat": -8.650255,
+      "lon": 115.2173111,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Bali Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4845160122,
+      "lat": -8.6883224,
+      "lon": 115.2607712,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Papa Pizza",
+        "opening_hours": "Mo-Su 18:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4849474821,
+      "lat": -8.6853856,
+      "lon": 115.2646011,
+      "tags": {
+        "amenity": "bar",
+        "cuisine": "indonesian;international",
+        "name:en": "Mango Beach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4863243822,
+      "lat": -8.6693918,
+      "lon": 115.2514183,
+      "tags": {
+        "addr:housenumber": "100 NA",
+        "addr:street": "Jalan Sedap Malam",
+        "amenity": "restaurant",
+        "name:en": "Wr.Lunak Bali(the joglo)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4887159522,
+      "lat": -8.7121732,
+      "lon": 115.2156924,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung amla"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4891933526,
+      "lat": -8.6463424,
+      "lon": 115.1956373,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "DIMSUN manan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4891933623,
+      "lat": -8.6462799,
+      "lon": 115.1956464,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Kampung Steak&Blend"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4891944525,
+      "lat": -8.6464115,
+      "lon": 115.1956316,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Soerabi nyonya bandung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4894735121,
+      "lat": -8.6810336,
+      "lon": 115.200619,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "SABO sate babi oka"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4898680422,
+      "lat": -8.673996,
+      "lon": 115.2613539,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Pojok mini market"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4898774127,
+      "lat": -8.6994753,
+      "lon": 115.1798042,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Deity of Miracle Vegan Resto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4916910023,
+      "lat": -8.6941426,
+      "lon": 115.2638607,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Coconut Tree"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4923429921,
+      "lat": -8.6965642,
+      "lon": 115.2634713,
+      "tags": {
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "internet_access": "wlan",
+        "name:en": "Zula Vegetarian Paradise"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4926027221,
+      "lat": -8.6927365,
+      "lon": 115.2638807,
+      "tags": {
+        "addr:street": "Danau Tamblingan",
+        "amenity": "cafe",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Square One"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4948829225,
+      "lat": -8.6581591,
+      "lon": 115.2146102,
+      "tags": {
+        "addr:street": "Belitung",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;regional",
+        "name:de": "Warung",
+        "name:en": "Warung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4996048823,
+      "lat": -8.6779301,
+      "lon": 115.2376639,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Sengol Pribumi(go fod)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4996051322,
+      "lat": -8.6779386,
+      "lon": 115.2379096,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Nasi Ayam Kedewatan(ibu mangku)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4999458822,
+      "lat": -8.6852519,
+      "lon": 115.2645064,
+      "tags": {
+        "amenity": "restaurant",
+        "name:ko": "foul on the beach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4999465721,
+      "lat": -8.692688,
+      "lon": 115.2665731,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Laghawa Sea Side Bar",
+        "name:ko": "아이스크림/그네/섬"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5001273434,
+      "lat": -8.6736573,
+      "lon": 115.2224572,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "3",
+        "addr:street": "Jalan Batusari",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "delivery": "no",
+        "name": "Mak Madura Gunarso",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "outdoor_seating": "no",
+        "smoking": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5001273496,
+      "lat": -8.6739392,
+      "lon": 115.224469,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "1A",
+        "addr:street": "Jalan Tukad Yeh Ho",
+        "amenity": "restaurant",
+        "name": "Depot Sarmina"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5010569721,
+      "lat": -8.6843786,
+      "lon": 115.2613906,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "japanese",
+        "internet_access": "wlan",
+        "name:en": "Kopitoko"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5011074622,
+      "lat": -8.7028804,
+      "lon": 115.261265,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Soul in a Bowl",
+        "name:nl": "Soul in a Bowl"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5017219422,
+      "lat": -8.6950342,
+      "lon": 115.2617973,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "DiKuBu darpa",
+        "opening_hours": "Mo-Su 08:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5025461223,
+      "lat": -8.6794413,
+      "lon": 115.2257852,
+      "tags": {
+        "addr:street": "Jl. Tukad Pakerisan",
+        "amenity": "fast_food",
+        "cuisine": "indonesian",
+        "name:en": "Warung Ari",
+        "opening_hours": "Mo-Sa 08:00-03:00",
+        "operator": "Ari",
+        "phone": "08124610765"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5059791531,
+      "lat": -8.6936949,
+      "lon": 115.2664766,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "warung wati"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5082751221,
+      "lat": -8.6363925,
+      "lon": 115.2553601,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Maharani vegetarian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5090984321,
+      "lat": -8.6671823,
+      "lon": 115.2385927,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "amazing nasi campur warung",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5093508022,
+      "lat": -8.6422762,
+      "lon": 115.2090725,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Bakmi Nyemek"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5093510221,
+      "lat": -8.640752,
+      "lon": 115.208894,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Bu Kris"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5098193221,
+      "lat": -8.6883288,
+      "lon": 115.2608296,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;italian_pizza",
+        "name:en": "Warung 25-85k",
+        "opening_hours": "Mo-Su 18:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5100381323,
+      "lat": -8.7029388,
+      "lon": 115.2618377,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:street": "Jl Duyung",
+        "amenity": "restaurant",
+        "capacity": "25",
+        "cuisine": "regional",
+        "delivery": "yes",
+        "name": "Warung kecil",
+        "name:en": "Restaurant Warung Kecil",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5100381324,
+      "lat": -8.6946838,
+      "lon": 115.2637285,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "kopi kiosk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5100381325,
+      "lat": -8.7034653,
+      "lon": 115.2610848,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5100386824,
+      "lat": -8.6872214,
+      "lon": 115.2627095,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Samping",
+        "name:en": "Warung Samping"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5103571094,
+      "lat": -8.6365033,
+      "lon": 115.1838167,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "steak_house",
+        "name": "Terrazza Steakhouse"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5104495222,
+      "lat": -8.6709717,
+      "lon": 115.1911406,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "78",
+        "addr:street": "Jalan Mahendradatta",
+        "amenity": "restaurant",
+        "name": "Restoran Cak Asmo",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5104495254,
+      "lat": -8.6707258,
+      "lon": 115.1915376,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "78",
+        "addr:street": "Jalan Mahendradatta",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Mahendradatta Fried Duck Haji Slamet",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5104495289,
+      "lat": -8.6698061,
+      "lon": 115.190766,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional;chicken",
+        "name": "Ayam Betutu Bu Lina",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5106685122,
+      "lat": -8.6463752,
+      "lon": 115.1956157,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Dimsum Manan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5108782221,
+      "lat": -8.6492128,
+      "lon": 115.2112691,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Siobak Khe Lok Singaraja"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5117209123,
+      "lat": -8.6780612,
+      "lon": 115.2375404,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Pork Belly Bali"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126003323,
+      "lat": -8.6962245,
+      "lon": 115.22709,
+      "tags": {
+        "addr:housenumber": "28B",
+        "addr:street": "Jalan Bedugul",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "internet_access": "wlan",
+        "name:en": "Bakmi 99",
+        "opening_hours": "Mo-Su 11:00-09:00",
+        "phone": "081238999922"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126054495,
+      "lat": -8.7057359,
+      "lon": 115.2609039,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hey Ni Hao"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126054496,
+      "lat": -8.7107463,
+      "lon": 115.2564432,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:facebook": "https://m.facebook.com/basilicoitalian/",
+        "cuisine": "italian",
+        "name": "Basilico italian pavilion"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126054497,
+      "lat": -8.7056242,
+      "lon": 115.2631695,
+      "tags": {
+        "amenity": "restaurant",
+        "description": "Fairmont hotel",
+        "name": "Nyala"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061306,
+      "lat": -8.7048681,
+      "lon": 115.2608992,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "korean",
+        "name": "Yimo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061311,
+      "lat": -8.7101989,
+      "lon": 115.2572379,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Tirta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061312,
+      "lat": -8.7063967,
+      "lon": 115.2631423,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mermaid Bay"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061314,
+      "lat": -8.7044246,
+      "lon": 115.2641703,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Tosca"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061315,
+      "lat": -8.7041751,
+      "lon": 115.2642531,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pizza",
+        "name": "Coco bistro",
+        "phone": "+62361287359"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061336,
+      "lat": -8.703083,
+      "lon": 115.2614157,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/jalapenobali/",
+        "cuisine": "mexican",
+        "email": "press@sidhayatra.com",
+        "name": "Jallapeño",
+        "opening_hours": "Mo-Su 12:00-23:00",
+        "phone": "+6287862475005",
+        "phone_1": "+623614490325",
+        "website": "http://www.jalapenobali.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061396,
+      "lat": -8.7046791,
+      "lon": 115.2641085,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Isakaya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061397,
+      "lat": -8.7040333,
+      "lon": 115.264246,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Surya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5126061524,
+      "lat": -8.7045635,
+      "lon": 115.2641447,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Barramundi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5130080524,
+      "lat": -8.6470965,
+      "lon": 115.1859715,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Pak Arba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5132367828,
+      "lat": -8.6771105,
+      "lon": 115.2062631,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Bubur Ayam Khas Jakarta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5141051721,
+      "lat": -8.7086563,
+      "lon": 115.2208087,
+      "tags": {
+        "addr:housenumber": "87 B",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "restaurant",
+        "cuisine": "chinese",
+        "name:en": "Depot 818 Cabang Sesetan",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "082111299686"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5143112421,
+      "lat": -8.6978764,
+      "lon": 115.2632761,
+      "tags": {
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "american;italian;indonesian",
+        "name:en": "Graze"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5144227821,
+      "lat": -8.6980352,
+      "lon": 115.2632288,
+      "tags": {
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "name:en": "White House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5187753722,
+      "lat": -8.7026866,
+      "lon": 115.2613555,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5217380822,
+      "lat": -8.6996148,
+      "lon": 115.2583604,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "american;burger;chinese;indonesian",
+        "diet:vegetarian": "yes",
+        "name:de": "MD Warung",
+        "name:en": "MD Warung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5246520811,
+      "lat": -8.7078237,
+      "lon": 115.18407,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Jak resto"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5251727221,
+      "lat": -8.7054768,
+      "lon": 115.2515704,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Lokal; Warung & Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5275082652,
+      "lat": -8.653568,
+      "lon": 115.2169837,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "11",
+        "addr:postcode": "80111",
+        "addr:street": "Jalan Veteran",
+        "addr:unit": "a",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Voltvet",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "outdoor_seating": "yes",
+        "website": "https://voltvet.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5331056221,
+      "lat": -8.6903306,
+      "lon": 115.2004501,
+      "tags": {
+        "addr:housenumber": "112",
+        "addr:street": "Jalan Pulau Bungin",
+        "amenity": "restaurant",
+        "name:en": "Warung Jawa Muslim Rena"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5342739021,
+      "lat": -8.7055558,
+      "lon": 115.2555356,
+      "tags": {
+        "amenity": "restaurant",
+        "email": "kapone163@mail.ru",
+        "internet_access": "wlan",
+        "name:en": "Moksha"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5350190121,
+      "lat": -8.6863689,
+      "lon": 115.2513145,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "fish",
+        "name:en": "Warung Pan Kuncung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5380380421,
+      "lat": -8.6733119,
+      "lon": 115.2341652,
+      "tags": {
+        "addr:postcode": "80235",
+        "addr:street": "Raya Puputan Ruko Bajra Sandi Blok 2",
+        "amenity": "restaurant",
+        "name:en": "Salato Pizzeria",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "623614459982",
+        "website": "http://www.salatopizzeria.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5386424224,
+      "lat": -8.6808114,
+      "lon": 115.2543028,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Old Man Strong",
+        "name:it": "Old Man Strong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5388402322,
+      "lat": -8.6751689,
+      "lon": 115.2593555,
+      "tags": {
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name": "Amari Coffee",
+        "name:en": "Booster coffee",
+        "name:ru": "Booster coffee",
+        "opening_hours": "Mo-Su 06:30-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5389192625,
+      "lat": -8.6674297,
+      "lon": 115.2153343,
+      "tags": {
+        "addr:housenumber": "122",
+        "addr:street": "Jalan Diponegoro",
+        "amenity": "restaurant",
+        "name:en": "Pizza Hut Diponegoro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5400739021,
+      "lat": -8.7047381,
+      "lon": 115.2588388,
+      "tags": {
+        "addr:street": "Jalan Danau Poso",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Dewata Minang"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5403368821,
+      "lat": -8.7241733,
+      "lon": 115.2147843,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "AKAME",
+        "name:zh": "Akame中餐"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5405230521,
+      "lat": -8.6664125,
+      "lon": 115.2386148,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "The Alleyway",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5408947461,
+      "lat": -8.6737779,
+      "lon": 115.2630441,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Warung Mak Beng"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5408947462,
+      "lat": -8.6738084,
+      "lon": 115.262908,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Den's Restaurant And Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5417894100,
+      "lat": -8.7050022,
+      "lon": 115.2462393,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cosmic diner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5417894101,
+      "lat": -8.6356529,
+      "lon": 115.2553782,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Warung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5417895866,
+      "lat": -8.7174524,
+      "lon": 115.2152136,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Warung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5417895867,
+      "lat": -8.6874405,
+      "lon": 115.2585129,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The Hub Bali"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5427956322,
+      "lat": -8.6830333,
+      "lon": 115.2604598,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "juice;smoothie_bowl",
+        "internet_access": "wlan",
+        "name:en": "Ginger Java Hut ( fresh juices and smoothly bowls)",
+        "name:ru": "Ginger Java Hut (Вкусные соки и смузи боул)",
+        "opening_hours": "Mo-Su 09:00-19:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5428124422,
+      "lat": -8.7029733,
+      "lon": 115.2197166,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "cuisine": "burger",
+        "diet:meat": "yes",
+        "drive_through": "yes",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "name:en": "McDonald's",
+        "opening_hours": "24/7",
+        "takeaway": "yes",
+        "website": "https://mcdonalds.co.id"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5428131721,
+      "lat": -8.6730485,
+      "lon": 115.2422767,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "internet_access": "wlan",
+        "name:en": "Pecopeco Sushi",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5428153721,
+      "lat": -8.6717487,
+      "lon": 115.2312295,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "indonesian",
+        "name:en": "Tortillas & burgers"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5432736121,
+      "lat": -8.7030727,
+      "lon": 115.2612386,
+      "tags": {
+        "addr:housenumber": "95",
+        "addr:postcode": "80228",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "name:en": "Bali Buda",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "phone": "+62 361 288732",
+        "website": "https://www.balibuda.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5432983627,
+      "lat": -8.7055019,
+      "lon": 115.2560414,
+      "tags": {
+        "addr:street": "Jln. Danau Poso",
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name:en": "Warung Blanjong"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5502390221,
+      "lat": -8.672658,
+      "lon": 115.2584395,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name:en": "Barista Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5541466921,
+      "lat": -8.6726443,
+      "lon": 115.2219775,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Warung Jawa Prasmanan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5544539622,
+      "lat": -8.6729148,
+      "lon": 115.2362982,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:street": "Puputan 1",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;italian_pizza;international",
+        "int_name": "Warung Pizza & Pasta",
+        "internet_access": "wlan",
+        "name": "Warung Pizza & Pasta",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "Joe",
+        "phone": "081238809369"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5546623421,
+      "lat": -8.670345,
+      "lon": 115.2276254,
+      "tags": {
+        "amenity": "restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5547406222,
+      "lat": -8.662321,
+      "lon": 115.2331617,
+      "tags": {
+        "addr:street": "Jalan Drupadi",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Mén Gabrug - Fresh Lak Lak From The Oven",
+        "opening_hours": "Mo-Sa 09:00-18:00",
+        "phone": "081933050992"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5561673873,
+      "lat": -8.6849174,
+      "lon": 115.2586628,
+      "tags": {
+        "amenity": "cafe",
+        "name": "In Coffee We Trust"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5588359121,
+      "lat": -8.7075958,
+      "lon": 115.2570471,
+      "tags": {
+        "amenity": "bar",
+        "name:en": "Linga Longa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5603554121,
+      "lat": -8.6960084,
+      "lon": 115.2635424,
+      "tags": {
+        "addr:housenumber": "142",
+        "addr:street": "Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;international",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Downtown",
+        "name:ru": "Downtown",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+628123928395"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5618975922,
+      "lat": -8.6852768,
+      "lon": 115.260557,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Pengkola"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5619217724,
+      "lat": -8.6930022,
+      "lon": 115.2636261,
+      "tags": {
+        "amenity": "bar",
+        "name:en": "Mini Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5619371621,
+      "lat": -8.6842931,
+      "lon": 115.2612185,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung 55"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5624849321,
+      "lat": -8.7044198,
+      "lon": 115.2608619,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Gopals cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5625741321,
+      "lat": -8.6899598,
+      "lon": 115.2624125,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Lilla warung"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5628741022,
+      "lat": -8.6852251,
+      "lon": 115.2645989,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Soul on the Beach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5631587721,
+      "lat": -8.6670202,
+      "lon": 115.2385768,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung \"Sederhana\"",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5633917421,
+      "lat": -8.6843935,
+      "lon": 115.2591214,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Simply Brew"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5633917422,
+      "lat": -8.6842902,
+      "lon": 115.2594802,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Chez Nina"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5633917423,
+      "lat": -8.6843524,
+      "lon": 115.2597976,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Saro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5633917424,
+      "lat": -8.6658505,
+      "lon": 115.2377393,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Foam Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5633917621,
+      "lat": -8.6845364,
+      "lon": 115.2590989,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Milestone Coffee Lounge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5647169522,
+      "lat": -8.6727164,
+      "lon": 115.2221353,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warunk Upnormal"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5647170221,
+      "lat": -8.6733603,
+      "lon": 115.1813993,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Pondog moro Seneng"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5664536321,
+      "lat": -8.6991992,
+      "lon": 115.2515916,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "name:en": "Warung Mega Sanur",
+        "name:nl": "Warung Mega Sanur",
+        "opening_hours": "Mo-Su 11:00-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5669738026,
+      "lat": -8.6843215,
+      "lon": 115.2602563,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:street": "Jalan Tandakan",
+        "amenity": "restaurant",
+        "capacity": "20",
+        "cuisine": "regional",
+        "name": "Warung Santai",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "outdoor_seating": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5678754921,
+      "lat": -8.6362149,
+      "lon": 115.2165182,
+      "tags": {
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "name:en": "Ms. Crackles",
+        "opening_hours": "Mo-Su 11:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5783078457,
+      "lat": -8.6902875,
+      "lon": 115.2638998,
+      "tags": {
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name:de": "Starbucks Coffee",
+        "name:en": "Starbucks Coffee"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5791234670,
+      "lat": -8.6846347,
+      "lon": 115.2304827,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Blaster"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5816568653,
+      "lat": -8.7044225,
+      "lon": 115.2541582,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name": "Juicy N' Crispy",
+        "name:en": "J&C",
+        "opening_hours:signed": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5837405289,
+      "lat": -8.6731705,
+      "lon": 115.1811654,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80119",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "restaurant",
+        "diet:vegan": "only",
+        "diet:vegetarian": "yes",
+        "name": "Warung Padang Vegan",
+        "name:en": "Padang Vegan",
+        "opening_hours": "Fr-We 10:00-22:00",
+        "phone": "+62 0812 3881 8160",
+        "website": "https://warung-padang-vegan-vegetarian-padang-food.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5880242486,
+      "lat": -8.6707644,
+      "lon": 115.1794317,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung - cheap and good food"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6077607217,
+      "lat": -8.6665073,
+      "lon": 115.2066939,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;italian_pizza;chicken;fine_dining;burger;diner;steak_house;asian",
+        "name:en": "D'Umah",
+        "opening_hours": "Mo-Sa 11:00-00:00",
+        "operator": "Ali",
+        "phone": "+6287860335598"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6112170686,
+      "lat": -8.6731486,
+      "lon": 115.2440494,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "O Matcha"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6112171085,
+      "lat": -8.6745204,
+      "lon": 115.2568158,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Laris Manis",
+        "opening_hours": "Mo-Su 09:00-05:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6112172887,
+      "lat": -8.6744282,
+      "lon": 115.2180256,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "donut",
+        "name:en": "Dunkin’ Donut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6112172889,
+      "lat": -8.6696226,
+      "lon": 115.2179629,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "cuisine": "burger",
+        "internet_access": "wlan",
+        "name": "McDonald's",
+        "opening_hours": "24/7",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6123169688,
+      "lat": -8.6762115,
+      "lon": 115.218427,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "FUJI RAMEN",
+        "name:ja": "フジ ラーメン"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6137388485,
+      "lat": -8.7045248,
+      "lon": 115.2610378,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "name:en": "Gopal’s Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6191931106,
+      "lat": -8.6959198,
+      "lon": 115.2628241,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Nasi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6199819685,
+      "lat": -8.6905396,
+      "lon": 115.2658536,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "warung Nyoman 12–22"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6199819686,
+      "lat": -8.6891201,
+      "lon": 115.2619578,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Nyoman"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6199820285,
+      "lat": -8.6844009,
+      "lon": 115.2605744,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Beringin Panti’s"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6203517495,
+      "lat": -8.6866627,
+      "lon": 115.2605518,
+      "tags": {
+        "addr:street": "Jalan Pasar",
+        "amenity": "restaurant",
+        "name": "Warung Mbok Lun"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6220691986,
+      "lat": -8.674008,
+      "lon": 115.261613,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "warung Pojok — Perama shuttle bus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6258253787,
+      "lat": -8.7050918,
+      "lon": 115.2606164,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Jepun",
+        "name:en": "Massimo Italian Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6258253886,
+      "lat": -8.6972483,
+      "lon": 115.2633492,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Manik Organik"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6266977485,
+      "lat": -8.6842525,
+      "lon": 115.2622586,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:street": "Jalan Pantai Sindu",
+        "amenity": "restaurant",
+        "cuisine": "american;burger;indonesian;mexican;pizza;steak_house",
+        "name": "Borneo/Kalimantan",
+        "name:id": "kalimantan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6273813485,
+      "lat": -8.6777596,
+      "lon": 115.2378766,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Bagoes",
+        "name:ru": "Варунг Багоес Порк Рибс",
+        "opening_hours": "Mo-Su 11:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6290512541,
+      "lat": -8.6850955,
+      "lon": 115.2602492,
+      "tags": {
+        "addr:city": "Sanur, Bali, Indonesia",
+        "addr:housenumber": "5",
+        "addr:street": "Jalan Pasar",
+        "amenity": "restaurant",
+        "cuisine": "mexican",
+        "name": "Warung Sanur Segar",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6334094286,
+      "lat": -8.6990942,
+      "lon": 115.2578595,
+      "tags": {
+        "addr:housenumber": "25",
+        "addr:postcode": "80227",
+        "addr:street": "Betngandang I",
+        "amenity": "cafe",
+        "cuisine": "asian",
+        "internet_access": "wlan",
+        "name:en": "Warung Makan SMS",
+        "opening_hours": "Mo-Su 18:00-22:00",
+        "phone": "+623614721925"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6397264688,
+      "lat": -8.7041233,
+      "lon": 115.2557945,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:street": "Jalan Bypass Ngurah Rai",
+        "amenity": "food_court",
+        "name": "Bakso Pak Rebo",
+        "opening_hours": "Tu-Su 10:00-18:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6405748985,
+      "lat": -8.6801719,
+      "lon": 115.2069483,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name:de": "Kedai Mie Vegetarian",
+        "name:en": "Kedai Mie Vegetarian",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6408542387,
+      "lat": -8.7115516,
+      "lon": 115.2537922,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "local;western",
+        "name": "Genius Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6409173339,
+      "lat": -8.7069694,
+      "lon": 115.2588456,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "14",
+        "cuisine": "regional",
+        "name": "Little Mars",
+        "outdoor_seating": "no",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6411503318,
+      "lat": -8.686115,
+      "lon": 115.2605489,
+      "tags": {
+        "amenity": "restaurant",
+        "capacity": "15",
+        "cuisine": "indonesian;german",
+        "delivery": "yes",
+        "name": "Laughing Chicken",
+        "opening_hours": "08:00-21:00",
+        "outdoor_seating": "yes",
+        "phone": "+62 831 1448 8711",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6412909974,
+      "lat": -8.707598,
+      "lon": 115.2562874,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "western",
+        "name": "Beach Breeze",
+        "outdoor_seating": "no",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6460725841,
+      "lat": -8.7044081,
+      "lon": 115.2557242,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Gung Kak"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6520963290,
+      "lat": -8.7058966,
+      "lon": 115.2455503,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "fish;indonesian",
+        "name:en": "no name restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6542008285,
+      "lat": -8.6783604,
+      "lon": 115.1806967,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Gado Gado Place"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6544020786,
+      "lat": -8.6702152,
+      "lon": 115.1914165,
+      "tags": {
+        "addr:housenumber": "100",
+        "addr:street": "Jalan Mahendradatta",
+        "amenity": "restaurant",
+        "name:en": "Warung Ole",
+        "phone": "0361490458",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6551200886,
+      "lat": -8.6567108,
+      "lon": 115.1859698,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "Gado Gado Cheap Place"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577819846,
+      "lat": -8.6541777,
+      "lon": 115.2238857,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "7",
+        "addr:postcode": "80236",
+        "addr:street": "Menuh",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;chinese;western",
+        "diet:vegan": "only",
+        "diet:vegetarian": "yes",
+        "name": "Umah VG",
+        "opening_hours": "Mo-Sa 09:00-19:00, Su 12:00-18:00",
+        "phone": "+62 813 3788 2828",
+        "website": "http://umahvegan.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577819947,
+      "lat": -8.6614519,
+      "lon": 115.2197069,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "2B",
+        "addr:postcode": "80232",
+        "addr:street": "Made Putra",
+        "amenity": "restaurant",
+        "check_date": "2023-01-18",
+        "cuisine": "indonesian;asian;juice;dessert",
+        "diet:gluten_free": "yes",
+        "diet:macrobiotic": "yes",
+        "diet:raw": "yes",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "level": "0",
+        "name": "Bodhi Leaf Eatery",
+        "name:id": "Bodhi Leaf Eatery",
+        "opening_hours": "Mo-Sa 07:00-17:00; Su 07:00-15:00",
+        "phone": "+62 361 254307",
+        "website": "https://bodhi-leaf-eatery.business.site/",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577830780,
+      "lat": -8.65398,
+      "lon": 115.2056952,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:street": "Jalan Gunung Agung",
+        "amenity": "restaurant",
+        "diet:vegan": "only",
+        "name": "Veggie Corner",
+        "phone": "+62 899 9600 077"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577839954,
+      "lat": -8.6525822,
+      "lon": 115.2103996,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "4",
+        "addr:postcode": "80118",
+        "addr:street": "Sutomo Gang XI",
+        "amenity": "restaurant",
+        "diet:vegan": "only",
+        "diet:vegetarian": "yes",
+        "name": "Merci VEGAN",
+        "opening_hours": "Mo-Su 06:00-21:00",
+        "phone": "+62 819 9903 3391",
+        "website": "https://merci-vegan.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577871829,
+      "lat": -8.6518687,
+      "lon": 115.2086385,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "37",
+        "addr:postcode": "80111",
+        "addr:street": "Setiabudi",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "diet:vegan": "only",
+        "diet:vegetarian": "yes",
+        "name": "warung kasih vegan",
+        "opening_hours": "Mo-Su 06:00-16:00",
+        "phone": "+62 813 3801 2076",
+        "website": "https://warung-kasih-vegan-vegetarian.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6577871830,
+      "lat": -8.6522869,
+      "lon": 115.2087874,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "20",
+        "addr:postcode": "80111",
+        "addr:street": "Setiabudi",
+        "amenity": "restaurant",
+        "diet:vegan": "only",
+        "diet:vegetarian": "yes",
+        "name": "Ijo Daun",
+        "opening_hours": "Mo-Sa 07:30-18:00",
+        "phone": "+62 851 0272 5610",
+        "website": "https://ijo-daun-vegetarian-vegan.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6578020517,
+      "lat": -8.6865672,
+      "lon": 115.183306,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "88X",
+        "addr:postcode": "80119",
+        "addr:street": "Jalan Gunung Soputan",
+        "amenity": "restaurant",
+        "diet:vegan": "only",
+        "diet:vegetarian": "yes",
+        "name": "LN Fortunate Coffee",
+        "opening_hours": "Mo-Sa 11:00-21:30, Su 10:30-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6596260155,
+      "lat": -8.6943408,
+      "lon": 115.2615362,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Warung Suta",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6612817294,
+      "lat": -8.6900439,
+      "lon": 115.2637535,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese;sushi",
+        "name:en": "Soya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6615525385,
+      "lat": -8.6361437,
+      "lon": 115.1920793,
+      "tags": {
+        "addr:street": "Jalan Bypass Gatot Subroto",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;pizza;noodles;pasta",
+        "internet_access": "wlan",
+        "name:en": "Gosha Kitchen & Patisserie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6639436385,
+      "lat": -8.683767,
+      "lon": 115.2642639,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;burger;steak_house",
+        "name:en": "Toot Sie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6639436485,
+      "lat": -8.7084402,
+      "lon": 115.2557595,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "name:en": "Warung Pita Pita"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6639726985,
+      "lat": -8.6697236,
+      "lon": 115.2150757,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name:en": "Cloud Cakes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6640124261,
+      "lat": -8.6994455,
+      "lon": 115.2573263,
+      "tags": {
+        "amenity": "restaurant",
+        "internet_access": "wlan",
+        "name:en": "Gong Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6707260538,
+      "lat": -8.7006137,
+      "lon": 115.2277742,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "95",
+        "addr:place": "Indomaret",
+        "addr:postcode": "80224",
+        "addr:street": "Jl. Sidakarya",
+        "amenity": "food_court",
+        "email": "Cumi.endooss@gmail.com",
+        "name": "Cumi Endooss",
+        "opening_hours": "13:30-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6720829386,
+      "lat": -8.6879247,
+      "lon": 115.2650949,
+      "tags": {
+        "amenity": "bar",
+        "name:en": "Artotel Beach Club"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6722981487,
+      "lat": -8.6826709,
+      "lon": 115.2640762,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Segara Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6723509485,
+      "lat": -8.7100705,
+      "lon": 115.2580163,
+      "tags": {
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name:en": "Flamingo coffee&resto",
+        "opening_hours": "Mo-Su 06:30-23:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6725563489,
+      "lat": -8.7215823,
+      "lon": 115.1938677,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "arabian",
+        "name": "Al Khaimah"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6773841220,
+      "lat": -8.6553875,
+      "lon": 115.2134224,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "80",
+        "addr:postcode": "80111",
+        "addr:street": "Jalan Gajah Mada",
+        "amenity": "cafe",
+        "name": "Bhineka Jaya (Kopi Bali)",
+        "website": "https://www.kopibali.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778456538,
+      "lat": -8.6738747,
+      "lon": 115.2621214,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Canvas Cafe",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6778585385,
+      "lat": -8.6950193,
+      "lon": 115.262221,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Old Brick"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6781829785,
+      "lat": -8.707627,
+      "lon": 115.2564946,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "italian_pizza;italian",
+        "name:de": "Bella Italia",
+        "name:en": "Bella Italia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6805030308,
+      "lat": -8.6837547,
+      "lon": 115.2605218,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:street": "Danau Toba",
+        "amenity": "bar",
+        "name": "TKS Bar/Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6805035658,
+      "lat": -8.6837149,
+      "lon": 115.2605192,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:street": "Danau Toba",
+        "amenity": "bar",
+        "name": "Lim Ling Bar",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6836266185,
+      "lat": -8.6820872,
+      "lon": 115.2595268,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "seafood;chinese",
+        "name:en": "Seafood Chinese food",
+        "phone": "+6285953872479"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6892993586,
+      "lat": -8.680023,
+      "lon": 115.2071133,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "Nasi Kuning Khas Surabaya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6911960886,
+      "lat": -8.6757085,
+      "lon": 115.2064776,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Minang Permai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6923551689,
+      "lat": -8.6802128,
+      "lon": 115.2098418,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Muslim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6923559386,
+      "lat": -8.6798947,
+      "lon": 115.2071904,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "Bakso"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6952538988,
+      "lat": -8.6841094,
+      "lon": 115.2554182,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:housenumber": "45A",
+        "addr:postcode": "80227",
+        "addr:province": "Bali",
+        "addr:street": "Jalan Danau Tondano",
+        "amenity": "cafe",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "internet_access:ssid": "TUGEBOR",
+        "name": "Warung TUGEBOR",
+        "opening_hours": "Mo-Sa 10:00-21:00",
+        "opening_hours:covid19": "Mo-Sa 10:00-20:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "phone": "+6289666283838",
+        "smoking": "yes",
+        "website": "https://instagr.am/tugebors"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6952548974,
+      "lat": -8.7028287,
+      "lon": 115.258008,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:housenumber": "3",
+        "addr:street": "Jalan Lantang Hidung",
+        "amenity": "food_court",
+        "email": "mbokcenik@chef.net",
+        "name": "Mbok Cenik",
+        "website": "https://instagr.am/mbokcenik"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6996458853,
+      "lat": -8.7190084,
+      "lon": 115.1931263,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Food Market"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7020932885,
+      "lat": -8.6362825,
+      "lon": 115.2070489,
+      "tags": {
+        "amenity": "fast_food",
+        "internet_access": "wlan",
+        "name": "Fried chicken",
+        "name:en": "Fried chicken (wifi)",
+        "name:fr": "Fried chicken (wifi)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7027579888,
+      "lat": -8.6759579,
+      "lon": 115.2640873,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Blue beach bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7041239694,
+      "lat": -8.674135,
+      "lon": 115.2616967,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Nanok"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7041239788,
+      "lat": -8.6739566,
+      "lon": 115.2617603,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "In the bowl"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7042815501,
+      "lat": -8.6865851,
+      "lon": 115.2624687,
+      "tags": {
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "restaurant",
+        "contact:facebook": "saucetree",
+        "contact:instagram": "saucetree",
+        "cuisine": "burger;cake;pasta",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name": "Sauce Tree Sanur: Plant Based Cafe",
+        "opening_hours": "Mo-Su 11:00-21:00",
+        "opening_hours:covid19": "off",
+        "phone": "+62-81558880888"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7074106086,
+      "lat": -8.684325,
+      "lon": 115.230693,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Pedas Abis",
+        "name:it": "Pedas Abis",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7094942715,
+      "lat": -8.7070627,
+      "lon": 115.2560581,
+      "tags": {
+        "addr:city": "Sanur, Bali",
+        "addr:housenumber": "No.15D",
+        "addr:street": "Jl. Sudamala No.15d, Semawang, Sanur Kauh, Denpasar Selatan, Denpasar City.",
+        "amenity": "restaurant",
+        "cuisine": "betutu_Fried_Chicken;Betutu_Soup_Chicken",
+        "name": "Ayam Betutu Sudamala",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "0812-3818-7418"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7106244663,
+      "lat": -8.7010522,
+      "lon": 115.1792861,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tokeru Cafe",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7120676481,
+      "lat": -8.6367243,
+      "lon": 115.2147187,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Starbucks"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7120691922,
+      "lat": -8.6356767,
+      "lon": 115.2416886,
+      "tags": {
+        "amenity": "cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7134535587,
+      "lat": -8.6948409,
+      "lon": 115.2613775,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "80228",
+        "addr:street": "Gg. Jasmine",
+        "amenity": "cafe",
+        "cuisine": "indonesian;chicken;asian;pancake;american;italian;local;burger;pasta;breakfast;international;grill",
+        "internet_access": "wlan",
+        "name:en": "Saskara Warung",
+        "name:ru": "Саскара",
+        "opening_hours": "Mo-Su 07:30-22:00",
+        "phone": "+62 878-6021-1290"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7137427085,
+      "lat": -8.6781757,
+      "lon": 115.1997295,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Eva",
+        "name:fr": "Eva"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7162092787,
+      "lat": -8.6823021,
+      "lon": 115.2639894,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;seafood",
+        "name:en": "Warung Goshan",
+        "operator": "@facebook...&...@instagram",
+        "phone": "6287761477212"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7192673488,
+      "lat": -8.6911909,
+      "lon": 115.26658,
+      "tags": {
+        "amenity": "cafe",
+        "internet_access": "wlan",
+        "name:en": "Nelayan Bali innovative cuisine",
+        "name:ru": "Nelayan Bali innovative cuisine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7192803885,
+      "lat": -8.689784,
+      "lon": 115.263731,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "MOSTLY JAZZ BREW"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7321238085,
+      "lat": -8.7054741,
+      "lon": 115.2546273,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "JFC Danau Poso",
+        "name:en": "JFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7334258185,
+      "lat": -8.6842768,
+      "lon": 115.2601635,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "thai",
+        "name:en": "Thailicious"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7342612785,
+      "lat": -8.6747201,
+      "lon": 115.2569829,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "JFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7345649085,
+      "lat": -8.6843807,
+      "lon": 115.2593146,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name:en": "Warung Ibu Resi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7366013285,
+      "lat": -8.681973,
+      "lon": 115.2546689,
+      "tags": {
+        "amenity": "fast_food",
+        "name:en": "ACK"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7425490217,
+      "lat": -8.7030418,
+      "lon": 115.2621682,
+      "tags": {
+        "addr:city": "Sanur",
+        "addr:housenumber": "3",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan Duyung",
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "cuisine": "international",
+        "name": "Pescado",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+62 812 394 678 61"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7573379490,
+      "lat": -8.6776696,
+      "lon": 115.259003,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "curry in bali"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7691734085,
+      "lat": -8.7028402,
+      "lon": 115.257798,
+      "tags": {
+        "addr:housenumber": "4",
+        "addr:street": "Jalan Lantang Hidung",
+        "amenity": "cafe",
+        "cuisine": "asian;breakfast;chicken;coffee_shop;fish_and_chips;friture;ice_cream",
+        "name:en": "Warung Flamingo Sanur",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+6281338361977"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7713255285,
+      "lat": -8.6862403,
+      "lon": 115.2605551,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Warung Cenari"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7791022485,
+      "lat": -8.69846,
+      "lon": 115.253783,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan Kutat Lestari",
+        "amenity": "cafe",
+        "contact:facebook": "kolaborasiuntukdesa",
+        "contact:instagram": "kolaborasiuntukdesa",
+        "cuisine": "burger;indonesian;oriental;pasta",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Kood - vegan restaurant",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "phone": "+62-81239020487"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8015718989,
+      "lat": -8.6718913,
+      "lon": 115.2089661,
+      "tags": {
+        "addr:street": "Jalan Teuku Umar",
+        "amenity": "fast_food",
+        "cuisine": "local",
+        "name:en": "Sempol Ayam"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8263379919,
+      "lat": -8.6766297,
+      "lon": 115.2300062,
+      "tags": {
+        "addr:housenumber": "16b",
+        "addr:street": "Jalan Tukad Pule",
+        "amenity": "restaurant",
+        "name": "Warung Kenken"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8563260419,
+      "lat": -8.6858877,
+      "lon": 115.1878364,
+      "tags": {
+        "addr:street": "Jalan Gunung Soputan I",
+        "amenity": "restaurant",
+        "cuisine": "american;local",
+        "name:en": "Wr. Pica"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8563308817,
+      "lat": -8.6849337,
+      "lon": 115.1890077,
+      "tags": {
+        "addr:street": "Jalan Mahendradatta Selatan I",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name:en": "Kopi Kita"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8835726517,
+      "lat": -8.7093607,
+      "lon": 115.1993753,
+      "tags": {
+        "addr:street": "Jalan Raya Pemogan",
+        "amenity": "cafe",
+        "name:en": "Farza Shake"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8835726617,
+      "lat": -8.6840737,
+      "lon": 115.2589166,
+      "tags": {
+        "addr:street": "Jl. Bypass Ngurah Rai",
+        "amenity": "restaurant",
+        "cuisine": "ramen",
+        "name:en": "Red Dragon Ramen",
+        "phone": "+6281339359595"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8852160217,
+      "lat": -8.6719218,
+      "lon": 115.2621223,
+      "tags": {
+        "addr:street": "Jalan Matahari Terbit",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;local;noodles",
+        "name:en": "Wr. Nila Majnun"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8852160317,
+      "lat": -8.6720837,
+      "lon": 115.2623755,
+      "tags": {
+        "addr:street": "Jalan Matahari Terbit",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name:en": "Goldmine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8911954363,
+      "lat": -8.6842086,
+      "lon": 115.2588898,
+      "tags": {
+        "addr:street": "Jalan Bypass Ngurah Rai",
+        "amenity": "restaurant",
+        "name": "Warung Pojok Sanur",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8912038984,
+      "lat": -8.6424658,
+      "lon": 115.2502149,
+      "tags": {
+        "addr:street": "Jalan WR Supratman",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "name": "Nasi Jinggo Pak Olog"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8912075631,
+      "lat": -8.7053754,
+      "lon": 115.2562277,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Jalan Danau Poso",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Sari Bundo Jaya",
+        "opening_hours": "24/7"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8912092555,
+      "lat": -8.7024048,
+      "lon": 115.258904,
+      "tags": {
+        "addr:street": "Jalan Betngandang 2",
+        "amenity": "bar",
+        "name": "Titis Bar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8947597618,
+      "lat": -8.6322452,
+      "lon": 115.2329784,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:postcode": "80239",
+        "addr:street": "Jalan Noja Saraswati",
+        "amenity": "restaurant",
+        "name": "Warung Bobink"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8947606867,
+      "lat": -8.6323977,
+      "lon": 115.2330562,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "Gg. Ayung, No. 1",
+        "addr:postcode": "80239",
+        "addr:street": "Jalan Noja Saraswati",
+        "amenity": "restaurant",
+        "name": "Cendal Cendol"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9157288411,
+      "lat": -8.6354821,
+      "lon": 115.2284026,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "268",
+        "addr:postcode": "80239",
+        "addr:street": "Jl. Gatot Subroto Timur",
+        "amenity": "restaurant",
+        "cuisine": "regional;coffee_shop;japanese",
+        "diet:halal": "yes",
+        "email": "gatsukuliner@gmail.com",
+        "name": "Gatsu Kuliner (GAKUL)",
+        "opening_hours": "Mo-Su 11:00-23:00",
+        "phone": "+6285738038112"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9673158317,
+      "lat": -8.7030962,
+      "lon": 115.261173,
+      "tags": {
+        "addr:housenumber": "188",
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "restaurant",
+        "contact:instagram": "thesandwichbarid",
+        "internet_access": "wlan",
+        "name:en": "The Sandwich Bar",
+        "opening_hours": "Mo-Su 07:00-17:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9763659085,
+      "lat": -8.6833827,
+      "lon": 115.2643514,
+      "tags": {
+        "amenity": "bar",
+        "name": "Byrdhouse Beach Club - Sanur"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9768930145,
+      "lat": -8.6645926,
+      "lon": 115.1977442,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lisa Kue Lempuyang Tegal Kertha"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9774037801,
+      "lat": -8.6967238,
+      "lon": 115.2336999,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Guinness Vaganza Blue Star Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9802626352,
+      "lat": -8.6751665,
+      "lon": 115.2321437,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "10a",
+        "addr:postcode": "80225",
+        "addr:street": "Tukad Unda",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;chicken;daerahregional;fish_and_chips",
+        "internet_access": "wlan",
+        "internet_access:fee": "customers",
+        "internet_access:ssid": "Jala Coffee",
+        "name": "Jala Coffee",
+        "opening_hours": "Mo-Su 12:00-22:30",
+        "outdoor_seating": "yes",
+        "phone": "081338023000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9916739727,
+      "lat": -8.6793405,
+      "lon": 115.1805134,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bakso Urat Dan Mie Ayam Yang Tau - Padangsambian Klod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918269610,
+      "lat": -8.6795302,
+      "lon": 115.1794286,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "WBS Padangsambian Kelod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918291172,
+      "lat": -8.6796117,
+      "lon": 115.1782551,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Supplier Kelapa Muda"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918510879,
+      "lat": -8.6797581,
+      "lon": 115.1795818,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Putra"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918521685,
+      "lat": -8.6797702,
+      "lon": 115.1804631,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nasi Ayam Betutu Sunari - Padangsambian Klod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918544572,
+      "lat": -8.6797719,
+      "lon": 115.1801297,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Ayuk"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918546088,
+      "lat": -8.6797947,
+      "lon": 115.1801847,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Wilda Rasa - Padangsambian Kelod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9918650052,
+      "lat": -8.6799137,
+      "lon": 115.1799546,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Wr. Pisang Aroma - Padangsambian Klod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9923665490,
+      "lat": -8.6801146,
+      "lon": 115.1781896,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "RM Doa Bundo"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9925942426,
+      "lat": -8.6802327,
+      "lon": 115.1781311,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "JFC - Padangsambian Klod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9928493952,
+      "lat": -8.6805382,
+      "lon": 115.1778568,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Barokah Ice Buah - Padangsambian Klod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9931208829,
+      "lat": -8.6811096,
+      "lon": 115.1777726,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Bu Putu - Gunung Tangkuban Perahu"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9933465834,
+      "lat": -8.6820383,
+      "lon": 115.1775061,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bubur Ayam Khas Jakarta Padangsambian Kelod"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9977321953,
+      "lat": -8.6994558,
+      "lon": 115.1801113,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Black Bowl - Legian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9977471049,
+      "lat": -8.6997958,
+      "lon": 115.1801856,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Porkbelly Bali Cabang Nakula Legian"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9994283415,
+      "lat": -8.6964474,
+      "lon": 115.2634947,
+      "tags": {
+        "addr:housenumber": "168",
+        "addr:street": "JL.Danau Tamblingan",
+        "amenity": "cafe",
+        "name": "Akaya cafe",
+        "opening_hours": "07:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9996544456,
+      "lat": -8.691737,
+      "lon": 115.263639,
+      "tags": {
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "cafe",
+        "name": "Salã",
+        "opening_hours": "08:00-22:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9998879641,
+      "lat": -8.7076413,
+      "lon": 115.2580654,
+      "tags": {
+        "addr:housenumber": "33",
+        "addr:street": "Jalan Cemara",
+        "amenity": "restaurant",
+        "cuisine": "vietnamese",
+        "name": "Hanoi by MeVui",
+        "opening_hours": "09:00-22:00",
+        "website": "https://www.vietnamkitchen.vn/restaurant/sanur/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9999416919,
+      "lat": -8.6979201,
+      "lon": 115.2629782,
+      "tags": {
+        "addr:housenumber": "170",
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "mexican",
+        "internet_access": "wlan",
+        "name:en": "Taqisa",
+        "opening_hours": "Mo-Su 10:30-21:00",
+        "website": "https://taqisa.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10217053637,
+      "lat": -8.7278365,
+      "lon": 115.2309662,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Mola Mola",
+        "name:id": "Warung Mola Mola"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10262384976,
+      "lat": -8.7070299,
+      "lon": 115.2624828,
+      "tags": {
+        "amenity": "bar",
+        "name": "Stuja di Panta"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10264792863,
+      "lat": -8.7059353,
+      "lon": 115.2560431,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "steak",
+        "name": "Puerta26"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10264804277,
+      "lat": -8.706812,
+      "lon": 115.2562248,
+      "tags": {
+        "amenity": "bar",
+        "name": "BJ's"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10269406203,
+      "lat": -8.7062235,
+      "lon": 115.2596492,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Ketut"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10269468099,
+      "lat": -8.7105564,
+      "lon": 115.2567017,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bamboo Beach Bar & Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10269472641,
+      "lat": -8.7076695,
+      "lon": 115.2592344,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Patio"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10269526531,
+      "lat": -8.7111537,
+      "lon": 115.2552148,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Retro Beach"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10269527976,
+      "lat": -8.7064529,
+      "lon": 115.2592266,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Little India"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10561871854,
+      "lat": -8.6571018,
+      "lon": 115.2198025,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "only",
+        "name": "Govinda's",
+        "opening_hours": "Mo-Su 07:00-20:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10672024953,
+      "lat": -8.7286739,
+      "lon": 115.2366176,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10701468232,
+      "lat": -8.671432,
+      "lon": 115.2612502,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Be Sanur"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801104959,
+      "lat": -8.613473,
+      "lon": 115.1934425,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10801108595,
+      "lat": -8.6229424,
+      "lon": 115.1987448,
+      "tags": {
+        "alt_name": "Dunkin' Donuts",
+        "amenity": "fast_food",
+        "brand": "Dunkin'",
+        "brand:wikidata": "Q847743",
+        "cuisine": "donut;coffee_shop",
+        "name": "Dunkin'",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10895336205,
+      "lat": -8.7075077,
+      "lon": 115.256265,
+      "tags": {
+        "addr:housenumber": "59",
+        "addr:street": "Jalan Sudamala",
+        "amenity": "cafe",
+        "name": "Saigon Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10971300962,
+      "lat": -8.6720383,
+      "lon": 115.2515774,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Bakso Memory"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10971305748,
+      "lat": -8.6726194,
+      "lon": 115.251678,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Warung Banyuwangi",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10971310149,
+      "lat": -8.6735165,
+      "lon": 115.2518306,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Warung Nasi Barokah"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10971311749,
+      "lat": -8.6705015,
+      "lon": 115.2515068,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "bbq",
+        "name": "Barbique House"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10971311750,
+      "lat": -8.7044069,
+      "lon": 115.2555706,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "pork",
+        "name": "Babi Guling Gung Ninie"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10997002291,
+      "lat": -8.6819127,
+      "lon": 115.1911229,
+      "tags": {
+        "addr:street": "Jalan Teuku Umar Barat",
+        "alt_name": "Kentucky Fried Chicken",
+        "amenity": "fast_food",
+        "brand": "KFC",
+        "brand:wikidata": "Q524757",
+        "cuisine": "chicken",
+        "diet:halal": "yes",
+        "name": "KFC",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10997002292,
+      "lat": -8.6820585,
+      "lon": 115.1916298,
+      "tags": {
+        "addr:city": "Pemecutan Klod, Denpasar, Bali;Denpasar",
+        "addr:housenumber": "241X",
+        "addr:postcode": "80119",
+        "addr:street": "Jalan Teuku Umar Barat",
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:wikidata": "Q38076",
+        "cuisine": "burger",
+        "name": "McDonald's",
+        "phone": "+623618466395",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11017014000,
+      "lat": -8.6796507,
+      "lon": 115.178241,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Ponting Sayur Kusnan Ho"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11041509192,
+      "lat": -8.7019671,
+      "lon": 115.1833637,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "name": "Gokana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11049338805,
+      "lat": -8.6985084,
+      "lon": 115.1807567,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung dilya"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11179067237,
+      "lat": -8.6900728,
+      "lon": 115.2636071,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mai-Mai",
+        "name:en": "Mai-Mai"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11189808437,
+      "lat": -8.6718349,
+      "lon": 115.2593618,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Warung Jawal Banyuwangi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11204446333,
+      "lat": -8.6884228,
+      "lon": 115.2654595,
+      "tags": {
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/memories.sanurclub",
+        "contact:phone": "+62 812 3612 084",
+        "name": "Memories Sanur Club"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11226762537,
+      "lat": -8.6735942,
+      "lon": 115.1796953,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "name": "Permana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11261628498,
+      "lat": -8.6983005,
+      "lon": 115.2630193,
+      "tags": {
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "cafe",
+        "name": "Paradise Sanur Cafe and Gym"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11447796732,
+      "lat": -8.7216225,
+      "lon": 115.238728,
+      "tags": {
+        "amenity": "cafe",
+        "name": "The Agus"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11455299388,
+      "lat": -8.6961949,
+      "lon": 115.2026754,
+      "tags": {
+        "addr:city": "denpasar",
+        "addr:postcode": "80222",
+        "addr:street": "jl. pulau bungin, gang IX",
+        "amenity": "cafe",
+        "cuisine": "coffee_shop;regional;indonesian",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "name": "Warung Tobit",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "outdoor_seating": "yes",
+        "phone": "+6287776741414"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11458924783,
+      "lat": -8.6335976,
+      "lon": 115.2338583,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Babi Guling Nojas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11521795969,
+      "lat": -8.6943507,
+      "lon": 115.2269624,
+      "tags": {
+        "addr:housenumber": "105",
+        "addr:street": "Jalan Bedugul",
+        "amenity": "restaurant",
+        "cuisine": "seafood",
+        "internet_access": "wlan",
+        "name:en": "Komet Seafood",
+        "phone": "+6285238008310"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581266085,
+      "lat": -8.702135,
+      "lon": 115.1841048,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "cuisine": "coffee_shop",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "shop": "coffee",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581281209,
+      "lat": -8.7020386,
+      "lon": 115.1839915,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "name": "Solaria"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581282058,
+      "lat": -8.7022122,
+      "lon": 115.1841134,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "sushi",
+        "name": "Ichiban sushi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581304224,
+      "lat": -8.7020599,
+      "lon": 115.1841193,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "japanese",
+        "level": "1",
+        "name": "Shaburi & Kintan"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581307549,
+      "lat": -8.7024106,
+      "lon": 115.1841048,
+      "tags": {
+        "amenity": "restaurant",
+        "level": "1",
+        "name": "Cobek Penyet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581310511,
+      "lat": -8.7019605,
+      "lon": 115.1841218,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Pepper Lunch",
+        "brand:wikidata": "Q1016072",
+        "cuisine": "teppanyaki",
+        "level": "1",
+        "name": "Pepper Lunch",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11581314078,
+      "lat": -8.7019531,
+      "lon": 115.1839923,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "jap",
+        "level": "1",
+        "name": "Gokana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11736164669,
+      "lat": -8.6703217,
+      "lon": 115.261034,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name:en": "Pole Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11736164670,
+      "lat": -8.6703791,
+      "lon": 115.2610577,
+      "tags": {
+        "amenity": "cafe",
+        "name:en": "Canvas to Go"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11736164869,
+      "lat": -8.704588,
+      "lon": 115.26071,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "breakfast;coffee_shop;indonesian;international",
+        "name": "Ritual Kopi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11738278769,
+      "lat": -8.7034407,
+      "lon": 115.2609717,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;indonesian;noodles",
+        "name:en": "Lucky 8"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11740535671,
+      "lat": -8.7051831,
+      "lon": 115.2605097,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;international",
+        "name": "Jepun",
+        "opening_hours": "Mo-Su 15:00-11:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11767851347,
+      "lat": -8.7041222,
+      "lon": 115.2542617,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Bubur Ayam Bang Yossi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11767852058,
+      "lat": -8.7040935,
+      "lon": 115.2550623,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Lalapan Si John"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11768062481,
+      "lat": -8.6926462,
+      "lon": 115.2665757,
+      "tags": {
+        "amenity": "bar",
+        "name": "Crema",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11768390372,
+      "lat": -8.6411618,
+      "lon": 115.2544734,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "KFC"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11768765441,
+      "lat": -8.6667361,
+      "lon": 115.2265756,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Nasi Tempong Indra"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11771195669,
+      "lat": -8.6990234,
+      "lon": 115.2512266,
+      "tags": {
+        "addr:street": "Jalan Kutat Lestari",
+        "amenity": "cafe",
+        "name:en": "Green Mood"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11772749269,
+      "lat": -8.6737432,
+      "lon": 115.2596459,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Fuji Sushi Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11809286131,
+      "lat": -8.6840101,
+      "lon": 115.2589177,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Red Dragon Ramen"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11809289449,
+      "lat": -8.6840977,
+      "lon": 115.2591554,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Jawa Cak Salim"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11809327329,
+      "lat": -8.6839418,
+      "lon": 115.2589299,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Warung Madura"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11836552469,
+      "lat": -8.7051336,
+      "lon": 115.2497279,
+      "tags": {
+        "addr:housenumber": "31",
+        "addr:postcode": "80227",
+        "addr:street": "Jalan Danau Poso",
+        "amenity": "cafe",
+        "contact:facebook": "joilocaleats",
+        "contact:instagram": "jhoiilocaleats",
+        "cuisine": "cake;coffee_shop;indonesian;oriental;pasta",
+        "diet:vegan": "yes",
+        "internet_access": "wlan",
+        "name:en": "Jhoii Local Eats",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "phone": "+62-81239280441",
+        "website": "https://taplink.cc/jhoii"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11841271171,
+      "lat": -8.6799237,
+      "lon": 115.2584347,
+      "tags": {
+        "addr:housenumber": "2",
+        "addr:postcode": "80227",
+        "addr:street": "Pemamoran",
+        "amenity": "restaurant",
+        "cuisine": "indonesian;oriental",
+        "diet:vegan": "yes",
+        "diet:vegetarian": "yes",
+        "internet_access": "wlan",
+        "name": "Waroeng Bagoes",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "phone": "+62-81339941790",
+        "website": "https://waroeng-bagoes-plant-based-vegan-vegetarian.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11850255114,
+      "lat": -8.6863218,
+      "lon": 115.2156472,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housename": "Universitas Terbuka Denpasar",
+        "addr:housenumber": "121",
+        "addr:neighbourhood": "Sesetan",
+        "addr:postcode": "80225",
+        "addr:province": "Bali",
+        "addr:street": "Jalan Raya Sesetan",
+        "amenity": "restaurant",
+        "name": "Kantin UT Denpasar"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11876005668,
+      "lat": -8.6713905,
+      "lon": 115.2597584,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Beer Brothers"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11876313769,
+      "lat": -8.6884911,
+      "lon": 115.2631887,
+      "tags": {
+        "addr:housenumber": "78",
+        "addr:postcode": "80228",
+        "addr:street": "Jalan Danau Tamblingan",
+        "amenity": "restaurant",
+        "cuisine": "indonesian",
+        "internet_access": "wlan",
+        "name": "Warung Bali",
+        "name:id": "Warung Bali Bagus",
+        "opening_hours": "Mo-Su 12:00-22:00",
+        "operator": "+62 813-9028-0004"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11900900094,
+      "lat": -8.7007708,
+      "lon": 115.2341321,
+      "tags": {
+        "addr:housenumber": "6",
+        "addr:street": "Jalan Kerta Dalem",
+        "amenity": "restaurant",
+        "name": "GOGO Fried Chicken Kerta Dalem"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11909800300,
+      "lat": -8.6737887,
+      "lon": 115.2596429,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Coffee Therapy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11974647825,
+      "lat": -8.691891,
+      "lon": 115.1927576,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Surya Mesari Villa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12009070969,
+      "lat": -8.6846099,
+      "lon": 115.2644981,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indonesian;seafood",
+        "name": "Warung Amphibia"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12017283774,
+      "lat": -8.7013072,
+      "lon": 115.2401627,
+      "tags": {
+        "addr:city": "Denpasar, Bali",
+        "addr:neighbourhood": "Sidakarya",
+        "addr:postcode": "80227",
+        "addr:province": "Bali",
+        "addr:street": "Jalan Tukad Balian",
+        "addr:subdistrict": "Denpasar Selatan",
+        "amenity": "restaurant",
+        "contact:facebook": "https://www.facebook.com/people/Chicagos-Pizza-Twist-Bali/100089885199282/",
+        "cuisine": "pizza;american;international;salad",
+        "diet:halal": "yes",
+        "diet:healthy": "yes",
+        "diet:vegan": "yes",
+        "name": "Chicago's Pizza Twist Renon",
+        "opening_hours": "Mo-Su 08:00-22:30",
+        "outdoor_seating": "yes",
+        "phone": "+6281236724655",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://chicagospizzatwist.id/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12057103862,
+      "lat": -8.7065466,
+      "lon": 115.2590284,
+      "tags": {
+        "addr:city": "Denpasar",
+        "addr:housenumber": "19",
+        "addr:street": "Jalan Cemara",
+        "amenity": "restaurant",
+        "name": "Patio restaurant",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "phone": "+6281390225705"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12169606720,
+      "lat": -8.6729129,
+      "lon": 115.2584327,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Betewe Cafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12169607149,
+      "lat": -8.678717,
+      "lon": 115.2583903,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Canangsari Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12169664708,
+      "lat": -8.6789676,
+      "lon": 115.2583905,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Richeese Factory"
+      }
+    }
+  ]
+}
