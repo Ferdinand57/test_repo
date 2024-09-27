@@ -11,15 +11,7 @@ Username: ferdinand.bonfilio
 Password: nEIckZwXfCMNUS8s3j1NcZwPnX_LzTpc
 ```
 
-You will need to use this command to deploy your code. If you have done this, in the future you will need to just use the third line only.
 
-```
-git remote add pws http://pbp.cs.ui.ac.id/ferdinand.bonfilio/bonbonshop
-
-git branch -M master
-
-git push pws master
-```
 
 
 Explain how did you implement the checklist step-by-step (apart from following the tutorial).
