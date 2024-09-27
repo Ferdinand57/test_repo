@@ -5,12 +5,6 @@ link to the PWS application that has been deployed: http://ferdinand-bonfilio-bo
 
 Deployment credential:
 
-```
-Username: ferdinand.bonfilio
-
-Password: nEIckZwXfCMNUS8s3j1NcZwPnX_LzTpc
-```
-
 
 
 
