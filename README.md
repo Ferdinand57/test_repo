@@ -24,65 +24,41 @@ git push pws master
 
 The checklist for this assignment is as follows, Explain how you implemented the checklist above step-by-step (not just following the tutorial)!:
 =
-To add the ability to edit and delete products in our application, we followed these steps:
+Implement functions to delete and edit products.
+=
+1. Create the Edit Product Function:
 
-    Create the Edit Product Function:
-
-    In views.py, we defined a new function edit_product that takes request and id as parameters. This function retrieves the product based on its id, creates a form instance with this product, and saves the changes if the form is valid.
-
-    python
-
+In views.py in the main subdirectory, I added a new function named edit_product that takes request and id as parameters.
+```
 def edit_product(request, id):
     # Get product entry based on id
-    product = Product.objects.get(pk=id)
+    product = ProductEntry.objects.get(pk = id)
 
     # Set product entry as an instance of the form
-    form = ProductForm(request.POST or None, instance=product)
+    form = ProductEntryForm(request.POST or None, instance=product)
 
     if form.is_valid() and request.method == "POST":
-        # Save form and return to product list page
+        # Save form and return to home page
         form.save()
-        return HttpResponseRedirect(reverse('app:show_products'))
+        return HttpResponseRedirect(reverse('main:show_main'))
 
     context = {'form': form}
     return render(request, "edit_product.html", context)
+```
 
-Create the Delete Product Function:
+Imports Added to views.py:
+```
+from django.shortcuts import .., reverse
+from django.http import .., HttpResponseRedirect
+```
 
-Similarly, we added a delete_product function in views.py, which deletes a product based on its id and redirects back to the product list.
+2. Create the Edit Product Template:
 
-python
-
-def delete_product(request, id):
-    # Get product based on id
-    product = Product.objects.get(pk=id)
-    # Delete product
-    product.delete()
-    # Return to product list page
-    return HttpResponseRedirect(reverse('app:show_products'))
-
-Update URLs:
-
-In urls.py, we imported the new functions and added URL patterns for them.
-
-python
-
-from app.views import edit_product, delete_product
-
-urlpatterns = [
-    # ...
-    path('edit-product/<int:id>/', edit_product, name='edit_product'),
-    path('delete-product/<int:id>/', delete_product, name='delete_product'),
-    # ...
-]
-
-Create the Edit Product Template:
-
-We created edit_product.html to display the edit form for a product.
-
-html
-
+I created a new HTML file named edit_product.html in the main/templates subdirectory and filled it with the following content:
+```
 {% extends 'base.html' %}
+
+{% load static %}
 
 {% block content %}
 
@@ -102,27 +78,80 @@ html
 </form>
 
 {% endblock %}
+```
 
-Update the Product List Template:
+3. Update urls.py for Edit Product:
 
-In the product list template, we added edit and delete buttons for each product so users can manage them directly from the list.
-``` html
+In urls.py in the main directory, I imported the edit_product function:
+```
+from main.views import edit_product
+```
 
+Then, I added a URL path to urlpatterns:
+```
+path('edit-product/<uuid:id>', edit_product, name='edit_product'),
+```
+
+Note: Adjust the <uuid:id> to <int:id> if the id in ProductEntry is an integer.
+
+4. Add an Edit Button in the Product List Template:
+
+In main.html in the main/templates subdirectory, I added the following code to display an edit button for each product:
+```
 <tr>
-    <!-- Display product details -->
-    <td>{{ product.name }}</td>
-    <td>{{ product.description }}</td>
-    <!-- Edit button -->
+    ...
     <td>
-        <a href="{% url 'app:edit_product' product.pk %}">
+        <a href="{% url 'main:edit_product' product_entry.pk %}">
             <button>
                 Edit
             </button>
         </a>
     </td>
-    <!-- Delete button -->
+</tr>
+```
+
+5. Create the Delete Product Function:
+
+In views.py, I added a new function named delete_product:
+
+```
+def delete_product(request, id):
+    # Get product based on id
+    product = ProductEntry.objects.get(pk = id)
+    # Delete product
+    product.delete()
+    # Return to home page
+    return HttpResponseRedirect(reverse('main:show_main'))
+```
+6. Update urls.py for Delete Product:
+
+In urls.py, I imported the delete_product function:
+```
+from main.views import delete_product
+```
+
+Then, I added a URL path:
+```
+path('delete/<uuid:id>', delete_product, name='delete_product'),
+```
+
+Again, adjust <uuid:id> if necessary.
+
+7. Add a Delete Button in the Product List Template:
+
+In main.html, I modified the code to include a delete button:
+```
+<tr>
+    ...
     <td>
-        <a href="{% url 'app:delete_product' product.pk %}">
+        <a href="{% url 'main:edit_product' product_entry.pk %}">
+            <button>
+                Edit
+            </button>
+        </a>
+    </td>
+    <td>
+        <a href="{% url 'main:delete_product' product_entry.pk %}">
             <button>
                 Delete
             </button>
@@ -130,10 +159,6 @@ In the product list template, we added edit and delete buttons for each product 
     </td>
 </tr>
 ```
-
-Implement functions to delete and edit products.
-=
-
 
 Customize the design of the HTML templates that have been created in previous assignments using CSS or a CSS framework (such as Bootstrap, Tailwind, Bulma) with the following conditions:
 =
