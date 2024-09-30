@@ -35,16 +35,23 @@ Customize the design of the HTML templates that have been created in previous as
 
 
 Customize the login, register, and add product pages to be as attractive as possible.
+=
+
 Customize the product list page to be more attractive and responsive. Then, consider the following conditions:
-    If there are no products saved in the application, the product list page will display an image and a message that no products are registered.
-    If there are products saved, the product list page will display details of each product using cards (must not be exactly the same as the design in the Tutorial!).
+If there are no products saved in the application, the product list page will display an image and a message that no products are registered.
+=
+
+
+If there are products saved, the product list page will display details of each product using cards (must not be exactly the same as the design in the Tutorial!).
+=
+
+
 For each product card, create two buttons to edit and delete the product on that card!
+=
+
+
 Create a navigation bar (navbar) for the features in the application that is responsive to different device sizes, especially mobile and desktop.
-    Example of a responsive navbar (Does not need to be exactly the same!):
-
-        Navbar condition for mobile version: Example of Mobile Navbar Display When the hamburger button is clicked: Example of Mobile Navbar Display (Expanded)
-
-        Navbar condition for desktop version: Example of Desktop Navbar Display
+=
 
 Answer the following questions in README.md in the root folder (please modify the README.md you have created before; add subheadings for each assignment).
 =
