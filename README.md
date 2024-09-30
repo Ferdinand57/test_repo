@@ -22,471 +22,140 @@ git push pws master
 ```
 
 
-Explain how did you implement the checklist step-by-step (apart from following the tutorial).
+The checklist for this assignment is as follows, Explain how you implemented the checklist above step-by-step (not just following the tutorial)!:
+
+Implement functions to delete and edit products.
+
+Customize the design of the HTML templates that have been created in previous assignments using CSS or a CSS framework (such as Bootstrap, Tailwind, Bulma) with the following conditions:
+        Customize the login, register, and add product pages to be as attractive as possible.
+        Customize the product list page to be more attractive and responsive. Then, consider the following conditions:
+            If there are no products saved in the application, the product list page will display an image and a message that no products are registered.
+            If there are products saved, the product list page will display details of each product using cards (must not be exactly the same as the design in the Tutorial!).
+        For each product card, create two buttons to edit and delete the product on that card!
+        Create a navigation bar (navbar) for the features in the application that is responsive to different device sizes, especially mobile and desktop.
+            Example of a responsive navbar (Does not need to be exactly the same!):
+
+                Navbar condition for mobile version: Example of Mobile Navbar Display When the hamburger button is clicked: Example of Mobile Navbar Display (Expanded)
+
+                Navbar condition for desktop version: Example of Desktop Navbar Display
+
+Answer the following questions in README.md in the root folder (please modify the README.md you have created before; add subheadings for each assignment).
 =
-
-
-
-Implement the register, login, and logout functions so that the user can access the application freely.
+If there are multiple CSS selectors for an HTML element, explain the priority order of these CSS selectors!
 =
-Step 1: Implementing Function and Registration Forms
+When we apply styles to an HTML element using CSS, sometimes multiple styles might conflict because they target the same element. In such cases, the browser follows a specific priority order to decide which style to apply. The priority order from highest to lowest is:
 
-1. Activate virtual enviorement with env\Scripts\activate
-
-2. Modify views.py in the main subdirectory to add the following
-```
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib import messages
-
-def register(request):
-    form = UserCreationForm()
-
-    if request.method == "POST":
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Your account has been successfully created!')
-            return redirect('main:login')
-    context = {'form':form}
-    return render(request, 'register.html', context)
-```
-
-3. Create a new HTML file named register.html in the main/templates directory
-```
-{% extends 'base.html' %} {% block meta %}
-<title>Register</title>
-{% endblock meta %} {% block content %}
-
-<div class="login">
-  <h1>Register</h1>
-
-  <form method="POST">
-    {% csrf_token %}
-    <table>
-      {{ form.as_table }}
-      <tr>
-        <td></td>
-        <td><input type="submit" name="submit" value="Register" /></td>
-      </tr>
-    </table>
-  </form>
-
-  {% if messages %}
-  <ul>
-    {% for message in messages %}
-    <li>{{ message }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-</div>
-
-{% endblock content %}
-```
-
-4. Open urls.py in the main subdirectory and modify it to add the following:
-```
-from main.views import register
-
- urlpatterns = [
-     ...
-     path('register/', register, name='register'),
- ]
-```
-
-Step 2: Implementing a Login Function
-
-1. Modify views.py in the main subdirectory to add the following
-```
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import authenticate, login
-
-def login_user(request):
-   if request.method == 'POST':
-      form = AuthenticationForm(data=request.POST)
-
-      if form.is_valid():
-            user = form.get_user()
-            login(request, user)
-            return redirect('main:show_main')
-
-   else:
-      form = AuthenticationForm(request)
-   context = {'form': form}
-   return render(request, 'login.html', context)
-```
-
-2. Create a new HTML file named login.html in the main/templates directory
-```
-{% extends 'base.html' %}
-
-{% block meta %}
-<title>Login</title>
-{% endblock meta %}
-
-{% block content %}
-<div class="login">
-  <h1>Login</h1>
-
-  <form method="POST" action="">
-    {% csrf_token %}
-    <table>
-      {{ form.as_table }}
-      <tr>
-        <td></td>
-        <td><input class="btn login_btn" type="submit" value="Login" /></td>
-      </tr>
-    </table>
-  </form>
-
-  {% if messages %}
-  <ul>
-    {% for message in messages %}
-    <li>{{ message }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %} Don't have an account yet?
-  <a href="{% url 'main:register' %}">Register Now</a>
-</div>
-
-{% endblock content %}
-```
-
-3. Open urls.py in the main subdirectory and modify it to add the following:
-```
-from main.views import login_user
-
-urlpatterns = [
-   ...
-   path('login/', login_user, name='login'),
-]
-```
-
-Step 3: Implementing a Logout Function
-
-1. Modify views.py in the main subdirectory to add the following
-```
-from django.contrib.auth import logout
-
-def logout_user(request):
-    logout(request)
-    return redirect('main:login')
-```
-
-2. Open main.html file in the main/templates directory and add the following code snippet after the hyperlink tag for "Add New Product Entry."
-```
-...
-<a href="{% url 'main:logout' %}">
-  <button>Logout</button>
-</a>
-...
-```
-
-3. Open urls.py in the main subdirectory and modify it to add the following:
-```
-from main.views import logout_user
-
-urlpatterns = [
-   ...
-   path('logout/', logout_user, name='logout'),
-]
-```
-
-Step 4: Restricting Access to the Main Page
-
-1. Modify views.py in the main subdirectory to add the following
-```
-from django.contrib.auth.decorators import login_required
-```
-
-2. Add the code snippet @login_required(login_url='/login') above the show_main function so that the main page can only be accessed by authenticated (logged-in) users.
-```
-...
-@login_required(login_url='/login')
-def show_main(request):
-...
-```
-
-Step 5: Using Data from Cookies
-
-Firstly, log out if you are currently running your Django application.
-
-1. Reopen views.py in the main subdirectory. Add the imports for HttpResponseRedirect, reverse, and datetime at the very top.
-
-```
-import datetime
-from django.http import HttpResponseRedirect
-from django.urls import reverse
-```
-
-2. In the login_user function, we will add the functionality to set a cookie named last_login to track when the user last logged in. Do this by replacing the code in the if form.is_valid() block with the following snippet.
-```
-...
-if form.is_valid():
-    user = form.get_user()
-    login(request, user)
-    response = HttpResponseRedirect(reverse("main:show_main"))
-    response.set_cookie('last_login', str(datetime.datetime.now()))
-    return response
-...
-```
-
-3. In the show_main function, add the snippet 'last_login': request.COOKIES['last_login'] to the context variable. 
-```
-context = {
-    'name': 'Pak Bepe',
-    'class': 'PBP D',
-    'npm': '2306123456',
-    'product_entries': product_entries,
-    'last_login': request.COOKIES.get('last_login', 'No login recorded'),
-}
-```
-
-4. Modify the logout_user function to look like the following snippet.
-```
-def logout_user(request):
-    logout(request)
-    response = HttpResponseRedirect(reverse('main:login'))
-    response.delete_cookie('last_login')
-    return response
-```
-
-5. Open the main.html file and add the following snippet after the logout button to display the last login data.
-```
-...
-<h5>Last login session: {{ last_login }}</h5>
-...
-```
-
-6. Refresh the login page (or run your Django project using the command python manage.py runserver if you haven't already) and try logging in. Your last login data will appear on the main page.
-
-```
-Before proceeding to the next tutorial, create an account on your website.
-```
-
-make two user accounts with three dummy data each, using the model made in the application beforehand so that each data can be accessed by each account locally.
-=
-
-Bonbon Shop user:
-```
-User: Ferdinand1
-Pass: bS"]FXPKcAf99_w
-
-Apple juice
-Good ol apple
-1000
-
-Cucumber juice
-Cucumber is acidic btw
-2000
-
-Banana juice
-Yellow liquid
-3000
-```
-```
-User: Ferdinand2
-Pass: -#egKAf4_Y+Uwkj
-
-Durian juice
-Spiky and delicious
-4000
-
-Saraca juice
-Spicy and more spicy
-5000
-
-Mustard juice
-From yours truly
-6000
-```
-
-
-Connect the models Product and User.
-=
-
-Lastly, we will link each ProductEntry object created to the user who made it so that an authorized user only sees the product entries they have created. Follow these steps:
-
-1. Open models.py in the main subdirectory and add the following code below the line that imports the model:
-
-```
-...
-from django.contrib.auth.models import User
-...
-```
-
-2. In the previously created ProductEntry model, add the following code:
-```
-class ProductEntry(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    ...
-```
-
-3. Reopen views.py in the main subdirectory and modify the code in the create_product_entry function as follows:
-
-```
-def create_product_entry(request):
-    form = ProductEntryForm(request.POST or None)
-
-    if form.is_valid() and request.method == "POST":
-        product_entry = form.save(commit=False)
-        product_entry.user = request.user
-        product_entry.save()
-        return redirect('main:show_main')
-
-    context = {'form': form}
-    return render(request, "create_product_entry.html", context)
- ...
-```
-
-4. Change the value of product_entries and context in the function show_main as follows.
-
-```
-def show_main(request):
-    product_entries = ProductEntry.objects.filter(user=request.user)
-
-    context = {
-         'name': request.user.username,
-         ...
-    }
-...
-```
-
-
-
-5. Save all changes and run the model migration with python manage.py makemigrations.
-
-6. You should encounter an error during the model migration. Select 1 to set a default value for the user field on all rows already created in the database.
-
-7. Type 1 again to assign the user with ID 1 (which we created earlier) to the existing model
-
-8. Run python manage.py migrate to apply the migration made in the previous step.
-
-9. Lastly, we need to ensure our project is ready for a production environtment. To do that, add another import statement in settings.py in the mental_health_tracker subdirectory.
-
-```
-import os
-```
-
-10. Then, change the variable DEBUG in settings.py into this.
-
-```
-PRODUCTION = os.getenv("PRODUCTION", False)
-DEBUG = not PRODUCTION
-```
-
-Display logged in user details such as username and apply cookies like last login to the application's main page.
-=
-
-We already did this before where we apply login:
-
-step 5.3: we change the last_login to request cookies
-
-3. In the show_main function, add the snippet 'last_login': request.COOKIES['last_login'] to the context variable. Here is an example of the updated code.
-```
-context = {
-    'name': 'Pak Bepe',
-    'class': 'PBP D',
-    'npm': '2306123456',
-    'product_entries': product_entries,
-    'last_login': request.COOKIES.get('last_login', 'No login recorded'),
-}
-```
-
-
-5.5: we add last login session on the main.html
-
-
-5. Open the main.html file and add the following snippet after the logout button to display the last login data.
-```
-...
-<h5>Last login session: {{ last_login }}</h5>
-...
-```
-
-and when we models product to user we add the following on step 4 which display the user name used for the login as the name shown:
-
-4. Change the value of product_entries and context in the function show_main as follows.
-
-```
-def show_main(request):
-    product_entries = ProductEntry.objects.filter(user=request.user)
-
-    context = {
-         'name': request.user.username,
-         ...
-    }
-...
-```
-
-What is the difference between HttpResponseRedirect() and redirect()?
-=
-
-Both HttpResponseRedirect() and redirect() are used in Django to redirect users from one URL to another, but they differ in terms of simplicity and flexibility.
-
-HttpResponseRedirect() is a Django class that creates an HTTP response with a status code indicating a redirection (typically 302). It requires you to specify the exact URL to redirect to. You have to manually construct the full URL, which can be less convenient. For example: return HttpResponseRedirect('/login/')
-
-The downside is if your URL patterns change or you have dynamic URLs, you need to update all instances where you've hard-coded the URLs, making maintenance more challenging.
-
-redirect() is a shortcut function provided by Django to simplify redirection. It can accept various types of arguments:
-- A view name
-- A URL pattern name defined in your urls.py
-- An absolute or relative URL
-- An object (if the object defines a get_absolute_url() method)
-
-Internally, redirect() uses HttpResponseRedirect() to perform the redirection but handles the URL resolution for you, for example: return redirect('login')
-
-The upside of using redirect() is that you don't have to build the URL manually; you can simply refer to the name of the view or URL pattern, not only that if your URL patterns change, you only need to update the urls.py file, and the redirect() calls will continue to work without modification, and because it used names rather than hard-coded URLs makes your code cleaner and easier to maintain.
-
-Explain how the ProductEntry model is linked with User!
-=
-
-We linked the ProductEntry model with the User model to associate each product entry with the user who created it by doing the following:
-
-1. Added a User Reference: In the ProductEntry model, we included a field that references the User model. This field acts like a link between a product entry and a user.
-
-2. Assigned the Current User: When a user creates a new product entry, we set the user field of that entry to the currently logged-in user. This means the product entry now knows who created it.
-
-3. Filtered Entries by User: In our views, when displaying product entries, we retrieve only the entries that belong to the logged-in user. This ensures that users see only their own entries.
+Inline Styles: These are styles written directly in the HTML element using the style attribute. For example:
     
-What is the difference between authentication and authorization, and what happens when a user logs in? Explain how Django implements these two concepts.
+```
+html
+
+<p style="color: blue;">This text is blue.</p>
+```
+
+Inline styles have the highest priority because they are applied directly to the element.
+
+External and Internal Style Sheets: These styles are defined either in a separate CSS file linked to the HTML (external) or within a <style> tag in the HTML document itself (internal). For example:
+
+```
+html
+
+<!-- Internal Style Sheet -->
+<style>
+  p {
+    color: red;
+  }
+</style>
+
+<!-- External Style Sheet -->
+<link rel="stylesheet" href="styles.css">
+```
+
+Styles from external and internal style sheets have a lower priority than inline styles but will override browser defaults.
+
+Browser Default: If no styles are provided, the browser applies its default styles to elements. These are the lowest in priority and are only used when no other styles are specified.
+
+In summary, if an element has styles defined at multiple levels, the browser will apply the style with the highest priority. Inline styles override external and internal style sheets, which in turn override the browser's default styles.
+
+Why does responsive design become an important concept in web application development? Give examples of applications that have and have not implemented responsive design!
 =
+Responsive design is essential in web development because it ensures that websites are accessible and user-friendly across a variety of devices with different screen sizes and capabilities. With the increasing use of smartphones and tablets, people access websites on devices other than desktop computers. Responsive design allows a website to adapt its layout and content to fit the screen of the device being used, providing an optimal viewing experience
 
-Authentication is the process of verifying who a user is. When a user logs in by entering their username and password, the application checks these credentials to confirm the user's identity.
+For example:
 
-Authorization determines what an authenticated user is allowed to do. After a user is authenticated, authorization controls their access to certain pages or actions within the application based on their permissions.
+- Applications with Responsive Design: Many modern websites and web applications implement responsive design. When we visit a news website on our phone, the content rearranges itself to fit the smaller screen, images resize, and menus become touch-friendly. This makes it easy to read articles and navigate the site on any device
 
-When a user logs in:
+- Applications without Responsive Design: Older websites or those that haven't been updated may not implement responsive design. When we access such a site on a mobile device, we might see tiny text, oversized images, or content that doesn't fit the screen, requiring us to zoom in and scroll horizontally. This can make the site difficult to use and discourage visitors
 
-1. Authentication: The application checks the provided credentials. If they match the records, the user is authenticated.
+Responsive design improves user experience by ensuring that content is presented in a clear and accessible manner, regardless of the device used. It also helps websites reach a wider audience and keeps users engaged
 
-2. Session Creation: Upon successful authentication, the application creates a session for the user to keep them logged in across different pages.
-
-3. Authorization: The application then uses authorization rules to determine what the user can access.
-
-Django implements these concepts using its built-in authentication system:
-
-1. For authentication, Django provides functions to handle login and logout processes, managing user sessions securely.
-
-2. For authorization, Django uses decorators like @login_required to protect views, ensuring that only authenticated users can access certain parts of the application.
-
-How does Django remember logged-in users? Explain other uses of cookies and whether all cookies are safe to use.
+Explain the differences between margin, border, and padding, and how to implement these three things!
 =
+In web design, understanding the box model is crucial. The box model describes how elements are structured and how spacing works around them. It consists of:
 
-Django remembers logged-in users by creating a session for each user and storing a unique session ID in a cookie on their browser. This cookie is sent with every request the user makes, allowing Django to identify the user and maintain their logged-in state across different pages.
+    Content: The actual text, images, or other media inside the element.
+    Padding: The space between the content and the element's border. Padding adds internal spacing within the element.
+    Border: A line or edge that surrounds the padding and content. It defines the outline of the element.
+    Margin: The space outside the border that separates the element from other elements. Margins add external spacing between elements.
 
-Other uses of cookies include:
+Here's how they differ:
 
-1. Remembering user preferences: Cookies can store settings like language choices or display preferences so that the site appears the same way on subsequent visits.
+Margin:
+Purpose: Creates space outside the element's border, pushing other elements away.
 
-2. Tracking user activity: They can help understand how users interact with the site, which pages they visit, and how often.
+Implementation:
+```
+css
 
-3. Keeping items in a shopping cart: For e-commerce sites, cookies can remember what items a user has added to their cart even if they navigate away from the page.
+.example {
+  margin: 20px; /* Adds 20 pixels of space around the element */
+}
+```
 
+Usage: Use margins to control the spacing between elements on a page.
 
-Not all cookies are inherently safe. While they are essential for many web functionalities, they can pose security risks if not handled properly:
+Border:
 
-Sensitive Data: Storing confidential information directly in cookies is risky because cookies are stored on the user's computer and can be accessed or modified.
+Purpose: Defines the edge of the element and can be styled to enhance visual appearance. 
 
-Security Measures: It's important to use cookies securely by encrypting sensitive information, using secure flags to prevent unauthorized access, and setting appropriate expiration dates.
+Implementation:
+```
+css
 
+.example {
+  border: 2px solid black; /* Adds a solid black border 2 pixels thick */
+}
+```
 
+Usage: Use borders to outline elements, separate sections, or add visual emphasis.
+
+Padding:
+
+Purpose: Adds space inside the element between the content and the border.
+
+Implementation:
+```
+css
+
+.example {
+  padding: 10px; /* Adds 10 pixels of space inside the element */
+}
+```
+
+Usage: Use padding to ensure content isn't touching the borders and to improve readability.
+
+By adjusting these properties, we can control how elements are spaced and how they relate to each other visually on the page.
+
+Explain the concepts of flex box and grid layout along with their uses!
+=
+Flexbox and grid are modern CSS layout systems that help us design responsive and flexible web layouts more easily
+
+Flexbox (Flexible Box Layout):
+- Concept: Flexbox is designed for one-dimensional layouts, meaning it works in either a row or a column
+- Usage: It allows us to align and distribute space among items in a container, even when their size is unknown or dynamic
+- Example: If we have a navigation menu and we want the items to spread out evenly across the horizontal space, flexbox makes this simple
+
+Grid Layout:
+- Concept: Grid layout is intended for two-dimensional layouts, handling both rows and columns simultaneously
+- Usage: It enables us to create complex and responsive grid structures, making it easier to design page layouts without using floats or positioning
+- Example: When designing a photo gallery where images need to be aligned both horizontally and vertically, grid layout provides a straightforward solution
