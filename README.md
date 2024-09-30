@@ -106,8 +106,7 @@ html
 Update the Product List Template:
 
 In the product list template, we added edit and delete buttons for each product so users can manage them directly from the list.
-```
-html
+``` html
 
 <tr>
     <!-- Display product details -->
