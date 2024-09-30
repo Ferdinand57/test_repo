@@ -23,21 +23,28 @@ git push pws master
 
 
 The checklist for this assignment is as follows, Explain how you implemented the checklist above step-by-step (not just following the tutorial)!:
+=
+
 
 Implement functions to delete and edit products.
+=
+
 
 Customize the design of the HTML templates that have been created in previous assignments using CSS or a CSS framework (such as Bootstrap, Tailwind, Bulma) with the following conditions:
-        Customize the login, register, and add product pages to be as attractive as possible.
-        Customize the product list page to be more attractive and responsive. Then, consider the following conditions:
-            If there are no products saved in the application, the product list page will display an image and a message that no products are registered.
-            If there are products saved, the product list page will display details of each product using cards (must not be exactly the same as the design in the Tutorial!).
-        For each product card, create two buttons to edit and delete the product on that card!
-        Create a navigation bar (navbar) for the features in the application that is responsive to different device sizes, especially mobile and desktop.
-            Example of a responsive navbar (Does not need to be exactly the same!):
+=
 
-                Navbar condition for mobile version: Example of Mobile Navbar Display When the hamburger button is clicked: Example of Mobile Navbar Display (Expanded)
 
-                Navbar condition for desktop version: Example of Desktop Navbar Display
+Customize the login, register, and add product pages to be as attractive as possible.
+Customize the product list page to be more attractive and responsive. Then, consider the following conditions:
+    If there are no products saved in the application, the product list page will display an image and a message that no products are registered.
+    If there are products saved, the product list page will display details of each product using cards (must not be exactly the same as the design in the Tutorial!).
+For each product card, create two buttons to edit and delete the product on that card!
+Create a navigation bar (navbar) for the features in the application that is responsive to different device sizes, especially mobile and desktop.
+    Example of a responsive navbar (Does not need to be exactly the same!):
+
+        Navbar condition for mobile version: Example of Mobile Navbar Display When the hamburger button is clicked: Example of Mobile Navbar Display (Expanded)
+
+        Navbar condition for desktop version: Example of Desktop Navbar Display
 
 Answer the following questions in README.md in the root folder (please modify the README.md you have created before; add subheadings for each assignment).
 =
@@ -45,7 +52,7 @@ If there are multiple CSS selectors for an HTML element, explain the priority or
 =
 When we apply styles to an HTML element using CSS, sometimes multiple styles might conflict because they target the same element. In such cases, the browser follows a specific priority order to decide which style to apply. The priority order from highest to lowest is:
 
-Inline Styles: These are styles written directly in the HTML element using the style attribute. For example:
+Inline Styles: These are styles written directly in the HTML element using the style attribute. Inline styles have the highest priority because they are applied directly to the element. For example:
     
 ```
 html
@@ -53,9 +60,7 @@ html
 <p style="color: blue;">This text is blue.</p>
 ```
 
-Inline styles have the highest priority because they are applied directly to the element.
-
-External and Internal Style Sheets: These styles are defined either in a separate CSS file linked to the HTML (external) or within a <style> tag in the HTML document itself (internal). For example:
+External and Internal Style Sheets: These styles are defined either in a separate CSS file linked to the HTML (external) or within a <style> tag in the HTML document itself (internal). Styles from external and internal style sheets have a lower priority than inline styles but will override browser defaults. For example:
 
 ```
 html
@@ -70,8 +75,6 @@ html
 <!-- External Style Sheet -->
 <link rel="stylesheet" href="styles.css">
 ```
-
-Styles from external and internal style sheets have a lower priority than inline styles but will override browser defaults.
 
 Browser Default: If no styles are provided, the browser applies its default styles to elements. These are the lowest in priority and are only used when no other styles are specified.
 
@@ -100,8 +103,11 @@ In web design, understanding the box model is crucial. The box model describes h
 
 Here's how they differ:
 
-Margin:
+- Margin:
+
 Purpose: Creates space outside the element's border, pushing other elements away.
+
+Usage: Use margins to control the spacing between elements on a page.
 
 Implementation:
 ```
@@ -112,11 +118,13 @@ css
 }
 ```
 
-Usage: Use margins to control the spacing between elements on a page.
 
-Border:
+
+- Border:
 
 Purpose: Defines the edge of the element and can be styled to enhance visual appearance. 
+
+Usage: Use borders to outline elements, separate sections, or add visual emphasis.
 
 Implementation:
 ```
@@ -127,11 +135,11 @@ css
 }
 ```
 
-Usage: Use borders to outline elements, separate sections, or add visual emphasis.
-
-Padding:
+- Padding:
 
 Purpose: Adds space inside the element between the content and the border.
+
+Usage: Use padding to ensure content isn't touching the borders and to improve readability.
 
 Implementation:
 ```
@@ -141,10 +149,6 @@ css
   padding: 10px; /* Adds 10 pixels of space inside the element */
 }
 ```
-
-Usage: Use padding to ensure content isn't touching the borders and to improve readability.
-
-By adjusting these properties, we can control how elements are spaced and how they relate to each other visually on the page.
 
 Explain the concepts of flex box and grid layout along with their uses!
 =
