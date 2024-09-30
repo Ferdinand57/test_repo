@@ -162,6 +162,143 @@ In main.html, I modified the code to include a delete button:
 
 Customize the design of the HTML templates that have been created in previous assignments using CSS or a CSS framework (such as Bootstrap, Tailwind, Bulma) with the following conditions:
 =
+Create a navigation bar (navbar) for the features in the application that is responsive to different device sizes, especially mobile and desktop.
+=
+
+Create navbar.html:
+```
+<nav class="bg-indigo-600 shadow-lg fixed top-0 left-0 z-40 w-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <h1 class="text-2xl font-bold text-center text-white">Product Tracker</h1>
+        </div>
+        <div class="hidden md:flex items-center">
+          {% if user.is_authenticated %}
+            <span class="text-gray-300 mr-4">Welcome, {{ user.username }}</span>
+            <a href="{% url 'main:logout' %}" class="text-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+              Logout
+            </a>
+          {% else %}
+            <a href="{% url 'main:login' %}" class="text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 mr-2">
+              Login
+            </a>
+            <a href="{% url 'main:register' %}" class="text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+              Register
+            </a>
+          {% endif %}
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6 text-white" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden px-4 w-full md:max-w-full">
+      <div class="pt-2 pb-3 space-y-1 mx-auto">
+        {% if user.is_authenticated %}
+          <span class="block text-gray-300 px-3 py-2">Welcome, {{ user.username }}</span>
+          <a href="{% url 'main:logout' %}" class="block text-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+            Logout
+          </a>
+        {% else %}
+          <a href="{% url 'main:login' %}" class="block text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300 mb-2">
+            Login
+          </a>
+          <a href="{% url 'main:register' %}" class="block text-center bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+            Register
+          </a>
+        {% endif %}
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const menu = document.querySelector(".mobile-menu");
+    
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </nav>
+```
+
+Create a card_info.html file in the main/templates directory, then add the following HTML code:
+```
+<div class="bg-indigo-700 rounded-xl overflow-hidden border-2 border-indigo-800">
+    <div class="p-4 animate-shine">
+      <h5 class="text-lg font-semibold text-gray-200">{{ title }}</h5>
+      <p class="text-white">{{ value }}</p>
+    </div>
+</div>
+```
+
+For each product card, create two buttons to edit and delete the product on that card!
+=
+
+1. Create a Card Template for Products (card_product.html):
+```
+<div class="relative break-inside-avoid">
+  <div class="relative bg-white shadow-md rounded-lg mb-6 break-inside-avoid flex flex-col border border-gray-300 transform hover:scale-105 transition-transform duration-300">
+    <div class="p-4">
+      <h3 class="font-bold text-xl mb-2">{{ product_entry.name }}</h3>
+      <p class="text-gray-700 mb-2">{{ product_entry.description }}</p>
+      <p class="text-gray-700 font-semibold mb-2">Price: ${{ product_entry.price }}</p>
+    </div>
+    <div class="flex justify-end p-4 space-x-2">
+      <a href="{% url 'main:edit_product' product_entry.pk %}" class="bg-yellow-500 hover:bg-yellow-600 text-white rounded-full p-2 transition duration-300 shadow-md">
+        Edit
+      </a>
+      <a href="{% url 'main:delete_product' product_entry.pk %}" class="bg-red-500 hover:bg-red-600 text-white rounded-full p-2 transition duration-300 shadow-md">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
+```
+
+2. Add an Image and Message for No Products:
+
+I added an image named no-products.png to the static/image directory.
+
+3. Modify the Product List Template (main.html):
+```
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<title>Product List</title>
+{% endblock meta %}
+{% block content %}
+{% include 'navbar.html' %}
+<div class="overflow-x-hidden px-4 md:px-8 pb-8 pt-24 min-h-screen bg-gray-100 flex flex-col">
+  <div class="flex justify-end mb-6">
+      <a href="{% url 'main:create_product_entry' %}" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+          Add New Product
+      </a>
+  </div>
+  
+  {% if not product_entries %}
+  <div class="flex flex-col items-center justify-center min-h-[24rem] p-6">
+      <img src="{% static 'image/no-products.png' %}" alt="No products" class="w-32 h-32 mb-4"/>
+      <p class="text-center text-gray-600 mt-4">No products are registered in the application.</p>
+  </div>
+  {% else %}
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+      {% for product_entry in product_entries %}
+          {% include 'card_product.html' with product_entry=product_entry %}
+      {% endfor %}
+  </div>
+  {% endif %}
+</div>
+{% endblock content %}
+```
+
+
+
 Customize the login, register, and add product pages to be as attractive as possible.
 =
 
@@ -454,13 +591,6 @@ If there are no products saved in the application, the product list page will di
 If there are products saved, the product list page will display details of each product using cards (must not be exactly the same as the design in the Tutorial!).
 =
 
-
-For each product card, create two buttons to edit and delete the product on that card!
-=
-
-
-Create a navigation bar (navbar) for the features in the application that is responsive to different device sizes, especially mobile and desktop.
-=
 
 ==============================================================================================================================================================================================================================================
 =
