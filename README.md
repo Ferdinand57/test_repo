@@ -52,7 +52,7 @@ If there are multiple CSS selectors for an HTML element, explain the priority or
 =
 When we apply styles to an HTML element using CSS, sometimes multiple styles might conflict because they target the same element. In such cases, the browser follows a specific priority order to decide which style to apply. The priority order from highest to lowest is:
 
-Inline Styles: These are styles written directly in the HTML element using the style attribute. Inline styles have the highest priority because they are applied directly to the element. For example:
+- Inline Styles: These are styles written directly in the HTML element using the style attribute. Inline styles have the highest priority because they are applied directly to the element. For example:
     
 ```
 html
@@ -60,7 +60,7 @@ html
 <p style="color: blue;">This text is blue.</p>
 ```
 
-External and Internal Style Sheets: These styles are defined either in a separate CSS file linked to the HTML (external) or within a <style> tag in the HTML document itself (internal). Styles from external and internal style sheets have a lower priority than inline styles but will override browser defaults. For example:
+- External and Internal Style Sheets: These styles are defined either in a separate CSS file linked to the HTML (external) or within a <style> tag in the HTML document itself (internal). Styles from external and internal style sheets have a lower priority than inline styles but will override browser defaults. For example:
 
 ```
 html
@@ -76,12 +76,13 @@ html
 <link rel="stylesheet" href="styles.css">
 ```
 
-Browser Default: If no styles are provided, the browser applies its default styles to elements. These are the lowest in priority and are only used when no other styles are specified.
+- Browser Default: If no styles are provided, the browser applies its default styles to elements. These are the lowest in priority and are only used when no other styles are specified.
 
 In summary, if an element has styles defined at multiple levels, the browser will apply the style with the highest priority. Inline styles override external and internal style sheets, which in turn override the browser's default styles.
 
 Why does responsive design become an important concept in web application development? Give examples of applications that have and have not implemented responsive design!
 =
+
 Responsive design is essential in web development because it ensures that websites are accessible and user-friendly across a variety of devices with different screen sizes and capabilities. With the increasing use of smartphones and tablets, people access websites on devices other than desktop computers. Responsive design allows a website to adapt its layout and content to fit the screen of the device being used, providing an optimal viewing experience
 
 For example:
@@ -94,14 +95,15 @@ Responsive design improves user experience by ensuring that content is presented
 
 Explain the differences between margin, border, and padding, and how to implement these three things!
 =
+
 In web design, understanding the box model is crucial. The box model describes how elements are structured and how spacing works around them. It consists of:
 
-    Content: The actual text, images, or other media inside the element.
-    Padding: The space between the content and the element's border. Padding adds internal spacing within the element.
-    Border: A line or edge that surrounds the padding and content. It defines the outline of the element.
-    Margin: The space outside the border that separates the element from other elements. Margins add external spacing between elements.
+- Content: The actual text, images, or other media inside the element.
+- Padding: The space between the content and the element's border. Padding adds internal spacing within the element.
+- Border: A line or edge that surrounds the padding and content. It defines the outline of the element.
+- Margin: The space outside the border that separates the element from other elements. Margins add external spacing between elements.
 
-Here's how they differ:
+The difference are the following:
 
 - Margin:
 
@@ -152,6 +154,7 @@ css
 
 Explain the concepts of flex box and grid layout along with their uses!
 =
+
 Flexbox and grid are modern CSS layout systems that help us design responsive and flexible web layouts more easily
 
 Flexbox (Flexible Box Layout):
