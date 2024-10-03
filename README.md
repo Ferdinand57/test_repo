@@ -44,7 +44,8 @@ else:
 AJAX GET
 =
 
-- Modify the codes in data cards to able to use AJAX GET.
+Modify the codes in data cards to able to use AJAX GET.
+=
 
 First, we remove the direct fetching of product_entries in the views.py file, as we will now fetch this data asynchronously.
 ```
@@ -86,7 +87,8 @@ After removing the above code, we add a new div element that will serve as a con
 <div id="product_entry_cards"></div>
 ```
 
-- Retrieve data using AJAX GET. Make sure that the datas retrieved are only the datas belonging to the logged in user.
+Retrieve data using AJAX GET. Make sure that the datas retrieved are only the datas belonging to the logged in user.
+=
 
 We create a JavaScript function getProductEntries to fetch the product data asynchronously.
 
@@ -178,7 +180,8 @@ By adjusting our views and templates, we ensure that only the logged-in user's d
 AJAX POST
 =
 
-- Create a button that opens a modal with a form for adding a product entry.
+Create a button that opens a modal with a form for adding a product entry.
+=
 
 We add a modal form to our application, which is triggered by a button click.
 ```
@@ -261,7 +264,8 @@ We update the existing button and add a new button to trigger the modal.
 
 NOTE: The modal is triggered by clicking a button on the main page. When adding a product entry successfully, the modal should be closed, and the form input should be cleared from the data entered before. If adding the product entry fails, show an error message.
 
-- Create a new view function to add a new product entry to the database.
+Create a new view function to add a new product entry to the database.
+=
 
 In views.py, we define a new function add_product_entry_ajax to handle the AJAX POST request.
 ```
@@ -288,7 +292,8 @@ def add_product_entry_ajax(request):
     return HttpResponse(b"CREATED", status=201)
 ```
 
-- Create a /create-ajax/ path that routes to the new view function you created.
+Create a /create-ajax/ path that routes to the new view function you created.
+=
 
 from main.views import ..., add_product_entry_ajax
 ```
@@ -298,7 +303,8 @@ urlpatterns = [
 ]
 ```
 
-- Connect the form you created inside the modal to the /create-ajax/ path.
+Connect the form you created inside the modal to the /create-ajax/ path.
+=
 
 We create a JavaScript function addProductEntry to handle form submission via AJAX.
 ```
@@ -323,7 +329,8 @@ We create a JavaScript function addProductEntry to handle form submission via AJ
 </script>
 ```
 
-- Perform asynchronous refresh on the main page to display the latest item list without reloading the entire main page.
+Perform asynchronous refresh on the main page to display the latest item list without reloading the entire main page.
+=
 
 WARNING: Make sure the AJAX GET and POST can be done securely.
 
