@@ -326,20 +326,83 @@ Tutorial: Protecting the Application from Cross Site Scripting (XSS)
 - Trying XSS
 
 1. Add a new product entry with the value of the mood field as follows. Other fields can be filled in according to your preference.
+```
+<img src=x onerror="alert('XSS!');">
+```
+
 2. Press the save button and if the storage is successful, you will get an alert with the value XSS! as shown in the figure below.
+
 
 - Adding strip_tags to "Clean Up" New Data
 
 1. Open the views.py and forms.py files and add the following imports.
-2. In the add_mood_entry_ajax function in the views.py file, use the strip_tags function on the mood and feelings data before the data is inserted into the MoodEntry.
-3. On the MoodEntryForm class in the forms.py file, add the following two methods.
+```
+from django.utils.html import strip_tags
+```
+
+2. In the add_product_entry_ajax function in the views.py file, use the strip_tags function on the name and description data before the data is inserted into the ProductEntry.
+```
+...
+@csrf_exempt
+@require_POST
+def add_product_entry_ajax(request):
+    name = strip_tags(request.POST.get("name")) # strip HTML tags!
+    description = strip_tags(request.POST.get("description")) # strip HTML tags!
+    ...
+```
+
+3. On the ProductEntryForm class in the forms.py file, add the following two methods.
+```
+...
+class ProductEntryForm(ModelForm):
+    class Meta:
+        ...
+    
+    def clean_name(self):
+        name = self.cleaned_data["name"]
+        return strip_tags(name)
+
+    def clean_description(self):
+        description = self.cleaned_data["description"]
+        return strip_tags(description)
+...
+```
+
 4. After adding strip_tags, remove the data that you have just added and try to add it again. If you get an error on the form that says the mood field cannot be empty, then congratulations, you have added a security hole against XSS! If you do not get an error, check again whether you have followed the steps above.
+
 
 - Sanitizing Data with DOMPurify
 
 1. Open the main.html file and add the following code to the meta block.
-2. After that, add the following code to the refreshMoodEntries function that you have added previously.
+```
+{% block meta %}
+...
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.7/dist/purify.min.js"></script>
+...
+{% endblock meta %}
+```
+
+2. After that, add the following code to the refreshProductEntries function that you have added previously.
+```
+<script>
+    ...
+    async function refreshProductEntries() {
+        ...
+        productEntries.forEach((item) => {
+            const name = DOMPurify.sanitize(item.fields.name);
+            const description = DOMPurify.sanitize(item.fields.description);
+            ...
+        });
+        ...
+    }
+    ...
+</script>
+```
+
+WARNING: Don't forget to change all occurrences of item.fields.name to name and item.fields.description to description.
+
 3. Refresh the main page and if you have previously had dirty data like the alert box that shows up, then the alert box should no longer appear on the browser.
+
 
 Explain how you implemented the checklist above step-by-step (not just following the tutorial)!
 =
