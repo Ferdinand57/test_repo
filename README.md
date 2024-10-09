@@ -8,7 +8,9 @@
 - Bryant Warrick Cai		
 
 ## Application description
-Restaurant Locator based on Bali, Denpasar
+Application for user to views restaurants and for restaurants owner to add and manage their ownn restaurants profile
+
+The user will be able to use all sort of features which are finding restaurants near the user, browsing our denpasar based restaurants catalog, sort the catalog in various way such as cuisine, and even viewing a spesific's restaurants detail
 
 ## List of modules to be implemented
 ```
@@ -17,10 +19,11 @@ authentication
 reviews
 map 
 admin_dashboard
-filter
+navigation
 ```
 
-
+Other users works on these:
+- 
 
 ## Souce of initial dataset
 https://overpass-turbo.eu
@@ -28,13 +31,10 @@ https://overpass-turbo.eu
 ## User roles
 Roles in the site:
 - Admin:
-    This user is allowed to modify the web or restaurant in anyway it fits
+    This user is allowed to add/remove/modify all restaurants in the system.
 
-- Client:
-    This user is only allowed to view restaurants and not allowed to add restaurants.
-
-- Restaurant Owner:
-    This user is only allowed to view restaurants and add new restaurants.
+- User:
+    This user is only allowed to view restaurants and cannot add/remove/modify restaurants.
 
 ## Application deployment link
 ```
