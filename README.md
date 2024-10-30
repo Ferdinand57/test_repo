@@ -1,105 +1,73 @@
-# denpasar-food
-## Group members
-- Derensh Pandian		
-- Isaac Jesse Boentoro		
-- Donia Sakji		
-- Ferdinand Bonfilio Simamora		
-- Adiena Nimeesha Adiwinastwan		
-- Bryant Warrick Cai		
+# Bonbon's Shop
 
-## Application description
-Application for user to views restaurants and for restaurants owner to add and manage their ownn restaurants profile
+## Assignment Answers
 
-The user will be able to use all sort of features which are finding restaurants near the user, browsing our denpasar based restaurants catalog, sort the catalog in various way such as cuisine, and even viewing a spesific's restaurants detail
+### 1. Explain what are stateless widgets and stateful widgets, and explain the difference between them.
 
-## List of modules to be implemented
-```
-restaurants
-authentication
-reviews
-map 
-admin_dashboard
-navigation
-```
+**Answer:**
 
-Other users works on these:
-- 
+In Flutter, widgets are like the building blocks of the app's user interface.
 
-## Souce of initial dataset
-https://overpass-turbo.eu
+- **Stateless widgets** are like pictures—they display static content that doesn't change over time. They are used for parts of the app that don't need to update dynamically.
 
-## User roles
-Roles in the site:
-- Admin:
-    This user is allowed to add/remove/modify all restaurants in the system.
+- **Stateful widgets** are like interactive gadgets—they can change and update in response to user actions or data changes. They are used when the app needs to react to changes.
 
-- User:
-    This user is only allowed to view restaurants and cannot add/remove/modify restaurants.
+The key difference is that stateless widgets remain the same once built, while stateful widgets can rebuild themselves when their state changes.
 
-## Application deployment link
-```
-tba
-```
+### 2. Mention the widgets that you have used for this project and their uses.
 
-## Instruction for other user to start the code:
-NOTE: The following instructions ASSUME that your current local repo is fresh out of 
-```
-git clone https://github.com/K6-PBD-Midterm/bali-food-guide.git
-```
+**Answer:**
 
-If you are in windows use `python`, if you're on linux/mac use `python3`
+- **MaterialApp**: Sets up the app's basic configurations, including the theme and home screen.
+- **Scaffold**: Provides a structure for the app, including app bar and body.
+- **AppBar**: Displays the app bar at the top with the shop's name.
+- **Text**: Displays text on the screen.
+- **GridView**: Creates a grid layout to display the buttons.
+- **Material**: Applies Material Design styling to widgets.
+- **InkWell**: Makes widgets respond to touch (used to create tappable buttons).
+- **Icon**: Displays an icon from the Material Icons library.
+- **SnackBar**: Shows brief messages at the bottom of the screen in response to user actions.
 
-Make sure you are in the root folder when running startup code, for example:
+### 3. What is the use-case for setState()? Explain the variable that can be affected by setState().
 
-```
-for Windows
-C:\Users\ferdi\OneDrive\Desktop\bali-food-guide>
+**Answer:**
 
-for Mac
+**setState()** is used in stateful widgets to inform the app that some data has changed and the UI needs to update to reflect this change. It's like telling the app to refresh a part of the screen.
 
-```
+Variables that can be affected by **setState()** are those that are part of the widget's state and can change over time, such as counters, form inputs, or any dynamic data.
 
-Make sure you do the following startup code in order (except if told otherwise)
+(Note: In this project, we used stateless widgets, so **setState()** was not utilized.)
 
-### Step 1:
-Inside the root directory of this repository, run:
-```
-python -m venv env
-```
+### 4. Explain the difference between const and final keyword.
 
-### Step 2:
-Activate the virtual environment by running:
+**Answer:**
 
-Windows:
-```
-env\Scripts\activate
-```
+- **const**: Indicates that a value is constant and unchangeable. It must be known at compile time. It's like setting something in stone—it cannot be altered.
 
-Unix (Mac/Linux):
-```
-source env/bin/activate
-```
+- **final**: Means that a variable can be set once and cannot be changed afterward. The value can be determined at runtime. It's like filling a jar—you can put something in it once, and then it's sealed.
 
-Note: On Windows, if you get an error that running scripts is disabled on your system, follow these steps:
-1. Open Windows PowerShell as an administrator. (Search "PowerShell" on start menu, then right-click -> Run as administrator)
-2. Run the following command: `Set-ExecutionPolicy Unrestricted -Force`
+Both are used to create variables that shouldn't change, but **const** is more restrictive and requires the value to be known ahead of time.
 
-### Step 3:
-Inside the virtual environment (with `(env)` indicated in the terminal input line), run:
-```
-pip install -r requirements.txt
-```
+### 5. Explain how you implemented the checklist above step-by-step.
 
-### Step 4:
-Run the following commands:
-```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py import_restaurants
-```
+**Answer:**
 
-### Step 5:
-```
-python manage.py runserver
-```
+1. **Created a new Flutter application named `bonbon_shop`.**
 
+2. **Modified `main.dart`** to change the app title to "Bonbon's Shop" and adjusted the theme colors to shades of orange to match the shop's theme.
+
+3. **Created `menu.dart`** in the `lib` directory to organize the main menu code separately from `main.dart`.
+
+4. **Moved `MyHomePage` from `main.dart` to `menu.dart`**, adjusting it to display the shop name and a welcome message.
+
+5. **Created a list of buttons**—View Product List, Add Product, and Logout—each with its own icon and assigned different colors to each to match the orange theme.
+
+6. **Created the `ItemCard` class** to display each button as a tappable card with an icon and text.
+
+7. **Implemented `onTap` actions** for each button using `InkWell` to show a `SnackBar` message when pressed.
+
+8. **Updated the `build` method** in `MyHomePage` to display the buttons using a `GridView`.
+
+9. **Answered the required questions in `README.md`**, explaining concepts in simple terms suitable for non-programmers.
+
+10. **Performed `git add`, `commit`, and `push` to GitHub** to save and share the project.
