@@ -1,3 +1,12 @@
+# Answer the following questions in README.md in the root folder (please modify the README.md you created earlier; add subtitles for each assignment).
+## 1. What is the purpose of const in Flutter? Explain the advantages of using const in Flutter code. When should we use const, and when should it not be used?
+## 2. Explain and compare the usage of Column and Row in Flutter. Provide example implementations of each layout widget!
+## 3. List the input elements you used on the form page in this assignment. Are there other Flutter input elements you didn’t use in this assignment? Explain!
+## 4. How do you set the theme within a Flutter application to ensure consistency? Did you implement a theme in your application?
+## 5. How do you manage navigation in a multi-page Flutter application?
+
+
+
 # The checklist for this assignment is as follows:
 
 
