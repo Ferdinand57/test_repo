@@ -341,6 +341,7 @@ productentry_form.dart
 
 we achive implement the above by doing the following piece of code:
 
+left_drawer.dart
 ```
           ListTile(
             leading: const Icon(Icons.home_outlined),
