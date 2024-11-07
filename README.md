@@ -194,10 +194,66 @@ This setup allows users to move between different pages smoothly.
 
 ## Create at least one new page in the application, specifically a form page to add a new item with the following requirements:
 
+Explanation:
+
+Following the tutorial's section on Adding Forms and Input Elements, I created a new page called ProductEntryFormPage in the productentry_form.dart file. This page allows users to input details about a new product they want to add to the shop.
+
+    The page is a StatefulWidget, which means it can maintain state changes, such as form input values.
+
+    The Scaffold widget provides the basic layout with an AppBar and a Form in the body.
+
+Code Reference:
+
+class ProductEntryFormPage extends StatefulWidget {
+  const ProductEntryFormPage({super.key});
+
+  @override
+  State<ProductEntryFormPage> createState() => _ProductEntryFormPageState();
+}
 
 ### Use at least three input elements: name, amount, and description. Add input elements according to the model in your previous Django project.
 
+Explanation:
+
+As per the tutorial's guidance on adding input fields to a form, I included three TextFormField widgets in the form for:
+
+    Product Name (_product): Captures the name of the product.
+
+    Descriptions (_descriptions): Allows the user to provide a description of the product.
+
+    Product Price (_productIntensity): Collects the price of the product, ensuring it is a numerical value.
+
+These fields correspond to the data model used in the previous Django project, ensuring consistency across applications.
+
+Code Reference:
+
+String _product = "";
+String _descriptions = "";
+int _productIntensity = 0;
+
 ### Include a Save button.
+
+Explanation:
+
+In line with the tutorial's instructions on adding a button to submit the form, I added an ElevatedButton widget labeled "Save."
+
+    The button is placed inside an Align and Padding widget to position it correctly.
+
+    When pressed, it triggers the form validation and displays the entered data.
+
+Code Reference:
+
+ElevatedButton(
+  onPressed: () {
+    if (_formKey.currentState!.validate()) {
+      // Show dialog with entered data
+    }
+  },
+  child: const Text(
+    "Save",
+    style: TextStyle(color: Colors.white),
+  ),
+),
 
 ### Each input element in the form must also be validated with the following criteria:
 
@@ -208,9 +264,101 @@ This setup allows users to move between different pages smoothly.
 
 warning: Pay attention to cases such as negative numbers, minimum string length (if applicable), maximum string length (if applicable), and so on. It's not just about data types!
 
+Explanation:
+
+Using the tutorial's section on Form Validation, I added validator functions to each TextFormField to ensure:
+
+    No Empty Fields: Each field checks if the input is null or empty and returns an error message if so.
+
+    Correct Data Types: For the product price, I added additional validation to ensure the input is a positive integer.
+
+    Additional Constraints: The price cannot be negative, handling cases beyond just data types.
+
+Code Reference:
+
+validator: (String? value) {
+  if (value == null || value.isEmpty) {
+    return "Product cannot be empty!";
+  }
+  return null;
+},
+
+For the product price:
+
+validator: (String? value) {
+  if (value == null || value.isEmpty) {
+    return "Product price cannot be empty!";
+  }
+  int? price = int.tryParse(value);
+  if (price == null) {
+    return "Product price must be a number!";
+  }
+  if (price < 0) {
+    return "Product price cannot be negative!";
+  }
+  return null;
+},
+
 ## Redirect the user to the new item addition form when they press the Add Item button on the main page.
 
+Explanation:
+
+Referring to the tutorial's section on Adding Navigation to the Button, I modified the onTap function of the "Add Product" button in product_card.dart to navigate to the ProductEntryFormPage.
+
+    Used Navigator.push() to add the form page onto the navigation stack, allowing users to return to the main page using the back button.
+
+Code Reference:
+
+if (item.name == "Add Product") {
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const ProductEntryFormPage()),
+  );
+}
+
 ## Display the data from the form in a pop-up after pressing the Save button on the new item addition form page.
+
+Explanation:
+
+Based on the tutorial's section on Displaying Data, I implemented a showDialog() function that shows an AlertDialog when the form is successfully validated and the Save button is pressed.
+
+    The dialog displays the entered product information.
+
+    It includes an OK button that closes the dialog and resets the form.
+
+Code Reference:
+
+onPressed: () {
+  if (_formKey.currentState!.validate()) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Product successfully saved'),
+          content: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Product: $_product'),
+                Text('Descriptions: $_descriptions'),
+                Text('Product price: $_productIntensity \$'),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              child: const Text('OK'),
+              onPressed: () {
+                Navigator.pop(context);
+                _formKey.currentState!.reset();
+              },
+            ),
+          ],
+        );
+      },
+    );
+  }
+},
 
 ## Create a drawer in the application with the following requirements:
 
@@ -220,3 +368,47 @@ warning: Pay attention to cases such as negative numbers, minimum string length 
 
 - When selecting the Add Item option, the application should redirect the user to the new item addition form page.
 
+Explanation:
+
+Following the tutorial's section on Adding a Drawer Menu for Navigation, I created a LeftDrawer widget in left_drawer.dart that contains navigation options.
+
+    Drawer Structure:
+
+        Contains a DrawerHeader with the application's title and a brief description.
+
+        Includes two ListTile widgets representing the Home and Add Product options.
+
+    Navigation Logic:
+
+        Used Navigator.pushReplacement() in the onTap functions to navigate to the appropriate pages.
+
+        This replaces the current page with the new one, keeping the navigation stack clean.
+
+Code Reference:
+
+ListTile(
+  leading: const Icon(Icons.home_outlined),
+  title: const Text('Home Page'),
+  onTap: () {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => MyHomePage(),
+      ),
+    );
+  },
+),
+ListTile(
+  leading: const Icon(Icons.add_business_outlined),
+  title: const Text('Add Product'),
+  onTap: () {
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(
+        builder: (context) => ProductEntryFormPage(),
+      ),
+    );
+  },
+),
+
+By implementing the drawer, users can easily navigate between the main page and the form page from anywhere in the app.
