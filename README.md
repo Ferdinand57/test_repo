@@ -84,6 +84,44 @@ ElevatedButton(
 ```
 This code handles the main function of sending registration data to the server and processing the server's response. If registration is successful, it shows a success message and navigates the user to the login page. If it fails, it displays an error message
 
+- Implementing the Registration View in Django: On the Django side, I needed to handle the registration request and create a new user. In my bonbon_shop project, the registration view is defined in views.py
+```
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib import messages
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
+def register(request):
+    form = UserCreationForm()
+
+    if request.method == "POST":
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Your account has been successfully created!')
+            return redirect('main:login')
+    context = {'form': form}
+    return render(request, 'register.html', context)
+```
+The main function of this code is to handle user registration:
+- It checks if the request method is POST.
+- It uses UserCreationForm to validate and save the new user data.
+- If the form is valid, it saves the new user and redirects to the login page.
+- If the form is invalid or the method is not POST, it renders the registration page with the form.
+
+Updating URLs in Django: I added the registration endpoint in bonbon_shop/urls.py:
+```
+from django.urls import path
+from .views import register
+
+urlpatterns = [
+    # other paths
+    path('register/', register, name='register'),
+    # other paths
+]
+```
+This makes the registration endpoint accessible at /register/
 
 ## Create a login page in the Flutter project.
 
@@ -178,6 +216,53 @@ ElevatedButton(
 ```
 This code performs the main function of authenticating the user. It sends the username and password to the server, and depending on the server's response, it either logs the user in and navigates to the home page or displays an error message
 
+- Implementing the Login View in Django: In bonbon_shop/views.py, I defined the login view.
+```
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib import messages
+from django.contrib.auth import authenticate, login
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+import datetime
+
+def login_user(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(data=request.POST)
+
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            response = HttpResponseRedirect(reverse("main:show_main"))
+            response.set_cookie('last_login', str(datetime.datetime.now()))
+            return response
+        else:
+            messages.error(request, "Invalid username or password. Please try again.")
+    else:
+        form = AuthenticationForm(request)
+    context = {'form': form}
+    return render(request, 'login.html', context)
+```
+The main function of this code is to authenticate users:
+- It checks if the request method is POST.
+- It uses AuthenticationForm to validate the credentials.
+- If valid, it logs the user in and redirects to the main page.
+- It sets a cookie to record the last login time.
+- If invalid, it displays an error message.
+
+Updating URLs in Django: I added the login endpoint in bonbon_shop/urls.py:
+```
+from django.urls import path
+from .views import login_user
+
+urlpatterns = [
+    # other paths
+    path('login/', login_user, name='login'),
+    # other paths
+]
+```
+This makes the login endpoint accessible at /login/
+
 ## Integrate the Django authentication system with the Flutter project.
 
 Integration was achieved by ensuring that the Flutter app could communicate with the Django server and maintain session state
@@ -232,9 +317,60 @@ Widget build(BuildContext context) {
 ```
 This allows the app to include session cookies in HTTP requests, ensuring that the server recognizes the user's session
 
+- Configuring CORS and CSRF in Django
+
+In settings.py, I added configurations to handle CORS and CSRF settings to allow communication from the Flutter app
+```
+INSTALLED_APPS = [
+    # other apps
+    'corsheaders',
+    'main',
+    'authentication',
+]
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = 'None'
+SESSION_COOKIE_SAMESITE = 'None'
+```
+These settings enable the Flutter app to communicate with the Django backend by allowing cross-origin requests and properly handling cookies
+
 ## Create a custom model according to your Django application project.
 
-I created a custom model in Flutter to match the data structure of the Django models, facilitating data handling in the app
+- In bonbon_shop/models.py, I defined the ProductEntry model.
+```
+from django.db import models
+import uuid
+from django.contrib.auth.models import User
+
+class ProductEntry(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    name = models.CharField(max_length=255)
+    time = models.DateField(auto_now_add=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    description = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.name
+```
+This model represents the product data in the database, including fields like user, name, time, price, and description
+
+I also created a custom model in Flutter to match the data structure of the Django models, facilitating data handling in the app
 
 - I used Quicktype to generate Dart model code based on a sample JSON response from the Django endpoint
 
@@ -349,6 +485,31 @@ class _ProductEntryPageState extends State<ProductEntryPage> {
 ```
 The main function of this code is to fetch product data from the server and display it in a list
 
+- In bonbon_shop/views.py, I added a view to return the list of products in JSON format.
+```
+from django.http import HttpResponse
+from django.core import serializers
+from .models import ProductEntry
+from django.contrib.auth.decorators import login_required
+
+@login_required(login_url='/login')
+def show_json(request):
+    data = ProductEntry.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
+```
+This view serializes the product data and returns it as JSON, filtering products by the current user.
+
+Updating URLs in Django: I added the JSON endpoint in bonbon_shop/urls.py:
+```
+from django.urls import path
+from .views import show_json
+
+urlpatterns = [
+    # other paths
+    path('json/', show_json, name='show_json'),
+    # other paths
+]
+```
 
 ### Display the name, price, and description of each item on this page.
 
@@ -482,7 +643,7 @@ class ProductDetailPage extends StatelessWidget {
 
 The main function of this code is to display all details of a selected product, including name, description, price, and date added. It also provides a button to return to the product list page
 
-In list_productentry.dart, I added navigation to the detail page when a product is tapped
+- In list_productentry.dart, I added navigation to the detail page when a product is tapped
 ```
 onTap: () {
   Navigator.push(
@@ -504,12 +665,10 @@ To ensure that users see only their own products, I made changes to both the bac
 
 - In the Django view that returns the JSON data, I filtered the products by the logged-in user
 ```
-def product_list_json(request):
-    if request.user.is_authenticated:
-        products = Product.objects.filter(user=request.user)
-        # Return JSON response
-    else:
-        # Return empty response or error
+@login_required(login_url='/login')
+def show_json(request):
+    data = ProductEntry.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
 ```
 The main function of this code is to retrieve only the products that belong to the authenticated user, ensuring that users see only their own data
