@@ -1,121 +1,139 @@
-# denpasar-food
-## Group members
-- Derensh Pandian		
-- Isaac Jesse Boentoro		
-- Donia Sakji		
-- Ferdinand Bonfilio Simamora		
-- Adiena Nimeesha Adiwinastwan		
-- Bryant Warrick Cai		
+# Answer the following questions in the README.md in the root folder (please modify the README.md you previously created; add subheadings for each assignment):
 
-## Link to the APK (not required at Stage I. The APK link can be added to README.md after completing Stage II.)
+## Explain why we need to create a model to retrieve or send JSON data. Will an error occur if we don't create a model first?
 
+Creating a model is like making a template or blueprint for the data we expect to receive or send. Imagine you're ordering a piece of furniture online. Knowing its dimensions, color, and material helps you visualize and plan where to place it in your home. Similarly, a model in our app defines the structure of the data—what pieces of information we'll have, like names, dates, or numbers.
 
+When our app communicates with a web service, the data is often in JSON format, which is a way of structuring data that's easy for computers to read and write. However, raw JSON data can be messy and hard to work with directly in the app. By creating a model, we can neatly convert this JSON data into objects that are easy to use within our app.
 
-## Application description
+If we don't create a model first, it would be like trying to assemble furniture without instructions or a picture of the final product. While it's technically possible, it's much more difficult and prone to mistakes. Without a model, our app might not understand how to handle the data properly, which could lead to errors when trying to display or manipulate the information.
 
-Denpasar Restaurant Finder - Flutter Application
+## Explain the function of the http library that you implemented for this task.
 
-This Flutter-based mobile application enables users to discover and explore restaurants in the Denpasar area. It interfaces with a Django-based web backend to provide up-to-date restaurant information.
+The http library acts like a mail carrier between our app and the web service (server). Just as a mail carrier delivers letters and packages between people, the http library sends requests to and receives responses from the server over the internet.
 
-Features:
+When our app needs to fetch data (like getting the latest news or user information), it uses the http library to send a request to the server. The server then sends back the data, and the http library helps our app receive and understand it.
 
-- Find Nearby Restaurants: Utilizes device location services to display restaurants close to the user's current position.
-- Browse Restaurant Database: Offers access to a comprehensive database of restaurants in Denpasar.
-- Sort and Filter Options: Allows users to sort and filter restaurants by criteria such as cuisine type, price range, and more.
-- Restaurant Details: Provides detailed information about each restaurant, including menus, photos, operating hours, and contact information.
-- "Restaurants Near Me" Feature: A dedicated function to list nearby dining options and view their locations on a map.
+In short, the http library enables our app to communicate over the internet, making it possible to retrieve information from web services and display it to the user.
 
-Technical Overview:
+## Explain the function of CookieRequest and why it’s necessary to share the CookieRequest instance with all components in the Flutter app.
 
-- Frontend: Developed with Flutter for a consistent user experience across Android and iOS platforms.
-- Backend: Powered by a Django-based web application that manages restaurant data and handles user queries.
+CookieRequest is like a personal assistant that keeps track of your session when you're interacting with a website or service. It manages cookies, which are small pieces of data stored on your device that help websites remember who you are—like staying logged in or keeping items in a shopping cart.
 
-## List of modules to be implemented
-```
-restaurants
-authentication
-reviews
-maps
-admin_dashboard
-navigation
-```
+In our app, CookieRequest handles sending requests to the server and managing these cookies. By sharing the same CookieRequest instance with all parts of the app, we ensure that every component is on the same page regarding the user's session.
 
-## Integration with the web service to connect to the web application created in the midterm project
+This is important because:
 
-TODO: How each module interact with the web-service
+- Consistency: All parts of the app access the same session information, so the user stays logged in across different screens.
+- State Management: It helps in maintaining the user's authentication state (logged in or out) throughout the app.
+- Ease of Use: Sharing a single instance simplifies the code and avoids the need to pass around session information manually.
 
-## Roles or actors of the user application
+Without sharing CookieRequest, different parts of the app might not recognize that the user is logged in, leading to a confusing experience where some features require re-authentication or don't work as expected.
 
+## Explain the mechanism of data transmission, from input to display in Flutter.
 
-# Dev Notes
-## Instruction for other user to start the code:
-NOTE: The following instructions ASSUME that your current local repo is fresh out of 
-```
-git clone https://github.com/K6-PBD-Midterm/denpasar_food_mobile.git
-```
+Let's think of the app as a two-way communication system between the user and the server:
 
-If you are in windows use `python`, if you're on linux/mac use `python3`
+1. User Input: The user interacts with the app by entering data—like filling out a form, typing a message, or pressing a button.
 
-Make sure you are in the root folder when running startup code, for example:
+2. Sending Data: The app takes this input and packages it into a request. Using tools like the http library or CookieRequest, it sends this request over the internet to the server.
 
-```
-for Windows
-C:\Users\ferdi\OneDrive\Desktop\denpasar-food>
+3. Server Processing: The server receives the request, processes the data (perhaps saving it to a database or performing some calculations), and prepares a response.
 
-for Mac
+4. Receiving Data: The app receives the server's response, which is often in JSON format.
 
-```
+5. Data Conversion: The app uses models to convert this raw data into usable objects. This is like unwrapping a package and organizing its contents.
 
-Make sure you do the following startup code in order (except if told otherwise)
+6. Displaying Data: Finally, the app updates the user interface to display the new information. This could be showing a confirmation message, updating a list of items, or navigating to a new screen.
 
-### Step 1:
-Inside the root directory of this repository, run:
-```
-python -m venv env
-```
+Throughout this process, the app and server work together to handle data securely and efficiently, providing a seamless experience for the user.
 
-### Step 2:
-Activate the virtual environment by running:
+## Explain the authentication mechanism from login, register, to logout. Start from inputting account data in Flutter to Django’s completion of the authentication process and display of the menu in Flutter.
 
-Windows:
-```
-env\Scripts\activate
-```
+Authentication is like the security process of entering a building—you need to prove who you are to gain access.
 
-Unix (Mac/Linux):
-```
-source env/bin/activate
-```
+Login:
 
-Note: On Windows, if you get an error that running scripts is disabled on your system, follow these steps:
-1. Open Windows PowerShell as an administrator. (Search "PowerShell" on start menu, then right-click -> Run as administrator)
-2. Run the following command: `Set-ExecutionPolicy Unrestricted -Force`
+1. User Input: The user opens the app and enters their username and password into the login form.
 
-### Step 3: Install Tailwind
+2. Sending Credentials: When they tap the "Login" button, the app sends these credentials to the server using CookieRequest.
 
-If you don't have node.js installed yet, you should install it first: see this tutorial for more information: [How to Install Node.js and NPM on Windows and Mac](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac#windows).
+3. Server Verification: The server (running Django) receives the credentials and checks them against its database:
+- If the username and password match a registered user, the server recognizes the user.
+- If not, the server responds with an error message.
 
-After that, run:
-```
-npm install -D tailwindcss
-```
+4. Response Handling:
+- Success: If the credentials are correct, the server sends back a success message along with session information.
+- Failure: If not, it sends back an error message explaining the issue.
 
-### Step 4:
-Inside the virtual environment (with `(env)` indicated in the terminal input line), run:
-```
-pip install -r requirements.txt
-```
+5. Updating the App:
+- Success: The app notes that the user is now logged in and navigates to the main menu or home screen.
+- Failure: The app displays an error message to the user.
 
-### Step 5:
-Run the following commands:
-```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py load_restaurants
-```
+Register:
 
-### Step 6:
-Run the server by running the following command:
-```
-python manage.py runserver
-```
+1. User Input: A new user fills out the registration form with their desired username and password.
+
+2. Sending Data: The app sends this information to the server's registration endpoint.
+
+3. Server Processing:
+- The server checks if the username is already taken.
+- It verifies that the passwords match and meet any security requirements.
+
+4. Response Handling:
+- Success: If everything is in order, the server creates a new user account and sends back a success message.
+- Failure: If there's an issue (like the username already exists), it sends back an error message.
+
+5. Updating the App:
+- Success: The app informs the user that registration was successful and may redirect them to the login screen.
+- Failure: The app displays the error message so the user can correct the issue.
+
+Logout:
+
+1. User Action: The user chooses to log out, often by tapping a "Logout" button.
+
+2. Sending Request: The app sends a logout request to the server using CookieRequest.
+
+3. Server Processing:
+- The server ends the user's session, clearing any session data.
+
+4. Response Handling:
+- The server sends back a confirmation that the user has been logged out.
+
+5. Updating the App:
+- The app updates its state to reflect that the user is no longer logged in.
+- It navigates back to the login screen or a public area of the app.
+
+Throughout the Process:
+
+- Session Management: CookieRequest handles session cookies, ensuring that the server recognizes the user's session across different requests.
+- State Sharing: By sharing the CookieRequest instance with all components, the app maintains a consistent understanding of whether the user is logged in or out.
+- User Experience: The app provides feedback at each step—informing the user of successful actions or errors that need attention.
+
+In essence, authentication in the app involves a continuous dialogue between the user's actions, the app's handling of those actions, and the server's processing and responses, all working together to ensure secure and smooth access to the app's features.
+
+# Explain how you implement the checklist above step by step! (not just following the tutorial).
+
+## Ensure the deployment of your Django project is running smoothly. For issues related to PWS, which cannot yet be integrated with Flutter, the Teaching Assistant Team will provide further information later. In the meantime, you are allowed to perform integration on localhost only.
+    
+## Implement the registration feature in the Flutter project.
+
+## Create a login page in the Flutter project.
+
+## Integrate the Django authentication system with the Flutter project.
+
+## Create a custom model according to your Django application project.
+
+## Create a page containing a list of all items available at the JSON endpoint in Django that you have deployed.
+
+### Display the name, price, and description of each item on this page.
+
+## Create a detail page for each item listed on the Product list page.
+
+### This page can be accessed by tapping on any item on the Product list page.
+
+### Display all attributes of your item model on this page.
+
+### Add a button to return to the item list page.
+
+## Filter the item list page to display only items associated with the currently logged-in user.
