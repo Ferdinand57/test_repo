@@ -3,115 +3,114 @@
 ### Restaurants Module
 
 Interaction with Web Service:
+- Fetching Restaurant Data: The application sends HTTP GET requests to retrieve a list of restaurants, including details like names, locations, cuisines, price ranges, menus, photos, operating hours, and contact information.
 
-    Fetching Restaurant Data: The application sends HTTP GET requests to retrieve a list of restaurants, including details like names, locations, cuisines, price ranges, menus, photos, operating hours, and contact information.
-
-    Filtering and Sorting: Users can apply filters or sorting options sent as query parameters. The web service processes these and returns the filtered and sorted list.
+- Filtering and Sorting: Users can apply filters or sorting options sent as query parameters. The web service processes these and returns the filtered and sorted list.
 
 Endpoints Used:
 
-    Retrieve All Restaurants: Retrieve a paginated list of all restaurants (GET /)
-        Parameters:
-            page (optional): The page number for pagination.
+- Retrieve All Restaurants: Retrieve a paginated list of all restaurants (GET /)
+Parameters:
+-- page (optional): The page number for pagination.
 
-    Retrieve Restaurants with Filters: Retrieve restaurants based on search terms and selected cuisines (GET /?search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&cuisines=<cuisine2>&...)
-        Parameters:
-            search (optional): The search term entered by the user.
-            search_by (optional): Field to search by (name or cuisine). Default is name.
-            cuisines (optional): List of cuisines to filter by (can be multiple).
-            page (optional): The page number for pagination.
+- Retrieve Restaurants with Filters: Retrieve restaurants based on search terms and selected cuisines (GET /?search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&cuisines=<cuisine2>&...)
+Parameters:
+-- search (optional): The search term entered by the user.
+-- search_by (optional): Field to search by (name or cuisine). Default is name.
+- cuisines (optional): List of cuisines to filter by (can be multiple).
+- page (optional): The page number for pagination.
 
-    Retrieve Restaurants via AJAX: Dynamically update restaurant listings without reloading the page (GET /ajax/?search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&...)
-        Parameters: Same as above.
+- Retrieve Restaurants via AJAX: Dynamically update restaurant listings without reloading the page (GET /ajax/?   search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&...)
+-- Parameters: Same as above.
 
 Details from Views:
 
-    RestaurantListView in restaurants/views.py handles the requests and processes query parameters.
-    Pagination is managed with paginate_by = 9.
+RestaurantListView in restaurants/views.py handles the requests and processes query parameters.
+Pagination is managed with paginate_by = 9.
 
 ### Authentication Module
 
 Interaction with Web Service:
 
-    User Registration: New users register by sending HTTP POST requests with their information.
+User Registration: New users register by sending HTTP POST requests with their information.
 
-    User Login: Users log in by sending credentials via HTTP POST. The web service authenticates the user and establishes a session.
+User Login: Users log in by sending credentials via HTTP POST. The web service authenticates the user and establishes a session.
 
-    User Logout: Users log out, and the app notifies the web service to terminate the session.
+User Logout: Users log out, and the app notifies the web service to terminate the session.
 
-    User Customization: Authenticated users access and update their settings.
+User Customization: Authenticated users access and update their settings.
 
 Endpoints Used:
 
-    User Login: Authenticate a user and start a session (POST /auth/login/)
-        Parameters:
-            username: The user's username.
-            password: The user's password.
+User Login: Authenticate a user and start a session (POST /auth/login/)
+Parameters:
+username: The user's username.
+password: The user's password.
 
-    User Logout: Log out the user and end the session (POST /auth/logout/)
+User Logout: Log out the user and end the session (POST /auth/logout/)
 
-    User Registration: Register a new user account (POST /auth/register/)
-        Parameters:
-            username: Desired username.
-            password1: Password.
-            password2: Password confirmation.
+User Registration: Register a new user account (POST /auth/register/)
+Parameters:
+username: Desired username.
+password1: Password.
+password2: Password confirmation.
 
-    User Customization (Access Settings): Retrieve user-specific data (GET /auth/customization/)
+User Customization (Access Settings): Retrieve user-specific data (GET /auth/customization/)
 
-    User Customization (Update Settings): Update user customization settings (POST /auth/customization/)
-        Parameters:
-            Depends on the customization options available.
+User Customization (Update Settings): Update user customization settings (POST /auth/customization/)
+Parameters:
+Depends on the customization options available.
 
 Details from Views:
 
-    Functions in authentication/views.py handle authentication processes.
-    CustomUserCreationForm is used for registration.
-    user_customization view allows access to personalized data.
+Functions in authentication/views.py handle authentication processes.
+CustomUserCreationForm is used for registration.
+user_customization view allows access to personalized data.
 
 ### Reviews Module
 
 Interaction with Web Service:
 
-    Submitting Reviews: Authenticated users submit reviews by sending HTTP POST requests with review content, ratings, and the restaurant ID.
+Submitting Reviews: Authenticated users submit reviews by sending HTTP POST requests with review content, ratings, and the restaurant ID.
 
-    Fetching Reviews: The app retrieves reviews for a restaurant via HTTP GET requests.
+Fetching Reviews: The app retrieves reviews for a restaurant via HTTP GET requests.
 
-    Liking/Disliking Restaurants: Users like or dislike a restaurant via POST requests.
+Liking/Disliking Restaurants: Users like or dislike a restaurant via POST requests.
 
 Endpoints Used:
 
-    Get Restaurant Details and Reviews: Retrieve restaurant details and reviews (GET /reviews/restaurant/<int:restaurant_id>/)
-        Parameters:
-            restaurant_id: The ID of the restaurant.
+Get Restaurant Details and Reviews: Retrieve restaurant details and reviews (GET /reviews/restaurant/<int:restaurant_id>/)
+Parameters:
+restaurant_id: The ID of the restaurant.
 
-    Submit a Review: Submit a review for a restaurant (POST /reviews/restaurant/<int:restaurant_id>/add_review/)
-        Parameters:
-            rating: The rating given by the user.
-            comment: The review text.
+Submit a Review: Submit a review for a restaurant (POST /reviews/restaurant/<int:restaurant_id>/add_review/)
+Parameters:
+rating: The rating given by the user.
+comment: The review text.
 
-    Like a Restaurant: Like a restaurant (POST /reviews/restaurant/<int:restaurant_id>/like/)
+Like a Restaurant: Like a restaurant (POST /reviews/restaurant/<int:restaurant_id>/like/)
 
-    Dislike a Restaurant: Dislike a restaurant (POST /reviews/restaurant/<int:restaurant_id>/dislike/)
+Dislike a Restaurant: Dislike a restaurant (POST /reviews/restaurant/<int:restaurant_id>/dislike/)
 
 Details from Views:
 
-    Functions in reviews/views.py handle the operations.
-    Authentication is required for submitting reviews and liking/disliking.
+Functions in reviews/views.py handle the operations.
+Authentication is required for submitting reviews and liking/disliking.
 
 ### Maps Module
 
 Interaction with Web Service:
 
-    Fetching Location Data: The app retrieves restaurant location data to display on a map.
+Fetching Location Data: The app retrieves restaurant location data to display on a map.
 
-    Displaying Restaurants on Map: Users view restaurants on an interactive map, possibly applying filters.
+Displaying Restaurants on Map: Users view restaurants on an interactive map, possibly applying filters.
 
 Endpoints Used:
 
-    Retrieve Map View with Restaurants: Retrieve map view with restaurants (GET /map/?search=<search_term>&search_by=<search_field>)
-        Parameters:
-            search (optional): Search term.
-            search_by (optional): Field to search by (name).
+Retrieve Map View with Restaurants: Retrieve map view with restaurants (GET /map/?search=<search_term>&search_by=<search_field>)
+Parameters:
+search (optional): Search term.
+search_by (optional): Field to search by (name).
 
 Details from Views:
 
