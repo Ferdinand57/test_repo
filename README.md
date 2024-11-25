@@ -39,6 +39,7 @@
 ### Endpoints Used:
 
 - User Login: Authenticate a user and start a session (POST /auth/login/)
+    
     Parameters:
     - username: The user's username.
     - password: The user's password.
@@ -46,6 +47,7 @@
 - User Logout: Log out the user and end the session (POST /auth/logout/)
 
 - User Registration: Register a new user account (POST /auth/register/)
+    
     Parameters:
     - username: Desired username.
     - password1: Password.
@@ -54,6 +56,7 @@
 - User Customization (Access Settings): Retrieve user-specific data (GET /auth/customization/)
 
 - User Customization (Update Settings): Update user customization settings (POST /auth/customization/)
+    
     Parameters:
     - Depends on the customization options available.
 
@@ -72,10 +75,12 @@
 ### Endpoints Used:
 
 - Get Restaurant Details and Reviews: Retrieve restaurant details and reviews (GET /reviews/restaurant/<int:restaurant_id>/)
+    
     Parameters:
     - restaurant_id: The ID of the restaurant.
 
 - Submit a Review: Submit a review for a restaurant (POST /reviews/restaurant/<int:restaurant_id>/add_review/)
+    
     Parameters:
     - rating: The rating given by the user.
     - comment: The review text.
@@ -97,6 +102,7 @@
 ### Endpoints Used:
 
 - Retrieve Map View with Restaurants: Retrieve map view with restaurants (GET /map/?search=<search_term>&search_by=<search_field>)
+    
     Parameters:
     - search (optional): Search term.
     - search_by (optional): Field to search by (name).
@@ -133,48 +139,58 @@
 - Restaurant Management:
 
     - List All Restaurants (Admin View): List all restaurants with optional search functionality (GET /admin-dashboard/restaurants/?q=<query>)
+        
         Parameters:
         - q (optional): Search term for restaurant names.
 
     - Add a New Restaurant: Add a new restaurant to the database (POST /admin-dashboard/restaurants/add/)
+        
         Parameters:
         - Form data including required fields:
         - id, name, latitude, longitude, cuisines, website, phone, address, image_url
         - Optional fields as per the form.
 
     - Update Restaurant Details: Update an existing restaurant (POST /admin-dashboard/restaurants/update/<int:pk>/)
+        
         Parameters:
         - pk: Primary key (ID) of the restaurant.
         - Form data for fields to update.
 
     - Delete a Restaurant: Delete a restaurant (POST /admin-dashboard/restaurants/delete/<int:pk>/)
+        
         Parameters:
         - pk: Primary key of the restaurant.
 
     - Batch Delete Restaurants: Delete multiple restaurants at once (POST /admin-dashboard/delete/)
+        
         Parameters:
         - restaurant_ids: List of restaurant IDs to delete.
 
 - User Management:
 
     - List All Users: List all users with optional search functionality (GET /admin-dashboard/users/?q=<query>)
+        
         Parameters:
         - q (optional): Search term for usernames.
 
     - Add a New User: Add a new user account (POST /admin-dashboard/users/add/)
+        
         Parameters:
         - Form data from UserForm.
 
     - Update User Details: Update an existing user (POST /admin-dashboard/users/update/<int:pk>/)
+        
         Parameters:
         - pk: Primary key of the user.
         - Form data for fields to update.
 
     - Delete a User: Delete a user account (POST /admin-dashboard/users/delete/<int:pk>/)
+        
         Parameters:
         - pk: Primary key of the user.
 
     - Batch Delete Users: Delete multiple users at once (POST /admin-dashboard/users/delete/)
+        
         Parameters:
         - user_ids: List of user IDs to delete.
 
