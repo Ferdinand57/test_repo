@@ -1,11 +1,11 @@
 ## Integration with the Web Service to Connect to the Web Application Created in the Midterm Project
 
-### Restaurants Module
+## Restaurants Module
 
 - Fetching Restaurant Data: The application sends HTTP GET requests to retrieve a list of restaurants, including details like names, locations, cuisines, price ranges, menus, photos, operating hours, and contact information.
 - Filtering and Sorting: Users can apply filters or sorting options sent as query parameters. The web service processes these and returns the filtered and sorted list.
 
-Endpoints Used:
+### Endpoints Used:
 
 - Retrieve All Restaurants: Retrieve a paginated list of all restaurants (GET /)
 
@@ -24,19 +24,19 @@ Endpoints Used:
 
     Parameters: Same as above.
 
-Details:
+### Details:
 
 - RestaurantListView in restaurants/views.py handles the requests and processes query parameters.
 - Pagination is managed with paginate_by = 9.
 
-### Authentication Module
+## Authentication Module
 
 - User Registration: New users register by sending HTTP POST requests with their information.
 - User Login: Users log in by sending credentials via HTTP POST. The web service authenticates the user and establishes a session.
 - User Logout: Users log out, and the app notifies the web service to terminate the session.
 - User Customization: Authenticated users access and update their settings.
 
-Endpoints Used:
+### Endpoints Used:
 
 - User Login: Authenticate a user and start a session (POST /auth/login/)
     Parameters:
@@ -57,19 +57,19 @@ Endpoints Used:
     Parameters:
     - Depends on the customization options available.
 
-Details:
+### Details:
 
 - Functions in authentication/views.py handle authentication processes.
 - CustomUserCreationForm is used for registration.
 - user_customization view allows access to personalized data.
 
-### Reviews Module
+## Reviews Module
 
 - Submitting Reviews: Authenticated users submit reviews by sending HTTP POST requests with review content, ratings, and the restaurant ID.
 - Fetching Reviews: The app retrieves reviews for a restaurant via HTTP GET requests.
 - Liking/Disliking Restaurants: Users like or dislike a restaurant via POST requests.
 
-Endpoints Used:
+### Endpoints Used:
 
 - Get Restaurant Details and Reviews: Retrieve restaurant details and reviews (GET /reviews/restaurant/<int:restaurant_id>/)
     Parameters:
@@ -84,51 +84,51 @@ Endpoints Used:
 
 - Dislike a Restaurant: Dislike a restaurant (POST /reviews/restaurant/<int:restaurant_id>/dislike/)
 
-Details:
+### Details:
 
 - Functions in reviews/views.py handle the operations.
 - Authentication is required for submitting reviews and liking/disliking.
 
-### Maps Module
+## Maps Module
 
 - Fetching Location Data: The app retrieves restaurant location data to display on a map.
 - Displaying Restaurants on Map: Users view restaurants on an interactive map, possibly applying filters.
 
-Endpoints Used:
+### Endpoints Used:
 
 - Retrieve Map View with Restaurants: Retrieve map view with restaurants (GET /map/?search=<search_term>&search_by=<search_field>)
     Parameters:
     - search (optional): Search term.
     - search_by (optional): Field to search by (name).
 
-Details:
+### Details:
 
 - RestaurantMapView in maps/views.py handles the requests.
 - Restaurants are filtered within Denpasar coordinates.
 
 
-### Navigation Module
+## Navigation Module
 
 - Dynamic Content Loading: Requests data to display dynamic menu options, such as the user's name or notifications.
 - Session Management: Adjusts navigation options based on authentication status.
 
-Endpoints Used:
+### Endpoints Used:
 
 - User Customization: Retrieve user-specific data (GET /auth/customization/)
 
 - Check Authentication Status: Session-based; checked internally.
 
-Details:
+### Details:
 
 - The user_customization view provides personalized data.
 - Navigation adjusts based on request.user.is_authenticated and request.user.is_superuser.
 
-### Admin Dashboard Module
+## Admin Dashboard Module
 
 - Managing Restaurants: Admin users add, edit, or delete restaurant data via HTTP requests.
 - Managing Users: Admins manage user accounts via API endpoints.
 
-Endpoints Used:
+### Endpoints Used:
 
 - Restaurant Management:
 
@@ -178,7 +178,7 @@ Endpoints Used:
         Parameters:
         - user_ids: List of user IDs to delete.
 
-Details:
+### Details:
 
 - Views in admin_dashboard/views.py handle operations.
 - Admin access is enforced via @login_required and @user_passes_test(lambda u: u.is_superuser) decorators.
