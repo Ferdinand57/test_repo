@@ -10,6 +10,7 @@ Interaction with Web Service:
 Endpoints Used:
 
 - Retrieve All Restaurants: Retrieve a paginated list of all restaurants (GET /)
+
   Parameters:
   - page (optional): The page number for pagination.
 
