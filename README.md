@@ -15,13 +15,13 @@ Parameters:
 
 - Retrieve Restaurants with Filters: Retrieve restaurants based on search terms and selected cuisines (GET /?search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&cuisines=<cuisine2>&...)
 Parameters:
--- search (optional): The search term entered by the user.
--- search_by (optional): Field to search by (name or cuisine). Default is name.
+- search (optional): The search term entered by the user.
+- search_by (optional): Field to search by (name or cuisine). Default is name.
 - cuisines (optional): List of cuisines to filter by (can be multiple).
 - page (optional): The page number for pagination.
 
 - Retrieve Restaurants via AJAX: Dynamically update restaurant listings without reloading the page (GET /ajax/?   search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&...)
--- Parameters: Same as above.
+- Parameters: Same as above.
 
 Details from Views:
 
