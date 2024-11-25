@@ -11,7 +11,7 @@ Endpoints Used:
 
 - Retrieve All Restaurants: Retrieve a paginated list of all restaurants (GET /)
 Parameters:
--- page (optional): The page number for pagination.
+  - page (optional): The page number for pagination.
 
 - Retrieve Restaurants with Filters: Retrieve restaurants based on search terms and selected cuisines (GET /?search=<search_term>&search_by=<search_field>&cuisines=<cuisine1>&cuisines=<cuisine2>&...)
 Parameters:
