@@ -1,138 +1,65 @@
-# denpasar-food
-## Group members
-- Derensh Pandian		
-- Isaac Jesse Boentoro		
-- Donia Sakji		
-- Ferdinand Bonfilio Simamora		
-- Adiena Nimeesha Adiwinastwan		
-- Bryant Warrick Cai		
-
-## Link to the APK (not required at Stage I. The APK link can be added to README.md after completing Stage II.)
-
-Link : 
-
-## Application description
-
-Denpasar Restaurant Finder - Flutter Application
-
-This Flutter-based mobile application enables users to discover and explore restaurants in the Denpasar area. It interfaces with a Django-based web backend to provide up-to-date restaurant information.
-
-Features:
-
-- Find Nearby Restaurants: Utilizes device location services to display restaurants close to the user's current position.
-- Browse Restaurant Database: Offers access to a comprehensive database of restaurants in Denpasar.
-- Sort and Filter Options: Allows users to sort and filter restaurants by criteria such as cuisine type, price range, and more.
-- Restaurant Details: Provides detailed information about each restaurant, including menus, photos, operating hours, and contact information.
-- "Restaurants Near Me" Feature: A dedicated function to list nearby dining options and view their locations on a map.
-
-Technical Overview:
-
-- Frontend: Developed with Flutter for a consistent user experience across Android and iOS platforms.
-- Backend: Powered by a Django-based web application that manages restaurant data and handles user queries.
-
-## List of modules to be implemented
-```
-restaurants
-authentication
-reviews
-maps
-admin_dashboard
-navigation
-```
-
 ## Integration with the web service to connect to the web application created in the midterm project
 
-TODO: How each module interact with the web-service
+### How we integrate the web service to connect to the web application
 
-## Roles or actors of the user application
+1. Deploy the django-based application to the web service, in this case we use Vercel
 
-Guest:
-- Filter restaurants
-- Read restaurants
+By deploying our django-based application, we are bringing our web application online, which enable us to access all of it's features and database with our flutter application
 
-Customer:
-- Filter restaurants
-- Read restaurants
-- Comment on restaurants
-- Leave reviews on restaurant
+2.  Connect our flutter application to the web application by referencing the link to our current active web application
 
-Admin:
-- Add/modify/delete account data from the database
-- Add/modify/delete restaurant data from the database
-
-
-# Dev Notes
-## Instruction for other user to start the code:
-
-TODO: update the Dev Notes for the flutter version
-
-NOTE: The following instructions ASSUME that your current local repo is fresh out of 
-```
-git clone https://github.com/K6-PBD-Midterm/denpasar_food_mobile.git
-```
-
-If you are in windows use `python`, if you're on linux/mac use `python3`
-
-Make sure you are in the root folder when running startup code, for example:
+We are able to do this by using the function "final response = await request.", for example with the following code (not the exact code that we will use):
 
 ```
-for Windows
-C:\Users\ferdi\OneDrive\Desktop\denpasar-food>
-
-for Mac
-
+final response = await request.get('http://127.0.0.1:8000/json/');
+final response = await request.login("http://127.0.0.1:8000/auth/login/", {'username': username,'password': password,});
+final response = await request.postJson("http://127.0.0.1:8000/create-flutter/",jsonEncode(<String, String>{'name': _name,'price': _price.toString(),'description': _description,}),
+final response = await request.postJson("http://127.0.0.1:8000/auth/register/",jsonEncode({"username": username,"password1": password1,"password2": password2,}));
+final response = await request.logout("http://127.0.0.1:8000/auth/logout/");
 ```
 
-Make sure you do the following startup code in order (except if told otherwise)
+By using the function, we are able to integrate our flutter application with our web service, which allows us to use it's function within our mobile application
 
-### Step 1:
-Inside the root directory of this repository, run:
-```
-python -m venv env
-```
+### Restaurants Module
 
-### Step 2:
-Activate the virtual environment by running:
+Interaction with Web Service:
+        
+- Fetching Restaurant Data: The application sends HTTP GET requests to the web service's API endpoints to retrieve a list of restaurants. This includes details like restaurant names, locations, cuisines, price ranges, menus, photos, operating hours, and contact information.
 
-Windows:
-```
-env\Scripts\activate
-```
+- Filtering and Sorting: Users can apply filters or sorting options, which are sent as query parameters in the GET requests. The web service processes these parameters and returns the filtered and sorted list of restaurants.
 
-Unix (Mac/Linux):
-```
-source env/bin/activate
-```
+### Authentication Module
 
-Note: On Windows, if you get an error that running scripts is disabled on your system, follow these steps:
-1. Open Windows PowerShell as an administrator. (Search "PowerShell" on start menu, then right-click -> Run as administrator)
-2. Run the following command: `Set-ExecutionPolicy Unrestricted -Force`
+Interaction with Web Service:
+- User Registration: The app allows new users to register by sending HTTP POST requests with their information to the web service, which creates new user accounts.
+- User Login: Users can log in by sending their credentials via HTTP POST requests. The web service authenticates the user and establishes a session or provides a token.
+- User Logout: Users can log out, and the app will notify the web service to terminate the session.
 
-### Step 3: Install Tailwind
 
-If you don't have node.js installed yet, you should install it first: see this tutorial for more information: [How to Install Node.js and NPM on Windows and Mac](https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac#windows).
+### Reviews Module
 
-After that, run:
-```
-npm install -D tailwindcss
-```
+Interaction with Web Service:
+- Submitting Reviews: Authenticated users can submit reviews for restaurants by sending HTTP POST requests with review content, ratings, and the restaurant ID.
+- Fetching Reviews: The app retrieves reviews for a specific restaurant by sending HTTP GET requests. The web service returns all reviews associated with that restaurant.
 
-### Step 4:
-Inside the virtual environment (with `(env)` indicated in the terminal input line), run:
-```
-pip install -r requirements.txt
-```
+### Maps Module
 
-### Step 5:
-Run the following commands:
-```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py load_restaurants
-```
+Interaction with Web Service:
+- Fetching Location Data: The app uses the location data (latitude and longitude) of restaurants retrieved from the web service to display them on a map.
+- Nearby Restaurants: By utilizing the user's current location, the app can calculate and display nearby restaurants. This can be enhanced by sending the user's location to the web service to get a list of nearby restaurants.
 
-### Step 6:
-Run the server by running the following command:
-```
-python manage.py runserver
-```
+### Admin Dashboard Module
+
+Interaction with Web Service:
+- Managing Restaurants: Admin users can add, edit, or delete restaurant data by sending HTTP POST, PUT/PATCH, or DELETE requests to the web service.
+- Managing Users: Admins can manage user accounts via API endpoints provided by the web service.
+
+### Navigation Module
+
+Interaction with Web Service:
+- Dynamic Content Loading: The navigation module may request data from the web service to display dynamic menu options or notifications.
+- Session Management: It utilizes authentication status to adjust available navigation options (e.g., showing admin options only to admin users).
+
+
+
+
